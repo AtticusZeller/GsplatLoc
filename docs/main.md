@@ -2,7 +2,7 @@
 first-title-word: GSplatLoc
 title-rest: ": Ultra-Precise Camera Localization via 3D Gaussian Splatting"
 bibliography: ./bibliography.bib
-csl: ./iet-computer-vision.csl
+csl: ./ieee.csl
 authors:
   - name: Atticus J. Zeller
     orcid: https://orcid.org/0009-0008-5460-325X

@@ -16,17 +16,23 @@
                 "file": "main.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "main"
             }
           },
           {
             "id": "6ffd2e8344ccb62c",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "main.pdf"
-              }
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
             }
           }
         ],
@@ -50,7 +56,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -58,7 +66,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           },
           {
@@ -73,7 +83,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           }
         ]
@@ -98,7 +110,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -106,7 +120,9 @@
             "type": "leaf",
             "state": {
               "type": "git-view",
-              "state": {}
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           },
           {
@@ -115,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "main.pdf",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +139,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for README"
             }
           },
           {
@@ -132,10 +150,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "main.pdf",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from README"
             }
           },
           {
@@ -147,7 +167,9 @@
                 "sortOrder": "frequency",
                 "showSearch": false,
                 "searchQuery": ""
-              }
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
             }
           },
           {
@@ -156,8 +178,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "main.pdf"
-              }
+                "file": "README.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of README"
             }
           },
           {
@@ -166,12 +190,14 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "main.pdf"
-              }
+                "file": "README.md"
+              },
+              "icon": "lucide-info",
+              "title": "File properties for README"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -186,18 +212,22 @@
       "random-note:Open random note": false,
       "workspaces:Manage workspace layouts": false,
       "switcher:Open quick switcher": false,
-      "obsidian-importer:Open Importer": false,
       "omnisearch:Omnisearch": false,
       "obsidian-git:Open Git source control": false,
       "oz-clear-unused-images:Clear Unused Images": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
-      "darlal-switcher-plus:Open in Headings Mode": false,
-      "darlal-switcher-plus:Open Symbols for the active editor": false
+      "terminal:Open terminal": false
     }
   },
-  "active": "6ffd2e8344ccb62c",
+  "active": "21942943f6ffac1a",
   "lastOpenFiles": [
+    "submission/figures/ocrid.pdf",
+    "submission/references.bib",
+    "README.md",
+    "submission/figures",
     "main.md",
+    "mess notes.md",
+    "ieee.csl",
+    "submission",
     "main.pdf",
     "iet-computer-vision.csl",
     "essay/texs/GsplatLoc/main.pdf",
@@ -205,10 +235,6 @@
     "essay/zotero/attachments/gs_spalt/relate_works/Bescos et al_2018_DynaSLAM.pdf",
     "essay/zotero/attachments/gs_spalt/relate_works/Zhou et al_2017_Unsupervised learning of depth and ego-motion from video.pdf",
     "essay/zotero/attachments/gs_spalt/relate_works/Kuipers_1999_Quaternions and rotation sequences2.pdf",
-    "essay/zotero/attachments/gs_spalt/relate_works/Max_1995_Optical models for direct volume rendering.pdf",
-    "essay/zotero/attachments/gs_spalt/relate_works/Pomerleau et al_2013_Comparing ICP variants on real-world data sets2.pdf",
-    "essay/zotero/attachments/gs_spalt/relate_works/Pomerleau et al_2013_Comparing ICP variants on real-world data sets.pdf",
-    "essay/zotero/attachments/gs_spalt/relate_works/Reiser et al_2021_Kilonerf.pdf",
     "essay/texs/GsplatLoc/mess notes.md",
     "essay/journals/IET/Cover question.md",
     "essay/journals/IET/Free Format.md",
@@ -238,8 +264,6 @@
     "docs/OS/Ubuntu/system.md",
     "docs/URLs.md",
     "docs/account.md",
-    "@engelDirectSparseOdometry2017], [@forsterSVOFastSemidirect2014], [@camposOrbslam3AccurateOpensource2021.md",
-    "essay/zotero/annotations/haRGBDGSICPSLAM2024.md",
     "assets/20240822115648.png",
     "assets/screenshot.png",
     "未命名.canvas",
