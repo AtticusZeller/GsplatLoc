@@ -39,8 +39,8 @@
 
 
 % 配置链接颜色
-\definecolor{authorcolor}{HTML}{800080} % 淡紫色
-\definecolor{linkcolor}{HTML}{A6CE39}   % 绿色
+\definecolor{authorcolor}{HTML}{800080}
+\definecolor{linkcolor}{HTML}{A6CE39}
 
 % 标题设置
 \title{\large\bfseries\textit{$first-title-word$} $title-rest$}
@@ -65,14 +65,6 @@
 \author{%
 $for(authors)$\authorinfo{$it.orcid$}{$it.name$}{$it.affiliation$\\$it.address$}{$if(it.corresponding)$\textsuperscript{*}$endif$}$if(it.last)$$else$\and$endif$$endfor$%
 }
-
-% TODO: footnote
-% \usepackage[bottom]{footmisc}  % 使用 footmisc 包的 bottom 选项
-
-% % 简化对应作者注释为脚注的命令
-% \newcommand{\correspondingauthor}{%
-%   \footnote{Corresponding author}%
-% }
 
 % 预定义作者格式
 \preauthor{\begin{center}\large\bfseries}
