@@ -114,7 +114,7 @@ Our method fully exploits the differentiable rendering pipeline to perform effic
 \vspace{-2cm}
 \centering
 \resizebox{\textwidth}{!}{\includegraphics{Flowcharts.pdf}}
-\caption{We propose **GSplatLoc**, a novel camera localization method that leverages the differentiable rendering capabilities of 3D Gaussian splatting for efficient and accurate pose estimation.}
+\caption{We propose \textbf{GSplatLoc}, a novel camera localization method that leverages the differentiable rendering capabilities of 3D Gaussian splatting for efficient and accurate pose estimation.}
 \label{fig:cross-column-image}
 \end{figure*}
 
