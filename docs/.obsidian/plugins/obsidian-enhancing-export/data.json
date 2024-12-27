@@ -51,6 +51,9 @@
       "name": "Bibliography"
     }
   ],
+  "pandocPath": {
+    "win32": "C:\\Program Files\\Pandoc\\pandoc.exe"
+  },
   "defaultExportDirectoryMode": "Same",
   "openExportedFile": true,
   "env": {},

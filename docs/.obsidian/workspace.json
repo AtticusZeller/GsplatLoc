@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "7fab16442c0d8556",
+            "id": "6ffd2e8344ccb62c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -22,7 +22,19 @@
             }
           },
           {
-            "id": "6ffd2e8344ccb62c",
+            "id": "2df7ff36dd75aa79",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "main.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "main"
+            }
+          },
+          {
+            "id": "18f565f4bd91a441",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -36,7 +48,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -92,7 +104,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 284.5110321044922
+    "width": 204.5
   },
   "right": {
     "id": "47a7fb051f9573eb",
@@ -113,16 +125,6 @@
               },
               "icon": "lucide-tags",
               "title": "Tags"
-            }
-          },
-          {
-            "id": "21942943f6ffac1a",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
             }
           },
           {
@@ -197,7 +199,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -213,28 +215,27 @@
       "workspaces:Manage workspace layouts": false,
       "switcher:Open quick switcher": false,
       "omnisearch:Omnisearch": false,
-      "obsidian-git:Open Git source control": false,
       "oz-clear-unused-images:Clear Unused Images": false,
       "terminal:Open terminal": false
     }
   },
-  "active": "21942943f6ffac1a",
+  "active": "18f565f4bd91a441",
   "lastOpenFiles": [
-    "submission/figures/ocrid.pdf",
-    "submission/references.bib",
-    "README.md",
-    "submission/figures",
+    "submission/main.run.xml",
+    "submission/main.bcf",
+    "submission/main.bbl",
+    "submission/main.blg",
+    "submission/main.out",
+    "submission/main.aux",
+    "submission/orcid.pdf",
     "main.md",
+    "output.tex",
+    "README.md",
+    "submission/bibliography.bib",
+    "submission/main.pdf",
+    "submission/main.tex",
     "mess notes.md",
-    "ieee.csl",
-    "submission",
-    "main.pdf",
-    "iet-computer-vision.csl",
-    "essay/texs/GsplatLoc/main.pdf",
     "essay/texs/GsplatLoc/main.md",
-    "essay/zotero/attachments/gs_spalt/relate_works/Bescos et al_2018_DynaSLAM.pdf",
-    "essay/zotero/attachments/gs_spalt/relate_works/Zhou et al_2017_Unsupervised learning of depth and ego-motion from video.pdf",
-    "essay/zotero/attachments/gs_spalt/relate_works/Kuipers_1999_Quaternions and rotation sequences2.pdf",
     "essay/texs/GsplatLoc/mess notes.md",
     "essay/journals/IET/Cover question.md",
     "essay/journals/IET/Free Format.md",

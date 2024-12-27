@@ -7,7 +7,7 @@
   "displayYAMLFrontmatter": false,
   "linkStrippingBehaviour": "link",
   "highDPIDiagrams": true,
-  "pandoc": null,
+  "pandoc": "C:\\Program Files\\Pandoc\\pandoc.exe",
   "pdflatex": "xelatex",
   "outputFolder": null,
   "extraArguments": "--mathjax  --citeproc\n--template=template.tex\n\n--filter=table_filter.py\n",

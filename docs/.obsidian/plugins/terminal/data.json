@@ -12,7 +12,7 @@
   "noticeTimeout": 5,
   "openChangelogOnUpdate": true,
   "pinNewInstance": true,
-  "preferredRenderer": "canvas",
+  "preferredRenderer": "webgl",
   "profiles": {
     "df91620f-9362-40de-b963-1d159fa850ca": {
       "args": [],
@@ -34,6 +34,24 @@
       },
       "type": "integrated",
       "useWin32Conhost": true
+    },
+    "763ea846-dcd6-494d-a688-24ff52b5e5c0": {
+      "args": [],
+      "executable": "powershell",
+      "name": "windows",
+      "platforms": {
+        "win32": true
+      },
+      "restoreHistory": true,
+      "successExitCodes": [
+        "0",
+        "SIGINT",
+        "SIGTERM"
+      ],
+      "terminalOptions": {
+        "documentOverride": null
+      },
+      "type": "external"
     }
   }
 }
