@@ -1,31 +1,20 @@
 ---
 first-title-word: GSplatLoc
 title-rest: ": Ultra-Precise Camera Localization via 3D Gaussian Splatting"
-bibliography: ./bibliography.bib
-csl: ./ieee.csl
 authors:
   - name: Atticus J. Zeller
     orcid: https://orcid.org/0009-0008-5460-325X
-    email: zhouge1831@gmail.com
     affiliation: Southeast University Chengxian College
     address: Nanjing, China
-    corresponding: false
-  - name: Jane Doe
-    orcid: https://orcid.org/0000-0000-0000-0000
-    email: jane.doe@another.edu
-    affiliation: Southeast University Chengxian College
-    address: Nanjing, China
-    corresponding: true
-    last: true
 abstract: We present **GSplatLoc**, a camera localization method that leverages the differentiable rendering capabilities of 3D Gaussian splatting for ultra-precise pose estimation. By formulating pose estimation as a gradient-based optimization problem that minimizes discrepancies between rendered depth maps from a pre-existing 3D Gaussian scene and observed depth images, GSplatLoc achieves translational errors within **0.01 cm** and near-zero rotational errors on the Replica dataset—significantly outperforming existing methods. Evaluations on the Replica and TUM RGB-D datasets demonstrate the method's robustness in challenging indoor environments with complex camera motions. GSplatLoc sets a new benchmark for localization in dense mapping, with important implications for applications requiring accurate real-time localization, such as robotics and augmented reality.
-url: https://github.com/Atticuszz/GsplatLoc
+url: https://github.com/AtticusZeller/GsplatLoc
 ---
 # Introduction
 
 
 
 
-Visual localization[@scaramuzzaVisualOdometryTutorial2011], specifically the task of estimating camera position and orientation (pose estimation) for a given image within a known scene, is a fundamental challenge in computer vision. Accurate pose estimation is crucial for applications like autonomous robotics (e.g., self-driving cars), as well as Augmented and Virtual Reality systems. Although Visual Simultaneous Localization and Mapping (Visual SLAM)[@durrant-whyteSimultaneousLocalizationMapping2006;@davisonMonoSLAMRealtimeSingle2007]combines both mapping and pose estimation, this paper focuses specifically on the localization component, which is essential for real-time tracking in dynamic environments.
+Visual localization[@scaramuzzaVisualOdometryTutorial2011], specifically the task of estimating camera position and orientation (pose estimation) for a given image within a known scene, is a fundamental challenge in computer vision. Accurate pose estimation is crucial for applications like autonomous robotics (e.g., self-driving cars), as well as Augmented and Virtual Reality systems. Although Visual Simultaneous Localization and Mapping (Visual SLAM)[@durrant-whyteSimultaneousLocalizationMapping2006; @davisonMonoSLAMRealtimeSingle2007]combines both mapping and pose estimation, this paper focuses specifically on the localization component, which is essential for real-time tracking in dynamic environments.
 
 Traditional SLAM systems [@kerlDenseVisualSLAM2013] have demonstrated accurate pose estimation across diverse environments. However, their underlying 3D representations (e.g., point clouds, meshes, and surfels) exhibit limitations[@newcombeKinectfusionRealtimeDense2011; @rusinkiewiczEfficientVariantsICP2001] in flexibility for tasks like photorealistic scene exploration and fine-grained map updates. Recent methods utilizing Neural Radiance Fields (NeRF) [@mildenhallNeRFRepresentingScenes2022] for surface reconstruction and view rendering have inspired novel SLAM approaches [@sandstromPointslamDenseNeural2023], which show promising[@sucarImapImplicitMapping2021; @zhuNiceslamNeuralImplicit2022] results in tracking and scene modeling. Despite these advances[@garbinFastnerfHighfidelityNeural2021], existing NeRF-based methods rely on computationally expensive volume rendering pipelines, limiting their ability to perform real-time **pose estimation** effectively.
 

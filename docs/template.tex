@@ -52,20 +52,18 @@
 \usepackage{footnote}
 
 % 自定义作者信息命令
-\newcommand{\authorinfo}[5]{%
+\newcommand{\authorinfo}[4]{%
   \begin{tabular}[t]{c}
-    \href{#1}{\includegraphics[scale=0.06]{orcid.pdf}\hspace{1mm}\textbf{#2}}#5\\
-    \texttt{#3}\\
-    #4
+    \href{#1}{\includegraphics[scale=0.06]{orcid.pdf}\hspace{1mm}\textbf{#2}}#4\\
+    #3\\
   \end{tabular}%
 }
-
 % 重定义 \and 命令以添加适当的间距
 \renewcommand{\and}{\hspace{2em}}
 
 % 作者设置
 \author{%
-$for(authors)$\authorinfo{$it.orcid$}{$it.name$}{$it.email$}{$it.affiliation$\\$it.address$}{$if(it.corresponding)$\textsuperscript{*}$endif$}$if(it.last)$$else$\and$endif$$endfor$%
+$for(authors)$\authorinfo{$it.orcid$}{$it.name$}{$it.affiliation$\\$it.address$}{$if(it.corresponding)$\textsuperscript{*}$endif$}$if(it.last)$$else$\and$endif$$endfor$%
 }
 
 % TODO: footnote
@@ -83,7 +81,7 @@ $for(authors)$\authorinfo{$it.orcid$}{$it.name$}{$it.email$}{$it.affiliation$\\$
 % PDF元数据
 \hypersetup{
     pdftitle={$first-title-word$ $title-rest$},
-    pdfauthor={$for(authors)$$it.name$$sep$, $endfor$},
+    pdfauthor={$for(authors)$$it.name$$sep$, $endfor$}
 }
 
 
