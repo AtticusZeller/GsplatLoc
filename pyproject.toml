@@ -1,59 +1,203 @@
-
-[tool.poetry]
+[project]
 name = "GsplatLoc"
-version = "0.10.0"
-description = ""
-authors = ["Atticuszz <1831768457@qq.com>"]
+description = "Ultra-Precise Camera Localization via 3D Gaussian Splatting"
 readme = "README.md"
-packages = [{include = "src", from = "."}]
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "A.J.Zeller", email = "GitHub.AJZ@pm.me" }]
+maintainers = [{ name = "A.J.Zeller", email = "GitHub.AJZ@pm.me" }]
 
-[tool.poetry.dependencies]
-python = ">=3.10,<3.11.0 || >3.11.0,<4.0"
-opencv-contrib-python-headless = "^4.9.0.80"
-matplotlib = "^3.8.4"
-natsort = "^8.4.0"
-scikit-learn = "^1.4.2"
-addict = "^2.4.0"
-pandas = "^2.2.2"
-mpld3 = "^0.5.10"
-numpy = "^1.26.4"
-open3d = "^0.18.0"
-tqdm = "^4.66.4"
-scipy = "^1.13.0"
-wandb = "^0.17.0"
-small-gicp = "0.1.1"
-kornia = "^0.7.2"
-pykeops = "^2.2.3"
-imageio = "^2.34.1"
-nerfview = "^0.0.3"
-tensorboard = "^2.17.0"
-torchmetrics = {extras = ["image"], version = "^1.4.0.post0"}
+dynamic = ["version"] # https://hatch.pypa.io/latest/config/metadata/#version
+
+[project.urls]
+Homepage = "https://github.com/AtticusZeller/GsplatLoc"
+Issues = "https://github.com/AtticusZeller/GsplatLoc/issues"
+Changelog = "https://github.com/AtticusZeller/GsplatLoc/blob/main/CHANGELOG.md"
 
 
-# # CUDA 12.1
-# pip install torch==2.2.0 torchvision==0.17.0 torchaudio==2.2.0 --index-url https://download.pytorch.org/whl/cu121
-# pip install ./thirdparty/gsplat/.
-torch = "2.2.0"
+[project.optional-dependencies]
+# optional deps for package installation
+
+[dependency-groups]
+dev = [
+    "ruff>=0.6.3",
+    # "mypy>=1.11.2",
+    "pre-commit>=3.8.0",
+    "git-cliff>=2.6.1",
+    "bump-my-version>=0.28.0",
+    "typos>=1.26.8",
+]
+docs = [
+    "pandas>=2.2.3",
+    "panflute>=2.3.1",
+]
 
 
+## Test
+[tool.mypy]
+strict = true
+exclude = ["venv", ".venv"]
 
-[tool.poetry.group.dev.dependencies]
-pytest = "^8.0.0"
-pre-commit = "^3.7.0"
-pytest-cov = "^4.1.0"
-scalene = "^1.5.40"
-pyqt6 = "^6.7.0"
+## Linter and formatter
+[tool.ruff]
+# cover and extend the default config in https=//docs.astral.sh/ruff/configuration/
+extend-exclude = [""]
+target-version = "py310"
 
-[tool.semantic_release]
-version_variables = ["src/__init__.py:__version__"]
-version_toml = ["pyproject.toml:tool.poetry.version"]
-branch = "main"
-upload_to_vcs_release = true
-# build_command = "pip install poetry && poetry build"
-commit_message = "chore(release): bump version to v{version}"
-changelog_components = "semantic_release.changelog.changelog_headers,semantic_release.changelog.compare_url"
-changelog_file = "CHANGELOG.md"
+[tool.ruff.lint]
+select = [
+    "E",      # pycodestyle errors
+    "W",      # pycodestyle warnings
+    "F",      # pyflakes
+    "I",      # isort
+    "B",      # flake8-bugbear
+    "C4",     # flake8-comprehensions
+    "UP",     # pyupgrade
+    "ARG001", # unused arguments in functions
+]
+ignore = [
+    "E501",   # line too long, handled by black
+    "B008",   # do not perform function calls in argument defaults
+    "W191",   # indentation contains tabs
+    "B904",   # Allow raising exceptions without from e, for HTTPException
+    "COM819", # Trailing comma prohibited
+    "D100",   # Missing docstring in public module(file)
+    "D104",   # Missing docstring in public package
+    "D203",   # 1 blank line required before class docstring
+    "E201",   # Whitespace after '('
+    "E202",   # Whitespace before ')'
+    "E203",   # Whitespace before '='
+    "E221",   # Multiple spaces before operator
+    "E241",   # Multiple spaces after ','
+    "E251",   # Unexpected spaces around keyword / parameter equals
+    "W291",   # Trailing whitespace
+    "W293",   # Blank line contains whitespace
+]
 
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+isort = { combine-as-imports = true,  split-on-trailing-comma = false }
+
+# Avoid trying to fix flake8-bugbear (`B`) violations.
+unfixable = ["B"]
+
+[tool.ruff.format]
+docstring-code-format = true
+skip-magic-trailing-comma = true
+
+# Reference
+# 1. https=//github.com/Kludex/python-template/blob/main/template/%7B%7B%20project_slug%20%7D%7D/pyproject.toml.jinja
+# 2. https=//github.com/fastapi/full-stack-fastapi-template/blob/master/backend/pyproject.toml
+# 3. https=//github.com/pydantic/logfire
+# 4. https=//coverage.readthedocs.io/en/latest/index.html
+
+
+## VCS
+[tool.git-cliff.remote.github]
+owner = "atticuszz"
+repo = "python-uv"
+
+[tool.git-cliff.changelog]
+# template for the changelog header
+header = """
+# Changelog\n
+All notable changes to this project will be documented in this file.\n
+"""
+# template for the changelog body
+# https://keats.github.io/tera/docs/#introduction
+body = """
+{% if version %}\
+    ## {{ version | trim_start_matches(pat="v") }} - {{ timestamp | date(format="%Y-%m-%d") }}
+{% else %}\
+    ## unreleased
+{% endif %}\
+{% for group, commits in commits | group_by(attribute="group") %}
+    ### {{ group | striptags | trim | upper_first }}
+    {% for commit in commits| unique(attribute="message") %}
+        - {% if commit.scope %}*({{ commit.scope }})* {% endif %}\
+            {% if commit.breaking %}[**breaking**] {% endif %}\
+            {{ commit.message | upper_first }}\
+            {% if commit.remote.pr_number %} in #{{ commit.remote.pr_number }}{%- endif %}\
+    {% endfor %}
+{% endfor %}\n
+"""
+# template for the changelog footer
+footer = """
+<!-- generated by git-cliff -->
+"""
+# remove the leading and trailings
+trim = true
+# postprocessors
+# postprocessors = [
+#   { pattern = '<REPO>', replace = "https://github.com/AtticusZeller/GsplatLoc" }, # replace repository URL
+# ]
+# render body even when there are no releases to process
+render_always = true
+# output file path
+output = "CHANGELOG.md"
+
+[tool.git-cliff.git]
+# parse the commits based on https://www.conventionalcommits.org
+conventional_commits = true
+# filter out the commits that are not conventional
+filter_unconventional = true
+# process each line of a commit as an individual commit
+split_commits = false
+# regex for preprocessing the commit messages
+commit_preprocessors = [
+    # If the spelling is incorrect, it will be automatically fixed.
+    { pattern = '.*', replace_command = 'typos --write-changes -' }
+]
+# regex for parsing and grouping commits
+commit_parsers = [
+  { message = "^feat", group = "<!-- 0 -->🚀 Features" },
+  { message = "^fix", group = "<!-- 1 -->🐛 Bug Fixes" },
+  { message = "^doc", group = "<!-- 3 -->📚 Documentation" },
+  { message = "^perf", group = "<!-- 4 -->⚡ Performance" },
+  { message = "^refactor", group = "<!-- 2 -->🚜 Refactor" },
+  { message = "^style", group = "<!-- 5 -->🎨 Styling" },
+  { message = "^test", group = "<!-- 6 -->🧪 Testing" },
+  { message = "^chore\\(release\\)", skip = true },
+  { message = "^chore\\(deps.*\\)", skip = true },
+  { message = "^chore\\(pr\\)", skip = true },
+  { message = "^chore\\(pull\\)", skip = true },
+  { message = "^chore|^ci", group = "<!-- 7 -->⚙️ Miscellaneous Tasks" },
+  { body = ".*security", group = "<!-- 8 -->🛡️ Security" },
+  { message = "^revert", group = "<!-- 9 -->◀️ Revert" },
+]
+# filter out the commits that are not matched by commit parsers
+filter_commits = false
+# sort the tags topologically
+topo_order = false
+# sort the commits inside sections by oldest/newest order
+sort_commits = "oldest"
+
+
+[tool.bumpversion]
+current_version = "0.0.40"
+parse = "(?P<major>\\d+)\\.(?P<minor>\\d+)\\.(?P<patch>\\d+)"
+serialize = ["{major}.{minor}.{patch}"]
+search = "{current_version}"
+replace = "{new_version}"
+regex = false
+ignore_missing_version = false
+ignore_missing_files = false
+tag = true
+sign_tags = false
+tag_name = "v{new_version}"
+tag_message = "chore(release): {current_version} → {new_version}"
+allow_dirty = true # git-cliff first then bump patch
+commit = true
+message = "chore(release): {current_version} → {new_version}"
+commit_args = ""
+setup_hooks = []
+pre_commit_hooks = []
+post_commit_hooks = []
+
+[[tool.bumpversion.files]]
+filename = "src/__init__.py"
+
+[[tool.bumpversion.files]]
+filename = "CHANGELOG.md"
+search = "unreleased"
+replace = "{new_version} - {now:%Y-%m-%d}"
+
+# https://callowayproject.github.io/bump-my-version/reference/search-and-replace-config/
