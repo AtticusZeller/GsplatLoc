@@ -30,10 +30,10 @@ uv run pandoc --from markdown --to latex -o .\submission\main.tex main.md --temp
 
 
 ```powershell
-xelatex main
+pdflatex main
 biber main
-xelatex main
-xelatex main
+pdflatex main
+pdflatex main
 ```
 
 

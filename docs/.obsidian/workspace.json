@@ -39,12 +39,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "main.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "main"
             }
           }
         ],
@@ -180,10 +180,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "main.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of README"
+              "title": "Outline of main"
             }
           },
           {
@@ -221,19 +221,20 @@
   },
   "active": "18f565f4bd91a441",
   "lastOpenFiles": [
-    "submission/main.run.xml",
-    "submission/main.bcf",
+    "submission/zia21428",
+    "submission/arxiv-submission.zip",
+    "submission/zia22392",
+    "submission/README.md",
+    "submission/zia21964",
     "submission/main.bbl",
     "submission/main.blg",
+    "submission/main.run.xml",
+    "submission/main.bcf",
     "submission/main.out",
     "submission/main.aux",
-    "submission/orcid.pdf",
-    "main.md",
-    "output.tex",
+    "submission/main.log",
     "README.md",
-    "submission/bibliography.bib",
-    "submission/main.pdf",
-    "submission/main.tex",
+    "main.md",
     "mess notes.md",
     "essay/texs/GsplatLoc/main.md",
     "essay/texs/GsplatLoc/mess notes.md",
@@ -264,7 +265,6 @@
     "docs/OS/Ubuntu/wsl.md",
     "docs/OS/Ubuntu/system.md",
     "docs/URLs.md",
-    "docs/account.md",
     "assets/20240822115648.png",
     "assets/screenshot.png",
     "未命名.canvas",
