@@ -1,14 +1,22 @@
-## GsplatLoc
-[x] clean config in base.py
-1. tracking
-   1. [x] normalize pcd and pose via PCA 
-   2. [x] update depth_gt with a proper method 
-   3. [x] loss with depth and edge and normals
-   4. [x] find an early stop condition !!! -> total loss and later than 100 step
-   5. [x] sync data shape and avoid too much middle vars through backward
-   6. [x] total dataset eval
-      1. [x] replica
-         1. [x]gsplatloc
-         2. [x]icps
-      2. TUM
-         
+<p align="center">
+  <h1 align="center">GSplatLoc: Ultra-Precise Camera Localization via 3D Gaussian Splatting</h1>
+  <p align="center">
+    <a href="https://notes.atticux.me/"><strong>Atticus Zeller</strong></a>
+  </p>
+</p>
+
+<p align="center">
+  <a href="">
+    <img src="./docs/flowchat.png" width="100%">
+  </a>
+</p>
+
+
+
+## 📌 Citation
+
+If you find our paper and code useful, please cite us:
+
+```bib
+comming soon...
+```
