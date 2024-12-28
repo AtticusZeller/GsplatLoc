@@ -1,0 +1,2496 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{scaramuzzaVisualOdometryTutorial2011}{article}{}
+      \name{author}{2}{}{%
+        {{hash=dac21ab4ede215439fcc6b051be53a11}{%
+           family={Scaramuzza},
+           familyi={S\bibinitperiod},
+           given={Davide},
+           giveni={D\bibinitperiod}}}%
+        {{hash=ea987af098c553e56730615d244f1dd6}{%
+           family={Fraundorfer},
+           familyi={F\bibinitperiod},
+           given={Friedrich},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{e3fadefef92a28fcd8544db3cc769ba2}
+      \strng{fullhash}{e3fadefef92a28fcd8544db3cc769ba2}
+      \strng{bibnamehash}{e3fadefef92a28fcd8544db3cc769ba2}
+      \strng{authorbibnamehash}{e3fadefef92a28fcd8544db3cc769ba2}
+      \strng{authornamehash}{e3fadefef92a28fcd8544db3cc769ba2}
+      \strng{authorfullhash}{e3fadefef92a28fcd8544db3cc769ba2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE robotics \& automation magazine}
+      \field{number}{4}
+      \field{title}{Visual Odometry [Tutorial]}
+      \field{urlday}{26}
+      \field{urlmonth}{9}
+      \field{urlyear}{2024}
+      \field{volume}{18}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{80\bibrangedash 92}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1109/MRA.2011.943233
+      \endverb
+      \verb{file}
+      \verb C:\Users\18317\DevSpace\DocHub\essay\zotero\attachments\gs_spalt\introduce\Scaramuzza_Fraundorfer_2011_Visual odometry [tutorial].pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/abstract/document/6096039/
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/abstract/document/6096039/
+      \endverb
+    \endentry
+    \entry{durrant-whyteSimultaneousLocalizationMapping2006}{article}{}
+      \name{author}{2}{}{%
+        {{hash=25adb16e1e973b04b027303ccb7e5fcf}{%
+           family={Durrant-Whyte},
+           familyi={D\bibinithyphendelim W\bibinitperiod},
+           given={Hugh},
+           giveni={H\bibinitperiod}}}%
+        {{hash=a37c63e1fc8eaedec4ea9e27569c27d3}{%
+           family={Bailey},
+           familyi={B\bibinitperiod},
+           given={Tim},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{210de09a158ffbef02c16824a43de295}
+      \strng{fullhash}{210de09a158ffbef02c16824a43de295}
+      \strng{bibnamehash}{210de09a158ffbef02c16824a43de295}
+      \strng{authorbibnamehash}{210de09a158ffbef02c16824a43de295}
+      \strng{authornamehash}{210de09a158ffbef02c16824a43de295}
+      \strng{authorfullhash}{210de09a158ffbef02c16824a43de295}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{journaltitle}{IEEE robotics \& automation magazine}
+      \field{number}{2}
+      \field{shorttitle}{Simultaneous Localization and Mapping}
+      \field{title}{Simultaneous Localization and Mapping: Part {{I}}}
+      \field{urlday}{26}
+      \field{urlmonth}{9}
+      \field{urlyear}{2024}
+      \field{volume}{13}
+      \field{year}{2006}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{99\bibrangedash 110}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1109/MRA.2006.1638022
+      \endverb
+      \verb{file}
+      \verb C:\Users\18317\DevSpace\DocHub\essay\zotero\attachments\gs_spalt\introduce\Durrant-Whyte_Bailey_2006_Simultaneous localization and mapping.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/abstract/document/1638022/
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/abstract/document/1638022/
+      \endverb
+    \endentry
+    \entry{davisonMonoSLAMRealtimeSingle2007}{article}{}
+      \name{author}{4}{}{%
+        {{hash=6800da0b1eba1591ea0c413f8efceae3}{%
+           family={Davison},
+           familyi={D\bibinitperiod},
+           given={Andrew\bibnamedelima J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=ee8d212ba96ab9b80423488534d7574c}{%
+           family={Reid},
+           familyi={R\bibinitperiod},
+           given={Ian\bibnamedelima D.},
+           giveni={I\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=45c6c69807f417e619d3d397c0448d50}{%
+           family={Molton},
+           familyi={M\bibinitperiod},
+           given={Nicholas\bibnamedelima D.},
+           giveni={N\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=d976a252b6fa0efe1839e7c6de032d43}{%
+           family={Stasse},
+           familyi={S\bibinitperiod},
+           given={Olivier},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{fceadd62e12f3daea401c47719d984dc}
+      \strng{fullhash}{d34af9fb5c054d89ccbb69195f280f82}
+      \strng{bibnamehash}{d34af9fb5c054d89ccbb69195f280f82}
+      \strng{authorbibnamehash}{d34af9fb5c054d89ccbb69195f280f82}
+      \strng{authornamehash}{fceadd62e12f3daea401c47719d984dc}
+      \strng{authorfullhash}{d34af9fb5c054d89ccbb69195f280f82}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{journaltitle}{IEEE transactions on pattern analysis and machine intelligence}
+      \field{number}{6}
+      \field{shorttitle}{{{MonoSLAM}}}
+      \field{title}{{{MonoSLAM}}: {{Real-time}} Single Camera {{SLAM}}}
+      \field{urlday}{26}
+      \field{urlmonth}{9}
+      \field{urlyear}{2024}
+      \field{volume}{29}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1052\bibrangedash 1067}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1109/TPAMI.2007.1049
+      \endverb
+      \verb{file}
+      \verb C:\Users\18317\DevSpace\DocHub\essay\zotero\attachments\gs_spalt\introduce\Davison et al_2007_MonoSLAM.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/abstract/document/4160954/
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/abstract/document/4160954/
+      \endverb
+    \endentry
+    \entry{kerlDenseVisualSLAM2013}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=c8b46d457d7577efc9d388d1c40fb783}{%
+           family={Kerl},
+           familyi={K\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=9e291584a3b29b27c88ecfe0a566274c}{%
+           family={Sturm},
+           familyi={S\bibinitperiod},
+           given={Jürgen},
+           giveni={J\bibinitperiod}}}%
+        {{hash=1bd2b6b6ca2fc15a90f164070b626131}{%
+           family={Cremers},
+           familyi={C\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{4088c2282796db3475bd1d361a9ac3f1}
+      \strng{fullhash}{21c79321a177b2edd1d9ad2ca8f11e28}
+      \strng{bibnamehash}{21c79321a177b2edd1d9ad2ca8f11e28}
+      \strng{authorbibnamehash}{21c79321a177b2edd1d9ad2ca8f11e28}
+      \strng{authornamehash}{4088c2282796db3475bd1d361a9ac3f1}
+      \strng{authorfullhash}{21c79321a177b2edd1d9ad2ca8f11e28}
+      \field{extraname}{1}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2013 {{IEEE}}/{{RSJ International Conference}} on {{Intelligent Robots}} and {{Systems}}}
+      \field{title}{Dense Visual {{SLAM}} for {{RGB-D}} Cameras}
+      \field{urlday}{22}
+      \field{urlmonth}{8}
+      \field{urlyear}{2024}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{2100\bibrangedash 2106}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1109/IROS.2013.6696650
+      \endverb
+      \verb{file}
+      \verb C:\Users\18317\DevSpace\DocHub\essay\zotero\attachments\gs_spalt\Kerl et al_2013_Dense visual SLAM for RGB-D cameras.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/abstract/document/6696650/
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/abstract/document/6696650/
+      \endverb
+    \endentry
+    \entry{newcombeKinectfusionRealtimeDense2011}{inproceedings}{}
+      \name{author}{10}{}{%
+        {{hash=7b635dacb5ef25a6f9c500f8c62aacd8}{%
+           family={Newcombe},
+           familyi={N\bibinitperiod},
+           given={Richard\bibnamedelima A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=19d80a2a01693de3631decaa652d4d3f}{%
+           family={Izadi},
+           familyi={I\bibinitperiod},
+           given={Shahram},
+           giveni={S\bibinitperiod}}}%
+        {{hash=e4282a8b050f6ec88f43896369f6fe38}{%
+           family={Hilliges},
+           familyi={H\bibinitperiod},
+           given={Otmar},
+           giveni={O\bibinitperiod}}}%
+        {{hash=23c72b179d65cca0461f33a964f1f98b}{%
+           family={Molyneaux},
+           familyi={M\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=4bbde8a08938e282b6bd70ea30ba2b09}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=6800da0b1eba1591ea0c413f8efceae3}{%
+           family={Davison},
+           familyi={D\bibinitperiod},
+           given={Andrew\bibnamedelima J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=d98a66dcfa35ba76c93f9e8a73b3650c}{%
+           family={Kohi},
+           familyi={K\bibinitperiod},
+           given={Pushmeet},
+           giveni={P\bibinitperiod}}}%
+        {{hash=3b90a1e3dad54d8cb1230eec501fdf04}{%
+           family={Shotton},
+           familyi={S\bibinitperiod},
+           given={Jamie},
+           giveni={J\bibinitperiod}}}%
+        {{hash=16c2fad85c202f0f60f5d77854ca1cd8}{%
+           family={Hodges},
+           familyi={H\bibinitperiod},
+           given={Steve},
+           giveni={S\bibinitperiod}}}%
+        {{hash=8eb0347090bee0e3077a241bdad85387}{%
+           family={Fitzgibbon},
+           familyi={F\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Ieee}%
+      }
+      \strng{namehash}{1716b787f56b1649cb7cef04aa0bc5c4}
+      \strng{fullhash}{141c488f773c92b7e6a2650d07cf9dcb}
+      \strng{bibnamehash}{1716b787f56b1649cb7cef04aa0bc5c4}
+      \strng{authorbibnamehash}{1716b787f56b1649cb7cef04aa0bc5c4}
+      \strng{authornamehash}{1716b787f56b1649cb7cef04aa0bc5c4}
+      \strng{authorfullhash}{141c488f773c92b7e6a2650d07cf9dcb}
+      \field{extraname}{1}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{booktitle}{2011 10th {{IEEE}} International Symposium on Mixed and Augmented Reality}
+      \field{shorttitle}{Kinectfusion}
+      \field{title}{Kinectfusion: {{Real-time}} Dense Surface Mapping and Tracking}
+      \field{urlday}{3}
+      \field{urlmonth}{9}
+      \field{urlyear}{2024}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{127\bibrangedash 136}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/ISMAR.2011.6092378
+      \endverb
+      \verb{file}
+      \verb C:\Users\18317\DevSpace\DocHub\essay\zotero\attachments\gs_spalt\relate_works\Newcombe et al_2011_Kinectfusion.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/abstract/document/6162880/
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/abstract/document/6162880/
+      \endverb
+    \endentry
+    \entry{rusinkiewiczEfficientVariantsICP2001}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=7828482a1cae897b8d87b30255d79a7d}{%
+           family={Rusinkiewicz},
+           familyi={R\bibinitperiod},
+           given={Szymon},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1315bf00f5fa82534be18df443fc255c}{%
+           family={Levoy},
+           familyi={L\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{0c03d43219d4ded30e34e6bb593488e8}
+      \strng{fullhash}{0c03d43219d4ded30e34e6bb593488e8}
+      \strng{bibnamehash}{0c03d43219d4ded30e34e6bb593488e8}
+      \strng{authorbibnamehash}{0c03d43219d4ded30e34e6bb593488e8}
+      \strng{authornamehash}{0c03d43219d4ded30e34e6bb593488e8}
+      \strng{authorfullhash}{0c03d43219d4ded30e34e6bb593488e8}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings Third International Conference on 3-{{D}} Digital Imaging and Modeling}
+      \field{title}{Efficient Variants of the {{ICP}} Algorithm}
+      \field{urlday}{26}
+      \field{urlmonth}{9}
+      \field{urlyear}{2024}
+      \field{year}{2001}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{145\bibrangedash 152}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/IM.2001.924423
+      \endverb
+      \verb{file}
+      \verb C:\Users\18317\DevSpace\DocHub\essay\zotero\attachments\gs_spalt\introduce\Rusinkiewicz_Levoy_2001_Efficient variants of the ICP algorithm.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/abstract/document/924423/
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/abstract/document/924423/
+      \endverb
+    \endentry
+    \entry{mildenhallNeRFRepresentingScenes2022}{article}{}
+      \name{author}{6}{}{%
+        {{hash=a3567364ab52973659adf74ee0c6e6f3}{%
+           family={Mildenhall},
+           familyi={M\bibinitperiod},
+           given={Ben},
+           giveni={B\bibinitperiod}}}%
+        {{hash=b503d22b8c86fb9dfd477d2f70a59650}{%
+           family={Srinivasan},
+           familyi={S\bibinitperiod},
+           given={Pratul\bibnamedelima P.},
+           giveni={P\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=9a18985a5c8b8be23d0ec9de0a3c87b9}{%
+           family={Tancik},
+           familyi={T\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod}}}%
+        {{hash=562f3254a241932db4a6d44a97473ec5}{%
+           family={Barron},
+           familyi={B\bibinitperiod},
+           given={Jonathan\bibnamedelima T.},
+           giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=e7e274981ceb0dd123d44af35cc7bedf}{%
+           family={Ramamoorthi},
+           familyi={R\bibinitperiod},
+           given={Ravi},
+           giveni={R\bibinitperiod}}}%
+        {{hash=96e30bdc2cf905aa1109c46617b16252}{%
+           family={Ng},
+           familyi={N\bibinitperiod},
+           given={Ren},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{094342ecc1d4c7df1a909882dd0a89cd}
+      \strng{fullhash}{9bee638bba28fb3cd739399aa8dc9983}
+      \strng{bibnamehash}{9bee638bba28fb3cd739399aa8dc9983}
+      \strng{authorbibnamehash}{9bee638bba28fb3cd739399aa8dc9983}
+      \strng{authornamehash}{094342ecc1d4c7df1a909882dd0a89cd}
+      \strng{authorfullhash}{9bee638bba28fb3cd739399aa8dc9983}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{We present a method that achieves state-of-the-art results for synthesizing novel views of complex scenes by optimizing an underlying continuous volumetric scene function using a sparse set of input views. Our algorithm represents a scene using a fully connected (nonconvolutional) deep network, whose input is a single continuous 5D coordinate (spatial location ( x , y , z ) and viewing direction ( θ, ϕ )) and whose output is the volume density and view-dependent emitted radiance at that spatial location. We synthesize views by querying 5D coordinates along camera rays and use classic volume rendering techniques to project the output colors and densities into an image. Because volume rendering is naturally differentiable, the only input required to optimize our representation is a set of images with known camera poses. We describe how to effectively optimize neural radiance fields to render photorealistic novel views of scenes with complicated geometry and appearance, and demonstrate results that outperform prior work on neural rendering and view synthesis.}
+      \field{issn}{0001-0782, 1557-7317}
+      \field{journaltitle}{Communications of the ACM}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{1}
+      \field{shortjournal}{Commun. ACM}
+      \field{shorttitle}{{{NeRF}}}
+      \field{title}{{{NeRF}}: Representing Scenes as Neural Radiance Fields for View Synthesis}
+      \field{urlday}{22}
+      \field{urlmonth}{8}
+      \field{urlyear}{2024}
+      \field{volume}{65}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{99\bibrangedash 106}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1145/3503250
+      \endverb
+      \verb{file}
+      \verb C:\Users\18317\DevSpace\DocHub\essay\zotero\attachments\gs_spalt\introduce\Mildenhall et al_2022_NeRF.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://dl.acm.org/doi/10.1145/3503250
+      \endverb
+      \verb{url}
+      \verb https://dl.acm.org/doi/10.1145/3503250
+      \endverb
+    \endentry
+    \entry{sandstromPointslamDenseNeural2023}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=d9eb3f671403ee2a28d9e48677737725}{%
+           family={Sandström},
+           familyi={S\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod}}}%
+        {{hash=0e1dff109644a2423d611a0bfe123178}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yue},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=d3bc7b9be5061411a87f19fcdf39499c}{%
+           family={Van\bibnamedelima Gool},
+           familyi={V\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={Luc},
+           giveni={L\bibinitperiod}}}%
+        {{hash=44e1d63adacaa62a8b257c28eb6145e2}{%
+           family={Oswald},
+           familyi={O\bibinitperiod},
+           given={Martin\bibnamedelima R.},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{2bd91d8d2f82b3e665ce5d86e849ca87}
+      \strng{fullhash}{4e1210a52b1afbae2f89585a7117a2e5}
+      \strng{bibnamehash}{4e1210a52b1afbae2f89585a7117a2e5}
+      \strng{authorbibnamehash}{4e1210a52b1afbae2f89585a7117a2e5}
+      \strng{authornamehash}{2bd91d8d2f82b3e665ce5d86e849ca87}
+      \strng{authorfullhash}{4e1210a52b1afbae2f89585a7117a2e5}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{booktitle}{Proceedings of the {{IEEE}}/{{CVF International Conference}} on {{Computer Vision}}}
+      \field{shorttitle}{Point-Slam}
+      \field{title}{Point-Slam: {{Dense}} Neural Point Cloud-Based Slam}
+      \field{urlday}{22}
+      \field{urlmonth}{8}
+      \field{urlyear}{2024}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{18433\bibrangedash 18444}
+      \range{pages}{12}
+      \verb{file}
+      \verb C:\Users\18317\DevSpace\DocHub\essay\zotero\attachments\gs_spalt\introduce\Sandström et al_2023_Point-slam.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://openaccess.thecvf.com/content/ICCV2023/html/Sandstrom_Point-SLAM_Dense_Neural_Point_Cloud-based_SLAM_ICCV_2023_paper.html
+      \endverb
+      \verb{url}
+      \verb http://openaccess.thecvf.com/content/ICCV2023/html/Sandstrom_Point-SLAM_Dense_Neural_Point_Cloud-based_SLAM_ICCV_2023_paper.html
+      \endverb
+      \keyw{⛔ No DOI found}
+    \endentry
+    \entry{sucarImapImplicitMapping2021}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=8f1a5e878ee54b003a7e019a1b6b7915}{%
+           family={Sucar},
+           familyi={S\bibinitperiod},
+           given={Edgar},
+           giveni={E\bibinitperiod}}}%
+        {{hash=6f1e887295b9ad4b9ac870667d61b091}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Shikun},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a2865884ed184115cce321b3469bc252}{%
+           family={Ortiz},
+           familyi={O\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod}}}%
+        {{hash=6800da0b1eba1591ea0c413f8efceae3}{%
+           family={Davison},
+           familyi={D\bibinitperiod},
+           given={Andrew\bibnamedelima J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{cb9d7ae96095d94c44dc40ec02690725}
+      \strng{fullhash}{e14299d26e49166e6d56990149072c8d}
+      \strng{bibnamehash}{e14299d26e49166e6d56990149072c8d}
+      \strng{authorbibnamehash}{e14299d26e49166e6d56990149072c8d}
+      \strng{authornamehash}{cb9d7ae96095d94c44dc40ec02690725}
+      \strng{authorfullhash}{e14299d26e49166e6d56990149072c8d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{booktitle}{Proceedings of the {{IEEE}}/{{CVF}} International Conference on Computer Vision}
+      \field{shorttitle}{Imap}
+      \field{title}{Imap: {{Implicit}} Mapping and Positioning in Real-Time}
+      \field{urlday}{10}
+      \field{urlmonth}{8}
+      \field{urlyear}{2024}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{6229\bibrangedash 6238}
+      \range{pages}{10}
+      \verb{file}
+      \verb C:\Users\18317\DevSpace\DocHub\essay\zotero\attachments\gs_spalt\experiments\Sucar et al_2021_imap.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://openaccess.thecvf.com/content/ICCV2021/html/Sucar_iMAP_Implicit_Mapping_and_Positioning_in_Real-Time_ICCV_2021_paper.html
+      \endverb
+      \verb{url}
+      \verb http://openaccess.thecvf.com/content/ICCV2021/html/Sucar_iMAP_Implicit_Mapping_and_Positioning_in_Real-Time_ICCV_2021_paper.html
+      \endverb
+      \keyw{⛔ No DOI found}
+    \endentry
+    \entry{zhuNiceslamNeuralImplicit2022}{inproceedings}{}
+      \name{author}{8}{}{%
+        {{hash=33ed4efed73bba931ef2327c69d56723}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Zihan},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=50cf323c42cc810f490f2ba9cbf452c0}{%
+           family={Peng},
+           familyi={P\bibinitperiod},
+           given={Songyou},
+           giveni={S\bibinitperiod}}}%
+        {{hash=594abed54a24fae71414120d58ff9b7f}{%
+           family={Larsson},
+           familyi={L\bibinitperiod},
+           given={Viktor},
+           giveni={V\bibinitperiod}}}%
+        {{hash=ff29ced796ff976c25650183cd141ad2}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Weiwei},
+           giveni={W\bibinitperiod}}}%
+        {{hash=c384a68d4495c23c2753e5bbbad04be0}{%
+           family={Bao},
+           familyi={B\bibinitperiod},
+           given={Hujun},
+           giveni={H\bibinitperiod}}}%
+        {{hash=152d039c26f4cbd157947af9ab63a949}{%
+           family={Cui},
+           familyi={C\bibinitperiod},
+           given={Zhaopeng},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=44e1d63adacaa62a8b257c28eb6145e2}{%
+           family={Oswald},
+           familyi={O\bibinitperiod},
+           given={Martin\bibnamedelima R.},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=501629493a5ead2d23ee597103478ce8}{%
+           family={Pollefeys},
+           familyi={P\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{23ead790ee2eaa7ca65cdb95443007fd}
+      \strng{fullhash}{72d20ee339f6a1a73be15d681a8dda6b}
+      \strng{bibnamehash}{23ead790ee2eaa7ca65cdb95443007fd}
+      \strng{authorbibnamehash}{23ead790ee2eaa7ca65cdb95443007fd}
+      \strng{authornamehash}{23ead790ee2eaa7ca65cdb95443007fd}
+      \strng{authorfullhash}{72d20ee339f6a1a73be15d681a8dda6b}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{booktitle}{Proceedings of the {{IEEE}}/{{CVF}} Conference on Computer Vision and Pattern Recognition}
+      \field{shorttitle}{Nice-Slam}
+      \field{title}{Nice-Slam: {{Neural}} Implicit Scalable Encoding for Slam}
+      \field{urlday}{3}
+      \field{urlmonth}{9}
+      \field{urlyear}{2024}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{12786\bibrangedash 12796}
+      \range{pages}{11}
+      \verb{file}
+      \verb C:\Users\18317\DevSpace\DocHub\essay\zotero\attachments\gs_spalt\relate_works\Zhu et al_2022_Nice-slam.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://openaccess.thecvf.com/content/CVPR2022/html/Zhu_NICE-SLAM_Neural_Implicit_Scalable_Encoding_for_SLAM_CVPR_2022_paper.html
+      \endverb
+      \verb{url}
+      \verb http://openaccess.thecvf.com/content/CVPR2022/html/Zhu_NICE-SLAM_Neural_Implicit_Scalable_Encoding_for_SLAM_CVPR_2022_paper.html
+      \endverb
+      \keyw{⛔ No DOI found}
+    \endentry
+    \entry{garbinFastnerfHighfidelityNeural2021}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=96e894055172e371846089961c792631}{%
+           family={Garbin},
+           familyi={G\bibinitperiod},
+           given={Stephan\bibnamedelima J.},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=86a4a43e222898ed1445d733259f6176}{%
+           family={Kowalski},
+           familyi={K\bibinitperiod},
+           given={Marek},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2ae3260bfecb5be8445e17eccabf2143}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod}}}%
+        {{hash=3b90a1e3dad54d8cb1230eec501fdf04}{%
+           family={Shotton},
+           familyi={S\bibinitperiod},
+           given={Jamie},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3a5f1e9a85bac703b518103ff99d6300}{%
+           family={Valentin},
+           familyi={V\bibinitperiod},
+           given={Julien},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{4003902c26a379d8c0759c7897d1733f}
+      \strng{fullhash}{68bfcfb43a859500f1d4a0ae6cdc75eb}
+      \strng{bibnamehash}{68bfcfb43a859500f1d4a0ae6cdc75eb}
+      \strng{authorbibnamehash}{68bfcfb43a859500f1d4a0ae6cdc75eb}
+      \strng{authornamehash}{4003902c26a379d8c0759c7897d1733f}
+      \strng{authorfullhash}{68bfcfb43a859500f1d4a0ae6cdc75eb}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{booktitle}{Proceedings of the {{IEEE}}/{{CVF}} International Conference on Computer Vision}
+      \field{shorttitle}{Fastnerf}
+      \field{title}{Fastnerf: {{High-fidelity}} Neural Rendering at 200fps}
+      \field{urlday}{26}
+      \field{urlmonth}{9}
+      \field{urlyear}{2024}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{14346\bibrangedash 14355}
+      \range{pages}{10}
+      \verb{file}
+      \verb C:\Users\18317\DevSpace\DocHub\essay\zotero\attachments\gs_spalt\relate_works\Garbin et al_2021_Fastnerf.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://openaccess.thecvf.com/content/ICCV2021/html/Garbin_FastNeRF_High-Fidelity_Neural_Rendering_at_200FPS_ICCV_2021_paper.html
+      \endverb
+      \verb{url}
+      \verb http://openaccess.thecvf.com/content/ICCV2021/html/Garbin_FastNeRF_High-Fidelity_Neural_Rendering_at_200FPS_ICCV_2021_paper.html
+      \endverb
+      \keyw{⛔ No DOI found}
+    \endentry
+    \entry{kerbl3DGaussianSplatting2023}{article}{}
+      \name{author}{4}{}{%
+        {{hash=c73d638ffd25328757379835747302ff}{%
+           family={Kerbl},
+           familyi={K\bibinitperiod},
+           given={Bernhard},
+           giveni={B\bibinitperiod}}}%
+        {{hash=2ab758a425dcd6ed440f4ae0d994dc2c}{%
+           family={Kopanas},
+           familyi={K\bibinitperiod},
+           given={Georgios},
+           giveni={G\bibinitperiod}}}%
+        {{hash=23f06719145b1e18e13a7e436bb8c2fc}{%
+           family={Leimkühler},
+           familyi={L\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=70ecb4c4a672f7c20e4b53b57d5a437e}{%
+           family={Drettakis},
+           familyi={D\bibinitperiod},
+           given={George},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{38ed96775a79b080a25e1e45e0aaa88a}
+      \strng{fullhash}{36d84a8a291db8ba20b3f78b93a2eeee}
+      \strng{bibnamehash}{36d84a8a291db8ba20b3f78b93a2eeee}
+      \strng{authorbibnamehash}{36d84a8a291db8ba20b3f78b93a2eeee}
+      \strng{authornamehash}{38ed96775a79b080a25e1e45e0aaa88a}
+      \strng{authorfullhash}{36d84a8a291db8ba20b3f78b93a2eeee}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACM Transactions on Graphics}
+      \field{number}{4}
+      \field{title}{{{3D Gaussian Splatting}} for {{Real-Time Radiance Field Rendering}}}
+      \field{urlday}{9}
+      \field{urlmonth}{6}
+      \field{urlyear}{2024}
+      \field{volume}{42}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 14}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1145/3592433
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\18317\\DevSpace\\DocHub\\essay\\zotero\\attachments\\gs_spalt\\Kerbl et al_2023_3d gaussian splatting for real-time radiance field rendering.pdf;C\:\\Users\\18317\\Zotero\\storage\\PRZ6GF98\\3D Gaussian Splatting for Real-Time Radiance Field Rendering - 3d_gaussian_splatting_low.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/
+      \endverb
+      \verb{url}
+      \verb https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/
+      \endverb
+    \endentry
+    \entry{pengRTGSLAMRealtime3D2024}{online}{}
+      \name{author}{7}{}{%
+        {{hash=913cd183a9be76d37247a590b24fd552}{%
+           family={Peng},
+           familyi={P\bibinitperiod},
+           given={Zhexi},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=9228bb2602666eea3f3f7cec2d5e8c34}{%
+           family={Shao},
+           familyi={S\bibinitperiod},
+           given={Tianjia},
+           giveni={T\bibinitperiod}}}%
+        {{hash=bc6c6f66f139beef784a50d9f1485019}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Yong},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=0e1bc1d9a4e5ea73ad61486fb9b85ff6}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Jingke},
+           giveni={J\bibinitperiod}}}%
+        {{hash=dc9616dbd138c8816662e7a1bf22bc60}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Yin},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=06b47d0dcf324aeafa35d1a8666637ba}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Jingdong},
+           giveni={J\bibinitperiod}}}%
+        {{hash=09d5d500b34786c94a128e6f131300c6}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Kun},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{e1660083991b1325b562914dabe293c0}
+      \strng{fullhash}{4e1c25d3d8e961a2e5c238289b53fa8b}
+      \strng{bibnamehash}{e1660083991b1325b562914dabe293c0}
+      \strng{authorbibnamehash}{e1660083991b1325b562914dabe293c0}
+      \strng{authornamehash}{e1660083991b1325b562914dabe293c0}
+      \strng{authorfullhash}{4e1c25d3d8e961a2e5c238289b53fa8b}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{We present Real-time Gaussian SLAM (RTG-SLAM), a real-time 3D reconstruction system with an RGBD camera for large-scale environments using Gaussian splatting. The system features a compact Gaussian representation and a highly efficient on-the-fly Gaussian optimization scheme. We force each Gaussian to be either opaque or nearly transparent, with the opaque ones fitting the surface and dominant colors, and transparent ones fitting residual colors. By rendering depth in a different way from color rendering, we let a single opaque Gaussian well fit a local surface region without the need of multiple overlapping Gaussians, hence largely reducing the memory and computation cost. For on-the-fly Gaussian optimization, we explicitly add Gaussians for three types of pixels per frame: newly observed, with large color errors, and with large depth errors. We also categorize all Gaussians into stable and unstable ones, where the stable Gaussians are expected to well fit previously observed RGBD images and otherwise unstable. We only optimize the unstable Gaussians and only render the pixels occupied by unstable Gaussians. In this way, both the number of Gaussians to be optimized and pixels to be rendered are largely reduced, and the optimization can be done in real time. We show real-time reconstructions of a variety of large scenes. Compared with the state-of-the-art NeRF-based RGBD SLAM, our system achieves comparable high-quality reconstruction but with around twice the speed and half the memory cost, and shows superior performance in the realism of novel view synthesis and camera tracking accuracy.}
+      \field{day}{8}
+      \field{eprintclass}{cs}
+      \field{eprinttype}{arXiv}
+      \field{month}{5}
+      \field{pubstate}{prepublished}
+      \field{shorttitle}{{{RTG-SLAM}}}
+      \field{title}{{{RTG-SLAM}}: {{Real-time 3D Reconstruction}} at {{Scale}} Using {{Gaussian Splatting}}}
+      \field{urlday}{16}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1145/3658233
+      \endverb
+      \verb{eprint}
+      \verb 2404.19706
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\18317\\DevSpace\\DocHub\\essay\\zotero\\attachments\\gs_spalt\\Peng et al_2024_RTG-SLAM2.pdf;C\:\\Users\\18317\\Zotero\\storage\\XV5IHMT8\\2404.html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2404.19706
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2404.19706
+      \endverb
+      \keyw{Computer Science - Computer Vision and Pattern Recognition}
+    \endentry
+    \entry{haRGBDGSICPSLAM2024}{online}{}
+      \name{author}{3}{}{%
+        {{hash=3db90f36d26bf6e32b86a0f10ed792d9}{%
+           family={Ha},
+           familyi={H\bibinitperiod},
+           given={Seongbo},
+           giveni={S\bibinitperiod}}}%
+        {{hash=cc16fc0f9a053d60092ca6a16d14dbde}{%
+           family={Yeon},
+           familyi={Y\bibinitperiod},
+           given={Jiung},
+           giveni={J\bibinitperiod}}}%
+        {{hash=ff40e96d1533de2d7b3715b675186f41}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Hyeonwoo},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{9268e354cd202e63d4eba6374dc788c7}
+      \strng{fullhash}{7b15c6cdf3cbf35f4b9d9a68bc0bb2b6}
+      \strng{bibnamehash}{7b15c6cdf3cbf35f4b9d9a68bc0bb2b6}
+      \strng{authorbibnamehash}{7b15c6cdf3cbf35f4b9d9a68bc0bb2b6}
+      \strng{authornamehash}{9268e354cd202e63d4eba6374dc788c7}
+      \strng{authorfullhash}{7b15c6cdf3cbf35f4b9d9a68bc0bb2b6}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Simultaneous Localization and Mapping (SLAM) with dense representation plays a key role in robotics, Virtual Reality (VR), and Augmented Reality (AR) applications. Recent advancements in dense representation SLAM have highlighted the potential of leveraging neural scene representation and 3D Gaussian representation for high-fidelity spatial representation. In this paper, we propose a novel dense representation SLAM approach with a fusion of Generalized Iterative Closest Point (G-ICP) and 3D Gaussian Splatting (3DGS). In contrast to existing methods, we utilize a single Gaussian map for both tracking and mapping, resulting in mutual benefits. Through the exchange of covariances between tracking and mapping processes with scale alignment techniques, we minimize redundant computations and achieve an efficient system. Additionally, we enhance tracking accuracy and mapping quality through our keyframe selection methods. Experimental results demonstrate the effectiveness of our approach, showing an incredibly fast speed up to 107 FPS (for the entire system) and superior quality of the reconstructed map.}
+      \field{day}{22}
+      \field{eprintclass}{cs}
+      \field{eprinttype}{arXiv}
+      \field{month}{3}
+      \field{pubstate}{prepublished}
+      \field{title}{{{RGBD GS-ICP SLAM}}}
+      \field{urlday}{23}
+      \field{urlmonth}{5}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{eprint}
+      \verb 2403.12550
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\18317\\Zotero\\storage\\HJ4D53M9\\Ha et al. - 2024 - RGBD GS-ICP SLAM.pdf;C\:\\Users\\18317\\Zotero\\storage\\P52BZ3I7\\2403.html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2403.12550
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2403.12550
+      \endverb
+      \keyw{Computer Science - Computer Vision and Pattern Recognition}
+    \endentry
+    \entry{yugayGaussianSLAMPhotorealisticDense2024}{online}{}
+      \name{author}{4}{}{%
+        {{hash=c0d899a4b2ad76e85b5a10bfa35ad4e7}{%
+           family={Yugay},
+           familyi={Y\bibinitperiod},
+           given={Vladimir},
+           giveni={V\bibinitperiod}}}%
+        {{hash=0e1dff109644a2423d611a0bfe123178}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yue},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=50a45145d1cd6b9c9782801e107d49eb}{%
+           family={Gevers},
+           familyi={G\bibinitperiod},
+           given={Theo},
+           giveni={T\bibinitperiod}}}%
+        {{hash=44e1d63adacaa62a8b257c28eb6145e2}{%
+           family={Oswald},
+           familyi={O\bibinitperiod},
+           given={Martin\bibnamedelima R.},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{c8095d8c9b833b7f754889b60070f3a0}
+      \strng{fullhash}{1e276592282b2ed69ec349557c18d6c1}
+      \strng{bibnamehash}{1e276592282b2ed69ec349557c18d6c1}
+      \strng{authorbibnamehash}{1e276592282b2ed69ec349557c18d6c1}
+      \strng{authornamehash}{c8095d8c9b833b7f754889b60070f3a0}
+      \strng{authorfullhash}{1e276592282b2ed69ec349557c18d6c1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{We present a dense simultaneous localization and mapping (SLAM) method that uses 3D Gaussians as a scene representation. Our approach enables interactive-time reconstruction and photo-realistic rendering from real-world single-camera RGBD videos. To this end, we propose a novel effective strategy for seeding new Gaussians for newly explored areas and their effective online optimization that is independent of the scene size and thus scalable to larger scenes. This is achieved by organizing the scene into sub-maps which are independently optimized and do not need to be kept in memory. We further accomplish frame-to-model camera tracking by minimizing photometric and geometric losses between the input and rendered frames. The Gaussian representation allows for high-quality photo-realistic real-time rendering of real-world scenes. Evaluation on synthetic and real-world datasets demonstrates competitive or superior performance in mapping, tracking, and rendering compared to existing neural dense SLAM methods.}
+      \field{day}{22}
+      \field{eprintclass}{cs}
+      \field{eprinttype}{arXiv}
+      \field{month}{3}
+      \field{pubstate}{prepublished}
+      \field{shorttitle}{Gaussian-{{SLAM}}}
+      \field{title}{Gaussian-{{SLAM}}: {{Photo-realistic Dense SLAM}} with {{Gaussian Splatting}}}
+      \field{urlday}{9}
+      \field{urlmonth}{6}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{eprint}
+      \verb 2312.10070
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\18317\\DevSpace\\DocHub\\essay\\zotero\\attachments\\gs_spalt\\Yugay et al_2024_Gaussian-SLAM2.pdf;C\:\\Users\\18317\\Zotero\\storage\\9J38D593\\2312.html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2312.10070
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2312.10070
+      \endverb
+      \keyw{Computer Science - Computer Vision and Pattern Recognition,Computer Science - Robotics}
+    \endentry
+    \entry{mur-artalOrbslam2OpensourceSlam2017}{article}{}
+      \name{author}{2}{}{%
+        {{hash=3bcf9140fcfbbb3fa5cdedbcb3380ee8}{%
+           family={Mur-Artal},
+           familyi={M\bibinithyphendelim A\bibinitperiod},
+           given={Raul},
+           giveni={R\bibinitperiod}}}%
+        {{hash=f309368530c6732a6657d7380a443890}{%
+           family={Tardós},
+           familyi={T\bibinitperiod},
+           given={Juan\bibnamedelima D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{97ed3709bd3c4e34f07fd331ed1bb6b8}
+      \strng{fullhash}{97ed3709bd3c4e34f07fd331ed1bb6b8}
+      \strng{bibnamehash}{97ed3709bd3c4e34f07fd331ed1bb6b8}
+      \strng{authorbibnamehash}{97ed3709bd3c4e34f07fd331ed1bb6b8}
+      \strng{authornamehash}{97ed3709bd3c4e34f07fd331ed1bb6b8}
+      \strng{authorfullhash}{97ed3709bd3c4e34f07fd331ed1bb6b8}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{journaltitle}{IEEE transactions on robotics}
+      \field{number}{5}
+      \field{shorttitle}{Orb-Slam2}
+      \field{title}{Orb-Slam2: {{An}} Open-Source Slam System for Monocular, Stereo, and Rgb-d Cameras}
+      \field{urlday}{22}
+      \field{urlmonth}{8}
+      \field{urlyear}{2024}
+      \field{volume}{33}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1255\bibrangedash 1262}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/TRO.2017.2705103
+      \endverb
+      \verb{file}
+      \verb C:\Users\18317\DevSpace\DocHub\essay\zotero\attachments\gs_spalt\experiments\Mur-Artal_Tardós_2017_Orb-slam2.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/abstract/document/7946260/
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/abstract/document/7946260/
+      \endverb
+    \endentry
+    \entry{camposOrbslam3AccurateOpensource2021}{article}{}
+      \name{author}{5}{}{%
+        {{hash=6cdacf84be87337589747b5b4820bfba}{%
+           family={Campos},
+           familyi={C\bibinitperiod},
+           given={Carlos},
+           giveni={C\bibinitperiod}}}%
+        {{hash=45619e807fa5241f5da5135ce7992309}{%
+           family={Elvira},
+           familyi={E\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+        {{hash=9f43a0aba53c88080ad5450b521f709d}{%
+           family={Rodríguez},
+           familyi={R\bibinitperiod},
+           given={Juan\bibnamedelimb J.\bibnamedelimi Gómez},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=96f8ef4e5aa02ab674ae4c12e943e56b}{%
+           family={Montiel},
+           familyi={M\bibinitperiod},
+           given={José\bibnamedelima MM},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=f309368530c6732a6657d7380a443890}{%
+           family={Tardós},
+           familyi={T\bibinitperiod},
+           given={Juan\bibnamedelima D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{4b5f61bd95eca9030bea99344bcf2557}
+      \strng{fullhash}{119a564e6f05f80e0dea9257eb4dd906}
+      \strng{bibnamehash}{119a564e6f05f80e0dea9257eb4dd906}
+      \strng{authorbibnamehash}{119a564e6f05f80e0dea9257eb4dd906}
+      \strng{authornamehash}{4b5f61bd95eca9030bea99344bcf2557}
+      \strng{authorfullhash}{119a564e6f05f80e0dea9257eb4dd906}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{journaltitle}{IEEE Transactions on Robotics}
+      \field{number}{6}
+      \field{shorttitle}{Orb-Slam3}
+      \field{title}{Orb-Slam3: {{An}} Accurate Open-Source Library for Visual, Visual–Inertial, and Multimap Slam}
+      \field{urlday}{20}
+      \field{urlmonth}{8}
+      \field{urlyear}{2024}
+      \field{volume}{37}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1874\bibrangedash 1890}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1109/TRO.2021.3075644
+      \endverb
+      \verb{file}
+      \verb C:\Users\18317\DevSpace\DocHub\essay\zotero\attachments\gs_spalt\experiments\Campos et al_2021_Orb-slam3.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/abstract/document/9440682/
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/abstract/document/9440682/
+      \endverb
+    \endentry
+    \entry{gauglitzEvaluationInterestPoint2011}{article}{}
+      \name{author}{3}{}{%
+        {{hash=d495c6381639662493aa21ba580c2d83}{%
+           family={Gauglitz},
+           familyi={G\bibinitperiod},
+           given={Steffen},
+           giveni={S\bibinitperiod}}}%
+        {{hash=22f545ecadaedf548ce1942093a0a225}{%
+           family={Höllerer},
+           familyi={H\bibinitperiod},
+           given={Tobias},
+           giveni={T\bibinitperiod}}}%
+        {{hash=3688cccd8484f3ca2424096f189fed1c}{%
+           family={Turk},
+           familyi={T\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{88d978d7c5a4cc39e9abf29f5fb26a04}
+      \strng{fullhash}{7e76681aa49be53850861f6b3e19af63}
+      \strng{bibnamehash}{7e76681aa49be53850861f6b3e19af63}
+      \strng{authorbibnamehash}{7e76681aa49be53850861f6b3e19af63}
+      \strng{authornamehash}{88d978d7c5a4cc39e9abf29f5fb26a04}
+      \strng{authorfullhash}{7e76681aa49be53850861f6b3e19af63}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0920-5691, 1573-1405}
+      \field{journaltitle}{International Journal of Computer Vision}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{number}{3}
+      \field{shortjournal}{Int J Comput Vis}
+      \field{title}{Evaluation of {{Interest Point Detectors}} and {{Feature Descriptors}} for {{Visual Tracking}}}
+      \field{urlday}{26}
+      \field{urlmonth}{9}
+      \field{urlyear}{2024}
+      \field{volume}{94}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{335\bibrangedash 360}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.1007/s11263-011-0431-5
+      \endverb
+      \verb{file}
+      \verb C:\Users\18317\DevSpace\DocHub\essay\zotero\attachments\gs_spalt\relate_works\Gauglitz et al_2011_Evaluation of Interest Point Detectors and Feature Descriptors for Visual.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/s11263-011-0431-5
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/s11263-011-0431-5
+      \endverb
+    \endentry
+    \entry{engelDirectSparseOdometry2017}{article}{}
+      \name{author}{3}{}{%
+        {{hash=105f32574a19425c80138198b0b09cd5}{%
+           family={Engel},
+           familyi={E\bibinitperiod},
+           given={Jakob},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9025300f43a193cfed8e10e924f2a117}{%
+           family={Koltun},
+           familyi={K\bibinitperiod},
+           given={Vladlen},
+           giveni={V\bibinitperiod}}}%
+        {{hash=1bd2b6b6ca2fc15a90f164070b626131}{%
+           family={Cremers},
+           familyi={C\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{3679e30c905fef5f09a6d8d4a06f62fc}
+      \strng{fullhash}{974ceb49e0d7e4e5dec3dc9cf0eaeae5}
+      \strng{bibnamehash}{974ceb49e0d7e4e5dec3dc9cf0eaeae5}
+      \strng{authorbibnamehash}{974ceb49e0d7e4e5dec3dc9cf0eaeae5}
+      \strng{authornamehash}{3679e30c905fef5f09a6d8d4a06f62fc}
+      \strng{authorfullhash}{974ceb49e0d7e4e5dec3dc9cf0eaeae5}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE transactions on pattern analysis and machine intelligence}
+      \field{number}{3}
+      \field{title}{Direct Sparse Odometry}
+      \field{urlday}{3}
+      \field{urlmonth}{9}
+      \field{urlyear}{2024}
+      \field{volume}{40}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{611\bibrangedash 625}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1109/TPAMI.2017.2658577
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/abstract/document/7898369/
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/abstract/document/7898369/
+      \endverb
+      \keyw{nosource}
+    \endentry
+    \entry{kerlRobustOdometryEstimation2013}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=c8b46d457d7577efc9d388d1c40fb783}{%
+           family={Kerl},
+           familyi={K\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=9e291584a3b29b27c88ecfe0a566274c}{%
+           family={Sturm},
+           familyi={S\bibinitperiod},
+           given={Jürgen},
+           giveni={J\bibinitperiod}}}%
+        {{hash=1bd2b6b6ca2fc15a90f164070b626131}{%
+           family={Cremers},
+           familyi={C\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{4088c2282796db3475bd1d361a9ac3f1}
+      \strng{fullhash}{21c79321a177b2edd1d9ad2ca8f11e28}
+      \strng{bibnamehash}{21c79321a177b2edd1d9ad2ca8f11e28}
+      \strng{authorbibnamehash}{21c79321a177b2edd1d9ad2ca8f11e28}
+      \strng{authornamehash}{4088c2282796db3475bd1d361a9ac3f1}
+      \strng{authorfullhash}{21c79321a177b2edd1d9ad2ca8f11e28}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2013 {{IEEE}} International Conference on Robotics and Automation}
+      \field{title}{Robust Odometry Estimation for {{RGB-D}} Cameras}
+      \field{urlday}{13}
+      \field{urlmonth}{9}
+      \field{urlyear}{2024}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{3748\bibrangedash 3754}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1109/ICRA.2013.6631104
+      \endverb
+      \verb{file}
+      \verb C:\Users\18317\DevSpace\DocHub\essay\zotero\attachments\gs_spalt\relate_works\Kerl et al_2013_Robust odometry estimation for RGB-D cameras.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/abstract/document/6631104/
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/abstract/document/6631104/
+      \endverb
+    \endentry
+    \entry{newcombeDTAMDenseTracking2011}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=7b635dacb5ef25a6f9c500f8c62aacd8}{%
+           family={Newcombe},
+           familyi={N\bibinitperiod},
+           given={Richard\bibnamedelima A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=2900c8a8d13f9001d8cd329cee1bb8da}{%
+           family={Lovegrove},
+           familyi={L\bibinitperiod},
+           given={Steven\bibnamedelima J.},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=6800da0b1eba1591ea0c413f8efceae3}{%
+           family={Davison},
+           familyi={D\bibinitperiod},
+           given={Andrew\bibnamedelima J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{1716b787f56b1649cb7cef04aa0bc5c4}
+      \strng{fullhash}{64b31b2d18f97261375befd7160afdf7}
+      \strng{bibnamehash}{64b31b2d18f97261375befd7160afdf7}
+      \strng{authorbibnamehash}{64b31b2d18f97261375befd7160afdf7}
+      \strng{authornamehash}{1716b787f56b1649cb7cef04aa0bc5c4}
+      \strng{authorfullhash}{64b31b2d18f97261375befd7160afdf7}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{booktitle}{2011 International Conference on Computer Vision}
+      \field{shorttitle}{{{DTAM}}}
+      \field{title}{{{DTAM}}: {{Dense}} Tracking and Mapping in Real-Time}
+      \field{urlday}{13}
+      \field{urlmonth}{9}
+      \field{urlyear}{2024}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{2320\bibrangedash 2327}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/ICCV.2011.6126513
+      \endverb
+      \verb{file}
+      \verb C:\Users\18317\DevSpace\DocHub\essay\zotero\attachments\gs_spalt\relate_works\Newcombe et al_2011_DTAM.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/abstract/document/6126513/
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/abstract/document/6126513/
+      \endverb
+    \endentry
+    \entry{whelanElasticFusionRealtimeDense2016}{article}{}
+      \name{author}{5}{}{%
+        {{hash=547364b3c154f5f2f7d53a4542e8e7c4}{%
+           family={Whelan},
+           familyi={W\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=7cd6e12dc02cf694c085b89c2a35d7a8}{%
+           family={Salas-Moreno},
+           familyi={S\bibinithyphendelim M\bibinitperiod},
+           given={Renato\bibnamedelima F},
+           giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=5bc19448e90c8f3e88e5fbd50f12ac15}{%
+           family={Glocker},
+           familyi={G\bibinitperiod},
+           given={Ben},
+           giveni={B\bibinitperiod}}}%
+        {{hash=6800da0b1eba1591ea0c413f8efceae3}{%
+           family={Davison},
+           familyi={D\bibinitperiod},
+           given={Andrew\bibnamedelima J},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=25564f7f36f46be27f7326210cc5c2ad}{%
+           family={Leutenegger},
+           familyi={L\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{9809af5f93be49cc52c15121e141a753}
+      \strng{fullhash}{f5cd21bb0933edf7c64b11c1baf3e2c7}
+      \strng{bibnamehash}{f5cd21bb0933edf7c64b11c1baf3e2c7}
+      \strng{authorbibnamehash}{f5cd21bb0933edf7c64b11c1baf3e2c7}
+      \strng{authornamehash}{9809af5f93be49cc52c15121e141a753}
+      \strng{authorfullhash}{f5cd21bb0933edf7c64b11c1baf3e2c7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{We present a novel approach to real-time dense visual simultaneous localisation and mapping. Our system is capable of capturing comprehensive dense globally consistent surfel-based maps of room scale environments and beyond explored using an RGB-D camera in an incremental online fashion, without pose graph optimization or any post-processing steps. This is accomplished by using dense frame-to-model camera tracking and windowed surfel-based fusion coupled with frequent model refinement through non-rigid surface deformations. Our approach applies local model-to-model surface loop closure optimizations as often as possible to stay close to the mode of the map distribution, while utilizing global loop closure to recover from arbitrary drift and maintain global consistency. In the spirit of improving map quality as well as tracking accuracy and robustness, we furthermore explore a novel approach to real-time discrete light source detection. This technique is capable of detecting numerous light sources in indoor environments in real-time as a user handheld camera explores the scene. Absolutely no prior information about the scene or number of light sources is required. By making a small set of simple assumptions about the appearance properties of the scene our method can incrementally estimate both the quantity and location of multiple light sources in the environment in an online fashion. Our results demonstrate that our technique functions well in many different environments and lighting configurations. We show that this enables (a) more realistic augmented reality rendering; (b) a richer understanding of the scene beyond pure geometry and; (c) more accurate and robust photometric tracking.}
+      \field{issn}{0278-3649, 1741-3176}
+      \field{journaltitle}{The International Journal of Robotics Research}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{14}
+      \field{shortjournal}{The International Journal of Robotics Research}
+      \field{shorttitle}{{{ElasticFusion}}}
+      \field{title}{{{ElasticFusion}}: {{Real-time}} Dense {{SLAM}} and Light Source Estimation}
+      \field{urlday}{13}
+      \field{urlmonth}{9}
+      \field{urlyear}{2024}
+      \field{volume}{35}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1697\bibrangedash 1716}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1177/0278364916669237
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\18317\\DevSpace\\DocHub\\essay\\zotero\\attachments\\gs_spalt\\relate_works\\Whelan et al_2016_ElasticFusion.pdf;C\:\\Users\\18317\\DevSpace\\DocHub\\essay\\zotero\\attachments\\gs_spalt\\relate_works\\Whelan et al_2016_ElasticFusion2.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://journals.sagepub.com/doi/10.1177/0278364916669237
+      \endverb
+      \verb{url}
+      \verb http://journals.sagepub.com/doi/10.1177/0278364916669237
+      \endverb
+    \endentry
+    \entry{yen-chenInerfInvertingNeural2021}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=8da2c855845ec964a310dda43392127d}{%
+           family={Yen-Chen},
+           familyi={Y\bibinithyphendelim C\bibinitperiod},
+           given={Lin},
+           giveni={L\bibinitperiod}}}%
+        {{hash=8b9d4cb970dc3176b51235d9a18dce48}{%
+           family={Florence},
+           familyi={F\bibinitperiod},
+           given={Pete},
+           giveni={P\bibinitperiod}}}%
+        {{hash=562f3254a241932db4a6d44a97473ec5}{%
+           family={Barron},
+           familyi={B\bibinitperiod},
+           given={Jonathan\bibnamedelima T.},
+           giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=51675f0d612799bd99aab6d0b9a38088}{%
+           family={Rodriguez},
+           familyi={R\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod}}}%
+        {{hash=cae9f806bc99a5f19fadea538fc2db04}{%
+           family={Isola},
+           familyi={I\bibinitperiod},
+           given={Phillip},
+           giveni={P\bibinitperiod}}}%
+        {{hash=08f925fe4692d130a1d7cb7d94483351}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Tsung-Yi},
+           giveni={T\bibinithyphendelim Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{699d21985071744ba8b4323771dd610e}
+      \strng{fullhash}{3e8d26e295acb2d47b734d692fe52a3a}
+      \strng{bibnamehash}{3e8d26e295acb2d47b734d692fe52a3a}
+      \strng{authorbibnamehash}{3e8d26e295acb2d47b734d692fe52a3a}
+      \strng{authornamehash}{699d21985071744ba8b4323771dd610e}
+      \strng{authorfullhash}{3e8d26e295acb2d47b734d692fe52a3a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{booktitle}{2021 {{IEEE}}/{{RSJ International Conference}} on {{Intelligent Robots}} and {{Systems}} ({{IROS}})}
+      \field{shorttitle}{Inerf}
+      \field{title}{Inerf: {{Inverting}} Neural Radiance Fields for Pose Estimation}
+      \field{urlday}{13}
+      \field{urlmonth}{9}
+      \field{urlyear}{2024}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1323\bibrangedash 1330}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/IROS51168.2021.9636708
+      \endverb
+      \verb{file}
+      \verb C:\Users\18317\DevSpace\DocHub\essay\zotero\attachments\gs_spalt\relate_works\Yen-Chen et al_2021_inerf.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/abstract/document/9636708/
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/abstract/document/9636708/
+      \endverb
+    \endentry
+    \entry{mullerInstantNeuralGraphics2022}{article}{}
+      \name{author}{4}{}{%
+        {{hash=c2ad285eb682bccdfe2685694db2188f}{%
+           family={Müller},
+           familyi={M\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=384420ee5132168a95e9f097058e3c55}{%
+           family={Evans},
+           familyi={E\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod}}}%
+        {{hash=56d271cf4aa34e6b3942487f50bc0419}{%
+           family={Schied},
+           familyi={S\bibinitperiod},
+           given={Christoph},
+           giveni={C\bibinitperiod}}}%
+        {{hash=611ada91d1e542d341733a32d3b74766}{%
+           family={Keller},
+           familyi={K\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{ac68b03d9bae4f1b128311bafa44418d}
+      \strng{fullhash}{5ee9a8053cd04c40f99a57f291d2c4a8}
+      \strng{bibnamehash}{5ee9a8053cd04c40f99a57f291d2c4a8}
+      \strng{authorbibnamehash}{5ee9a8053cd04c40f99a57f291d2c4a8}
+      \strng{authornamehash}{ac68b03d9bae4f1b128311bafa44418d}
+      \strng{authorfullhash}{5ee9a8053cd04c40f99a57f291d2c4a8}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Neural graphics primitives, parameterized by fully connected neural networks, can be costly to train and evaluate. We reduce this cost with a versatile new input encoding that permits the use of a smaller network without sacrificing quality, thus significantly reducing the number of floating point and memory access operations: a small neural network is augmented by a multiresolution hash table of trainable feature vectors whose values are optimized through stochastic gradient descent. The multiresolution structure allows the network to disambiguate hash collisions, making for a simple architecture that is trivial to parallelize on modern GPUs. We leverage this parallelism by implementing the whole system using fully-fused CUDA kernels with a focus on minimizing wasted bandwidth and compute operations. We achieve a combined speedup of several orders of magnitude, enabling training of high-quality neural graphics primitives in a matter of seconds, and rendering in tens of milliseconds at a resolution of 1920×1080.}
+      \field{issn}{0730-0301, 1557-7368}
+      \field{journaltitle}{ACM Transactions on Graphics}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{number}{4}
+      \field{shortjournal}{ACM Trans. Graph.}
+      \field{title}{Instant Neural Graphics Primitives with a Multiresolution Hash Encoding}
+      \field{urlday}{3}
+      \field{urlmonth}{9}
+      \field{urlyear}{2024}
+      \field{volume}{41}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 15}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1145/3528223.3530127
+      \endverb
+      \verb{file}
+      \verb C:\Users\18317\DevSpace\DocHub\essay\zotero\attachments\gs_spalt\relate_works\Müller et al_2022_Instant neural graphics primitives with a multiresolution hash encoding.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://dl.acm.org/doi/10.1145/3528223.3530127
+      \endverb
+      \verb{url}
+      \verb https://dl.acm.org/doi/10.1145/3528223.3530127
+      \endverb
+    \endentry
+    \entry{yuPlenoctreesRealtimeRendering2021}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=ff32d51d3d43688459e059d03b115eca}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b417efc17c6c4f027b621a1f48d8342e}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Ruilong},
+           giveni={R\bibinitperiod}}}%
+        {{hash=9a18985a5c8b8be23d0ec9de0a3c87b9}{%
+           family={Tancik},
+           familyi={T\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2620b9afd37cca5b9b7354f67c036d4d}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Hao},
+           giveni={H\bibinitperiod}}}%
+        {{hash=96e30bdc2cf905aa1109c46617b16252}{%
+           family={Ng},
+           familyi={N\bibinitperiod},
+           given={Ren},
+           giveni={R\bibinitperiod}}}%
+        {{hash=6739ae1219e43710a65f37e9a5b5e902}{%
+           family={Kanazawa},
+           familyi={K\bibinitperiod},
+           given={Angjoo},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{8a303a6a58c9fee7f11e0c90cc0ebcd6}
+      \strng{fullhash}{9efe82c0400b745a2e4e1b3e76382ea6}
+      \strng{bibnamehash}{9efe82c0400b745a2e4e1b3e76382ea6}
+      \strng{authorbibnamehash}{9efe82c0400b745a2e4e1b3e76382ea6}
+      \strng{authornamehash}{8a303a6a58c9fee7f11e0c90cc0ebcd6}
+      \strng{authorfullhash}{9efe82c0400b745a2e4e1b3e76382ea6}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the {{IEEE}}/{{CVF International Conference}} on {{Computer Vision}}}
+      \field{title}{Plenoctrees for Real-Time Rendering of Neural Radiance Fields}
+      \field{urlday}{13}
+      \field{urlmonth}{9}
+      \field{urlyear}{2024}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{5752\bibrangedash 5761}
+      \range{pages}{10}
+      \verb{file}
+      \verb C:\Users\18317\DevSpace\DocHub\essay\zotero\attachments\gs_spalt\relate_works\Yu et al_2021_Plenoctrees for real-time rendering of neural radiance fields.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://openaccess.thecvf.com/content/ICCV2021/html/Yu_PlenOctrees_for_Real-Time_Rendering_of_Neural_Radiance_Fields_ICCV_2021_paper.html
+      \endverb
+      \verb{url}
+      \verb http://openaccess.thecvf.com/content/ICCV2021/html/Yu_PlenOctrees_for_Real-Time_Rendering_of_Neural_Radiance_Fields_ICCV_2021_paper.html
+      \endverb
+      \keyw{⛔ No DOI found}
+    \endentry
+    \entry{fridovich-keilPlenoxelsRadianceFields2022}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=c631c1dd8a471790086b4fb6e8af17f2}{%
+           family={Fridovich-Keil},
+           familyi={F\bibinithyphendelim K\bibinitperiod},
+           given={Sara},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ff32d51d3d43688459e059d03b115eca}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod}}}%
+        {{hash=9a18985a5c8b8be23d0ec9de0a3c87b9}{%
+           family={Tancik},
+           familyi={T\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod}}}%
+        {{hash=87bb5d69ecd43c83ff6c1f229a3f059e}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Qinhong},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=3503059e1c0c778913607c87d8c5173a}{%
+           family={Recht},
+           familyi={R\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=6739ae1219e43710a65f37e9a5b5e902}{%
+           family={Kanazawa},
+           familyi={K\bibinitperiod},
+           given={Angjoo},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{135f9445b6158d10e48a066eb09e1eb2}
+      \strng{fullhash}{13a051ca054a6ebd0c9c96b602778f7f}
+      \strng{bibnamehash}{13a051ca054a6ebd0c9c96b602778f7f}
+      \strng{authorbibnamehash}{13a051ca054a6ebd0c9c96b602778f7f}
+      \strng{authornamehash}{135f9445b6158d10e48a066eb09e1eb2}
+      \strng{authorfullhash}{13a051ca054a6ebd0c9c96b602778f7f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{booktitle}{Proceedings of the {{IEEE}}/{{CVF}} Conference on Computer Vision and Pattern Recognition}
+      \field{shorttitle}{Plenoxels}
+      \field{title}{Plenoxels: {{Radiance}} Fields without Neural Networks}
+      \field{urlday}{3}
+      \field{urlmonth}{9}
+      \field{urlyear}{2024}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{5501\bibrangedash 5510}
+      \range{pages}{10}
+      \verb{file}
+      \verb C:\Users\18317\DevSpace\DocHub\essay\zotero\attachments\gs_spalt\relate_works\Fridovich-Keil et al_2022_Plenoxels.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://openaccess.thecvf.com/content/CVPR2022/html/Fridovich-Keil_Plenoxels_Radiance_Fields_Without_Neural_Networks_CVPR_2022_paper.html
+      \endverb
+      \verb{url}
+      \verb http://openaccess.thecvf.com/content/CVPR2022/html/Fridovich-Keil_Plenoxels_Radiance_Fields_Without_Neural_Networks_CVPR_2022_paper.html
+      \endverb
+      \keyw{⛔ No DOI found}
+    \endentry
+    \entry{keethaSplaTAMSplatTrack2024}{online}{}
+      \name{author}{7}{}{%
+        {{hash=1aee7c01f6f49b87068e78702c98ffcb}{%
+           family={Keetha},
+           familyi={K\bibinitperiod},
+           given={Nikhil},
+           giveni={N\bibinitperiod}}}%
+        {{hash=c66eaaf176c294b1436c43321bab695a}{%
+           family={Karhade},
+           familyi={K\bibinitperiod},
+           given={Jay},
+           giveni={J\bibinitperiod}}}%
+        {{hash=6ce2ec3bb10a1f4268e04ea143952547}{%
+           family={Jatavallabhula},
+           familyi={J\bibinitperiod},
+           given={Krishna\bibnamedelima Murthy},
+           giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=f3f4fb1e873ad6ec4b53d70078cfdb3a}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Gengshan},
+           giveni={G\bibinitperiod}}}%
+        {{hash=ad26bf16eeaee427e8e36bea35587822}{%
+           family={Scherer},
+           familyi={S\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+        {{hash=aedcd3831845183e070aef16857d83ea}{%
+           family={Ramanan},
+           familyi={R\bibinitperiod},
+           given={Deva},
+           giveni={D\bibinitperiod}}}%
+        {{hash=8c336c193892d2f1d5a6c952eb5b1d4c}{%
+           family={Luiten},
+           familyi={L\bibinitperiod},
+           given={Jonathon},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{327634b377ad49e4467ed06bfb213a85}
+      \strng{fullhash}{b2d05f0b8eeb825e0a63d870889ffdfd}
+      \strng{bibnamehash}{327634b377ad49e4467ed06bfb213a85}
+      \strng{authorbibnamehash}{327634b377ad49e4467ed06bfb213a85}
+      \strng{authornamehash}{327634b377ad49e4467ed06bfb213a85}
+      \strng{authorfullhash}{b2d05f0b8eeb825e0a63d870889ffdfd}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Dense simultaneous localization and mapping (SLAM) is crucial for robotics and augmented reality applications. However, current methods are often hampered by the non-volumetric or implicit way they represent a scene. This work introduces SplaTAM, an approach that, for the first time, leverages explicit volumetric representations, i.e., 3D Gaussians, to enable high-fidelity reconstruction from a single unposed RGB-D camera, surpassing the capabilities of existing methods. SplaTAM employs a simple online tracking and mapping system tailored to the underlying Gaussian representation. It utilizes a silhouette mask to elegantly capture the presence of scene density. This combination enables several benefits over prior representations, including fast rendering and dense optimization, quickly determining if areas have been previously mapped, and structured map expansion by adding more Gaussians. Extensive experiments show that SplaTAM achieves up to 2x superior performance in camera pose estimation, map construction, and novel-view synthesis over existing methods, paving the way for more immersive high-fidelity SLAM applications.}
+      \field{day}{16}
+      \field{eprintclass}{cs}
+      \field{eprinttype}{arXiv}
+      \field{month}{4}
+      \field{pubstate}{prepublished}
+      \field{shorttitle}{{{SplaTAM}}}
+      \field{title}{{{SplaTAM}}: {{Splat}}, {{Track}} \& {{Map 3D Gaussians}} for {{Dense RGB-D SLAM}}}
+      \field{urlday}{9}
+      \field{urlmonth}{6}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{eprint}
+      \verb 2312.02126
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\18317\\Zotero\\storage\\WUQKHF5Y\\Keetha et al. - 2024 - SplaTAM Splat, Track & Map 3D Gaussians for Dense.pdf;C\:\\Users\\18317\\Zotero\\storage\\5A6XMJDM\\2312.html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2312.02126
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2312.02126
+      \endverb
+      \keyw{Computer Science - Artificial Intelligence,Computer Science - Computer Vision and Pattern Recognition,Computer Science - Robotics}
+    \endentry
+    \entry{huCGSLAMEfficientDense2024}{online}{}
+      \name{author}{8}{}{%
+        {{hash=a646796e5765f8f44d0bd05cd156040b}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Jiarui},
+           giveni={J\bibinitperiod}}}%
+        {{hash=8f66cf05cc1f53e0813865a26da33f60}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Xianhao},
+           giveni={X\bibinitperiod}}}%
+        {{hash=6451fedde9c40387124a637057184390}{%
+           family={Feng},
+           familyi={F\bibinitperiod},
+           given={Boyin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=bb1182aa336dd5b4dba4a678d1bcc0ee}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Guanglin},
+           giveni={G\bibinitperiod}}}%
+        {{hash=482d5067f6f329ecac9a9c7f197280f2}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Liangjing},
+           giveni={L\bibinitperiod}}}%
+        {{hash=c384a68d4495c23c2753e5bbbad04be0}{%
+           family={Bao},
+           familyi={B\bibinitperiod},
+           given={Hujun},
+           giveni={H\bibinitperiod}}}%
+        {{hash=0150ab01be364b2d61fa4e2f9e01e23b}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Guofeng},
+           giveni={G\bibinitperiod}}}%
+        {{hash=152d039c26f4cbd157947af9ab63a949}{%
+           family={Cui},
+           familyi={C\bibinitperiod},
+           given={Zhaopeng},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{bc2e62901ad3a1e2d3f817e8bb7b2ce7}
+      \strng{fullhash}{f6ef02ac874f6fcfca2b681a72f58d3f}
+      \strng{bibnamehash}{bc2e62901ad3a1e2d3f817e8bb7b2ce7}
+      \strng{authorbibnamehash}{bc2e62901ad3a1e2d3f817e8bb7b2ce7}
+      \strng{authornamehash}{bc2e62901ad3a1e2d3f817e8bb7b2ce7}
+      \strng{authorfullhash}{f6ef02ac874f6fcfca2b681a72f58d3f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Recently neural radiance fields (NeRF) have been widely exploited as 3D representations for dense simultaneous localization and mapping (SLAM). Despite their notable successes in surface modeling and novel view synthesis, existing NeRF-based methods are hindered by their computationally intensive and time-consuming volume rendering pipeline. This paper presents an efficient dense RGB-D SLAM system, i.e., CG-SLAM, based on a novel uncertainty-aware 3D Gaussian field with high consistency and geometric stability. Through an in-depth analysis of Gaussian Splatting, we propose several techniques to construct a consistent and stable 3D Gaussian field suitable for tracking and mapping. Additionally, a novel depth uncertainty model is proposed to ensure the selection of valuable Gaussian primitives during optimization, thereby improving tracking efficiency and accuracy. Experiments on various datasets demonstrate that CG-SLAM achieves superior tracking and mapping performance with a notable tracking speed of up to 15 Hz. We will make our source code publicly available. Project page: https://zju3dv.github.io/cg-slam.}
+      \field{day}{24}
+      \field{eprintclass}{cs}
+      \field{eprinttype}{arXiv}
+      \field{month}{3}
+      \field{pubstate}{prepublished}
+      \field{shorttitle}{{{CG-SLAM}}}
+      \field{title}{{{CG-SLAM}}: {{Efficient Dense RGB-D SLAM}} in a {{Consistent Uncertainty-aware 3D Gaussian Field}}}
+      \field{urlday}{16}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{eprint}
+      \verb 2403.16095
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\18317\\DevSpace\\DocHub\\essay\\zotero\\attachments\\gs_spalt\\Hu et al_2024_CG-SLAM3.pdf;C\:\\Users\\18317\\Zotero\\storage\\EKRNMV59\\2403.html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2403.16095
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2403.16095
+      \endverb
+      \keyw{Computer Science - Computer Vision and Pattern Recognition,Computer Science - Robotics}
+    \endentry
+    \entry{beslMethodRegistration3shapes1992}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=c86e978974a8b442b51fbaa04acd2e0b}{%
+           family={Besl},
+           familyi={B\bibinitperiod},
+           given={Paul\bibnamedelima J.},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=069445b230220d610c916f4272b33ced}{%
+           family={McKay},
+           familyi={M\bibinitperiod},
+           given={Neil\bibnamedelima D.},
+           giveni={N\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Spie}%
+      }
+      \strng{namehash}{46f98bbe16698f10efa6e1b762574b99}
+      \strng{fullhash}{46f98bbe16698f10efa6e1b762574b99}
+      \strng{bibnamehash}{46f98bbe16698f10efa6e1b762574b99}
+      \strng{authorbibnamehash}{46f98bbe16698f10efa6e1b762574b99}
+      \strng{authornamehash}{46f98bbe16698f10efa6e1b762574b99}
+      \strng{authorfullhash}{46f98bbe16698f10efa6e1b762574b99}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Sensor Fusion {{IV}}: Control Paradigms and Data Structures}
+      \field{title}{Method for Registration of 3-{{D}} Shapes}
+      \field{urlday}{13}
+      \field{urlmonth}{9}
+      \field{urlyear}{2024}
+      \field{volume}{1611}
+      \field{year}{1992}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{586\bibrangedash 606}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1117/12.57955
+      \endverb
+      \verb{file}
+      \verb C:\Users\18317\DevSpace\DocHub\essay\zotero\attachments\gs_spalt\relate_works\Besl_McKay_1992_Method for registration of 3-D shapes.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.spiedigitallibrary.org/conference-proceedings-of-spie/1611/1/Method-for-registration-of-3-D-shapes/10.1117/12.57955.short
+      \endverb
+      \verb{url}
+      \verb https://www.spiedigitallibrary.org/conference-proceedings-of-spie/1611/1/Method-for-registration-of-3-D-shapes/10.1117/12.57955.short
+      \endverb
+    \endentry
+    \entry{segalGeneralizedicp2009a}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=f301e710afb9806e47054d6bb1be796f}{%
+           family={Segal},
+           familyi={S\bibinitperiod},
+           given={Aleksandr},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b87dffa311fa694fb509a2535cbdc408}{%
+           family={Haehnel},
+           familyi={H\bibinitperiod},
+           given={Dirk},
+           giveni={D\bibinitperiod}}}%
+        {{hash=5112ea130eadef0764fce0145b8b9f91}{%
+           family={Thrun},
+           familyi={T\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Seattle, WA}%
+      }
+      \strng{namehash}{49bdf2e1ff1c0b17f77e99f8f17a4d8b}
+      \strng{fullhash}{1240901b76de1ada6eca66daf26d5dd1}
+      \strng{bibnamehash}{1240901b76de1ada6eca66daf26d5dd1}
+      \strng{authorbibnamehash}{1240901b76de1ada6eca66daf26d5dd1}
+      \strng{authornamehash}{49bdf2e1ff1c0b17f77e99f8f17a4d8b}
+      \strng{authorfullhash}{1240901b76de1ada6eca66daf26d5dd1}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Robotics: Science and Systems}
+      \field{number}{4}
+      \field{title}{Generalized-Icp.}
+      \field{urlday}{20}
+      \field{urlmonth}{5}
+      \field{urlyear}{2024}
+      \field{volume}{2}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{435}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.15607/RSS.2009.V.021
+      \endverb
+      \verb{file}
+      \verb C:\Users\18317\DevSpace\DocHub\essay\zotero\attachments\EMPTY_COLLECTION_NAMESegal et al\Segal et al_2009_Generalized-icp.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://direct.mit.edu/books/edited-volume/chapter-pdf/2277340/9780262289801_cau.pdf
+      \endverb
+      \verb{url}
+      \verb https://direct.mit.edu/books/edited-volume/chapter-pdf/2277340/9780262289801_cau.pdf
+      \endverb
+    \endentry
+    \entry{parkColoredPointCloud2017}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=4601943d47b90174b1d991712b65af21}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Jaesik},
+           giveni={J\bibinitperiod}}}%
+        {{hash=fc2bd85da63b3d182bb3b3433b80a17f}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Qian-Yi},
+           giveni={Q\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=9025300f43a193cfed8e10e924f2a117}{%
+           family={Koltun},
+           familyi={K\bibinitperiod},
+           given={Vladlen},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{066b7539fb4ab7df7544bbd723faa825}
+      \strng{fullhash}{551c608f0b29a1ba277a091bf4755bbe}
+      \strng{bibnamehash}{551c608f0b29a1ba277a091bf4755bbe}
+      \strng{authorbibnamehash}{551c608f0b29a1ba277a091bf4755bbe}
+      \strng{authornamehash}{066b7539fb4ab7df7544bbd723faa825}
+      \strng{authorfullhash}{551c608f0b29a1ba277a091bf4755bbe}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the {{IEEE}} International Conference on Computer Vision}
+      \field{title}{Colored Point Cloud Registration Revisited}
+      \field{urlday}{23}
+      \field{urlmonth}{5}
+      \field{urlyear}{2024}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{143\bibrangedash 152}
+      \range{pages}{10}
+      \verb{file}
+      \verb C:\Users\18317\Zotero\storage\NIWZJR2Y\Park et al_2017_Colored point cloud registration revisited-dual-translated.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://openaccess.thecvf.com/content_iccv_2017/html/Park_Colored_Point_Cloud_ICCV_2017_paper.html
+      \endverb
+      \verb{url}
+      \verb http://openaccess.thecvf.com/content_iccv_2017/html/Park_Colored_Point_Cloud_ICCV_2017_paper.html
+      \endverb
+      \keyw{💫}
+    \endentry
+    \entry{steinbruckerRealtimeVisualOdometry2011}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=c9ab5a637c8b26cc9a3011c81f1cddd2}{%
+           family={Steinbrücker},
+           familyi={S\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+        {{hash=9e291584a3b29b27c88ecfe0a566274c}{%
+           family={Sturm},
+           familyi={S\bibinitperiod},
+           given={Jürgen},
+           giveni={J\bibinitperiod}}}%
+        {{hash=1bd2b6b6ca2fc15a90f164070b626131}{%
+           family={Cremers},
+           familyi={C\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{7cc5b4309280651ef45cdfc5c5c68bad}
+      \strng{fullhash}{f640ca48ba37fc08ce9706957846b982}
+      \strng{bibnamehash}{f640ca48ba37fc08ce9706957846b982}
+      \strng{authorbibnamehash}{f640ca48ba37fc08ce9706957846b982}
+      \strng{authornamehash}{7cc5b4309280651ef45cdfc5c5c68bad}
+      \strng{authorfullhash}{f640ca48ba37fc08ce9706957846b982}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2011 {{IEEE}} International Conference on Computer Vision Workshops ({{ICCV Workshops}})}
+      \field{title}{Real-Time Visual Odometry from Dense {{RGB-D}} Images}
+      \field{urlday}{20}
+      \field{urlmonth}{8}
+      \field{urlyear}{2024}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{719\bibrangedash 722}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1109/ICCVW.2011.6130321
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/abstract/document/6130321/
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/abstract/document/6130321/
+      \endverb
+      \keyw{nosource}
+    \endentry
+    \entry{pomerleauComparingICPVariants2013}{article}{}
+      \name{author}{4}{}{%
+        {{hash=f220f9566be4f464ab62f74f22203b54}{%
+           family={Pomerleau},
+           familyi={P\bibinitperiod},
+           given={François},
+           giveni={F\bibinitperiod}}}%
+        {{hash=05c5b6f76d792212ca5d644bb169272d}{%
+           family={Colas},
+           familyi={C\bibinitperiod},
+           given={Francis},
+           giveni={F\bibinitperiod}}}%
+        {{hash=6ee8958bbf32527489012d8ca7c95ee3}{%
+           family={Siegwart},
+           familyi={S\bibinitperiod},
+           given={Roland},
+           giveni={R\bibinitperiod}}}%
+        {{hash=6746a55bf5327ab107e8086d745e74f5}{%
+           family={Magnenat},
+           familyi={M\bibinitperiod},
+           given={Stéphane},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{1e56ad13dbd841ad5970bb119dce8549}
+      \strng{fullhash}{99e70ee7c80bfbe9778fdf343f6ecd22}
+      \strng{bibnamehash}{99e70ee7c80bfbe9778fdf343f6ecd22}
+      \strng{authorbibnamehash}{99e70ee7c80bfbe9778fdf343f6ecd22}
+      \strng{authornamehash}{1e56ad13dbd841ad5970bb119dce8549}
+      \strng{authorfullhash}{99e70ee7c80bfbe9778fdf343f6ecd22}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{0929-5593, 1573-7527}
+      \field{journaltitle}{Autonomous Robots}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{number}{3}
+      \field{shortjournal}{Auton Robot}
+      \field{shorttitle}{Comparing {{ICP}} Variants on Real-World Data Sets}
+      \field{title}{Comparing {{ICP}} Variants on Real-World Data Sets: {{Open-source}} Library and Experimental Protocol}
+      \field{urlday}{26}
+      \field{urlmonth}{9}
+      \field{urlyear}{2024}
+      \field{volume}{34}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{133\bibrangedash 148}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1007/s10514-013-9327-2
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\18317\\DevSpace\\DocHub\\essay\\zotero\\attachments\\gs_spalt\\relate_works\\Pomerleau et al_2013_Comparing ICP variants on real-world data sets.pdf;C\:\\Users\\18317\\DevSpace\\DocHub\\essay\\zotero\\attachments\\gs_spalt\\relate_works\\Pomerleau et al_2013_Comparing ICP variants on real-world data sets2.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/s10514-013-9327-2
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/s10514-013-9327-2
+      \endverb
+    \endentry
+    \entry{kuipersQuaternionsRotationSequences1999}{book}{}
+      \name{author}{1}{}{%
+        {{hash=6f6cb9d14f282595edbde9b8a9b025e2}{%
+           family={Kuipers},
+           familyi={K\bibinitperiod},
+           given={Jack\bibnamedelima B.},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Princeton university press}%
+      }
+      \strng{namehash}{6f6cb9d14f282595edbde9b8a9b025e2}
+      \strng{fullhash}{6f6cb9d14f282595edbde9b8a9b025e2}
+      \strng{bibnamehash}{6f6cb9d14f282595edbde9b8a9b025e2}
+      \strng{authorbibnamehash}{6f6cb9d14f282595edbde9b8a9b025e2}
+      \strng{authornamehash}{6f6cb9d14f282595edbde9b8a9b025e2}
+      \strng{authorfullhash}{6f6cb9d14f282595edbde9b8a9b025e2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{shorttitle}{Quaternions and Rotation Sequences}
+      \field{title}{Quaternions and Rotation Sequences: A Primer with Applications to Orbits, Aerospace, and Virtual Reality}
+      \field{urlday}{13}
+      \field{urlmonth}{9}
+      \field{urlyear}{2024}
+      \field{year}{1999}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C\:\\Users\\18317\\DevSpace\\DocHub\\essay\\zotero\\attachments\\gs_spalt\\relate_works\\Kuipers_1999_Quaternions and rotation sequences.pdf;C\:\\Users\\18317\\Zotero\\storage\\6MZ26W74\\Kuipers - 1999 - Quaternions and rotation sequences a primer with .pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://books.google.com/books?hl=en&lr=&id=_Og9DwAAQBAJ&oi=fnd&pg=PR21&dq=kuipers+Quaternions+Rotation+Sequences+1999&ots=t3I3ky6Zut&sig=o3xQEsvNHM-t2AIySNcaxBhSc_I
+      \endverb
+      \verb{url}
+      \verb https://books.google.com/books?hl=en&lr=&id=_Og9DwAAQBAJ&oi=fnd&pg=PR21&dq=kuipers+Quaternions+Rotation+Sequences+1999&ots=t3I3ky6Zut&sig=o3xQEsvNHM-t2AIySNcaxBhSc_I
+      \endverb
+    \endentry
+    \entry{zwickerEWASplatting2002}{article}{}
+      \name{author}{4}{}{%
+        {{hash=f8b89b955dad449fd9254a354c6041d2}{%
+           family={Zwicker},
+           familyi={Z\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b996af7e283eefe990aabf24ef52e032}{%
+           family={Pfister},
+           familyi={P\bibinitperiod},
+           given={Hanspeter},
+           giveni={H\bibinitperiod}}}%
+        {{hash=a86a443dd3dac8a6e34fa2ab939d2779}{%
+           family={Van\bibnamedelima Baar},
+           familyi={V\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={Jeroen},
+           giveni={J\bibinitperiod}}}%
+        {{hash=89835485884945e38712de8162277435}{%
+           family={Gross},
+           familyi={G\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{2e41ba32ecf73baf435ec7c653bc332b}
+      \strng{fullhash}{c4719443b6f94afe9feb78854d13a13f}
+      \strng{bibnamehash}{c4719443b6f94afe9feb78854d13a13f}
+      \strng{authorbibnamehash}{c4719443b6f94afe9feb78854d13a13f}
+      \strng{authornamehash}{2e41ba32ecf73baf435ec7c653bc332b}
+      \strng{authorfullhash}{c4719443b6f94afe9feb78854d13a13f}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Visualization and Computer Graphics}
+      \field{number}{3}
+      \field{title}{{{EWA}} Splatting}
+      \field{urlday}{20}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{volume}{8}
+      \field{year}{2002}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{223\bibrangedash 238}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1109/TVCG.2002.1021576
+      \endverb
+      \verb{file}
+      \verb C:\Users\18317\DevSpace\DocHub\essay\zotero\attachments\gs_spalt\Zwicker et al_2002_EWA splatting.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/abstract/document/1021576/
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/abstract/document/1021576/
+      \endverb
+    \endentry
+    \entry{kanopoulosDesignImageEdge1988}{article}{}
+      \name{author}{3}{}{%
+        {{hash=85a6cf1e3dec085321f0b999ae485311}{%
+           family={Kanopoulos},
+           familyi={K\bibinitperiod},
+           given={Nick},
+           giveni={N\bibinitperiod}}}%
+        {{hash=06c924091fbb57e33b167243fcb9b45c}{%
+           family={Vasanthavada},
+           familyi={V\bibinitperiod},
+           given={Nagesh},
+           giveni={N\bibinitperiod}}}%
+        {{hash=232f7a7dc0e96f563e4033bc80e64c85}{%
+           family={Baker},
+           familyi={B\bibinitperiod},
+           given={Robert\bibnamedelima L.},
+           giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{ae36959f41470f9b537cadb9ff5d0006}
+      \strng{fullhash}{9d7b455e4ba7eaf22a062b3fc9edd8df}
+      \strng{bibnamehash}{9d7b455e4ba7eaf22a062b3fc9edd8df}
+      \strng{authorbibnamehash}{9d7b455e4ba7eaf22a062b3fc9edd8df}
+      \strng{authornamehash}{ae36959f41470f9b537cadb9ff5d0006}
+      \strng{authorfullhash}{9d7b455e4ba7eaf22a062b3fc9edd8df}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Journal of solid-state circuits}
+      \field{number}{2}
+      \field{title}{Design of an Image Edge Detection Filter Using the {{Sobel}} Operator}
+      \field{urlday}{9}
+      \field{urlmonth}{8}
+      \field{urlyear}{2024}
+      \field{volume}{23}
+      \field{year}{1988}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{358\bibrangedash 367}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/4.996
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/abstract/document/996/
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/abstract/document/996/
+      \endverb
+      \keyw{nosource}
+    \endentry
+    \entry{kingmaAdamMethodStochastic2014}{unpublished}{}
+      \name{author}{1}{}{%
+        {{hash=b6fbd171848aad4edf3925543f1f1522}{%
+           family={Kingma},
+           familyi={K\bibinitperiod},
+           given={Diederik\bibnamedelima P.},
+           giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{b6fbd171848aad4edf3925543f1f1522}
+      \strng{fullhash}{b6fbd171848aad4edf3925543f1f1522}
+      \strng{bibnamehash}{b6fbd171848aad4edf3925543f1f1522}
+      \strng{authorbibnamehash}{b6fbd171848aad4edf3925543f1f1522}
+      \strng{authornamehash}{b6fbd171848aad4edf3925543f1f1522}
+      \strng{authorfullhash}{b6fbd171848aad4edf3925543f1f1522}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{eprinttype}{arXiv}
+      \field{shorttitle}{Adam}
+      \field{title}{Adam: {{A}} Method for Stochastic Optimization}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \verb{eprint}
+      \verb 1412.6980
+      \endverb
+      \keyw{⛔ No DOI found}
+    \endentry
+    \entry{straubReplicaDatasetDigital2019}{online}{}
+      \name{author}{30}{}{%
+        {{hash=449da8c93866a386da0e55cfd97629b1}{%
+           family={Straub},
+           familyi={S\bibinitperiod},
+           given={Julian},
+           giveni={J\bibinitperiod}}}%
+        {{hash=547364b3c154f5f2f7d53a4542e8e7c4}{%
+           family={Whelan},
+           familyi={W\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=85bb1803c3b8c449445e27a74d0465ac}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Lingni},
+           giveni={L\bibinitperiod}}}%
+        {{hash=0733d91fbf2a30c44e626cd56dc54c4d}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Yufan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=9e9515b35f1161d2ea10f097e0222638}{%
+           family={Wijmans},
+           familyi={W\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod}}}%
+        {{hash=43d4028764737f96da619eec9e803be5}{%
+           family={Green},
+           familyi={G\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b018e029e1ebc3b7a1d68a990c14414c}{%
+           family={Engel},
+           familyi={E\bibinitperiod},
+           given={Jakob\bibnamedelima J.},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=3bcf9140fcfbbb3fa5cdedbcb3380ee8}{%
+           family={Mur-Artal},
+           familyi={M\bibinithyphendelim A\bibinitperiod},
+           given={Raul},
+           giveni={R\bibinitperiod}}}%
+        {{hash=30b9ddd4c1532e2e70298c97d606f54a}{%
+           family={Ren},
+           familyi={R\bibinitperiod},
+           given={Carl},
+           giveni={C\bibinitperiod}}}%
+        {{hash=7979cf64afeedc0d5cce42ec332196cc}{%
+           family={Verma},
+           familyi={V\bibinitperiod},
+           given={Shobhit},
+           giveni={S\bibinitperiod}}}%
+        {{hash=2e2efc330f9042584ac249de0665ce0c}{%
+           family={Clarkson},
+           familyi={C\bibinitperiod},
+           given={Anton},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a76494925059ff5b3543a093d868f6b7}{%
+           family={Yan},
+           familyi={Y\bibinitperiod},
+           given={Mingfei},
+           giveni={M\bibinitperiod}}}%
+        {{hash=801e533aca932dccbe47ef24ce6844e6}{%
+           family={Budge},
+           familyi={B\bibinitperiod},
+           given={Brian},
+           giveni={B\bibinitperiod}}}%
+        {{hash=f822255ffbf7573ee86e3ea03b883f69}{%
+           family={Yan},
+           familyi={Y\bibinitperiod},
+           given={Yajie},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=145354182208a8b3bdfe4a31a90ca58a}{%
+           family={Pan},
+           familyi={P\bibinitperiod},
+           given={Xiaqing},
+           giveni={X\bibinitperiod}}}%
+        {{hash=3fc509f7d75521c6ccf50cc6fb7916bc}{%
+           family={Yon},
+           familyi={Y\bibinitperiod},
+           given={June},
+           giveni={J\bibinitperiod}}}%
+        {{hash=0851ff9e983c5d81b64f367f3d198e3f}{%
+           family={Zou},
+           familyi={Z\bibinitperiod},
+           given={Yuyang},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=0e721e23e818845dbcf63cec1af3a6d2}{%
+           family={Leon},
+           familyi={L\bibinitperiod},
+           given={Kimberly},
+           giveni={K\bibinitperiod}}}%
+        {{hash=60933f16bcf58e4a6761006e8ab3d20a}{%
+           family={Carter},
+           familyi={C\bibinitperiod},
+           given={Nigel},
+           giveni={N\bibinitperiod}}}%
+        {{hash=f313387efc828661f1f1eaec4132c279}{%
+           family={Briales},
+           familyi={B\bibinitperiod},
+           given={Jesus},
+           giveni={J\bibinitperiod}}}%
+        {{hash=20afb38370996f7859c54d4ea00f69ef}{%
+           family={Gillingham},
+           familyi={G\bibinitperiod},
+           given={Tyler},
+           giveni={T\bibinitperiod}}}%
+        {{hash=d4f0473d41e0f621d04087560afd4065}{%
+           family={Mueggler},
+           familyi={M\bibinitperiod},
+           given={Elias},
+           giveni={E\bibinitperiod}}}%
+        {{hash=9b336ad198387bad7dacf615c036295a}{%
+           family={Pesqueira},
+           familyi={P\bibinitperiod},
+           given={Luis},
+           giveni={L\bibinitperiod}}}%
+        {{hash=bad0a30ec9610ab126c95e2785c806c4}{%
+           family={Savva},
+           familyi={S\bibinitperiod},
+           given={Manolis},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d0a408119272ca1bd49b625e3b927d05}{%
+           family={Batra},
+           familyi={B\bibinitperiod},
+           given={Dhruv},
+           giveni={D\bibinitperiod}}}%
+        {{hash=1ae3b92892b9bd4f6e3bd54021ba0fbe}{%
+           family={Strasdat},
+           familyi={S\bibinitperiod},
+           given={Hauke\bibnamedelima M.},
+           giveni={H\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=90d5753b2165d531b4206ac54756b857}{%
+           family={De\bibnamedelima Nardi},
+           familyi={D\bibinitperiod\bibinitdelim N\bibinitperiod},
+           given={Renzo},
+           giveni={R\bibinitperiod}}}%
+        {{hash=fe9c4886922d0dc4b62709fdad478c05}{%
+           family={Goesele},
+           familyi={G\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e7c982cac058f95aeb5e1e584f764c82}{%
+           family={Lovegrove},
+           familyi={L\bibinitperiod},
+           given={Steven},
+           giveni={S\bibinitperiod}}}%
+        {{hash=239670d06a0c3f1468b54a7264838ce6}{%
+           family={Newcombe},
+           familyi={N\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{23704b5d33a408d95e7a187d9810e87e}
+      \strng{fullhash}{634d54df49ae2207ad62722508cba4cd}
+      \strng{bibnamehash}{23704b5d33a408d95e7a187d9810e87e}
+      \strng{authorbibnamehash}{23704b5d33a408d95e7a187d9810e87e}
+      \strng{authornamehash}{23704b5d33a408d95e7a187d9810e87e}
+      \strng{authorfullhash}{634d54df49ae2207ad62722508cba4cd}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{We introduce Replica, a dataset of 18 highly photo-realistic 3D indoor scene reconstructions at room and building scale. Each scene consists of a dense mesh, high-resolution high-dynamic-range (HDR) textures, per-primitive semantic class and instance information, and planar mirror and glass reflectors. The goal of Replica is to enable machine learning (ML) research that relies on visually, geometrically, and semantically realistic generative models of the world - for instance, egocentric computer vision, semantic segmentation in 2D and 3D, geometric inference, and the development of embodied agents (virtual robots) performing navigation, instruction following, and question answering. Due to the high level of realism of the renderings from Replica, there is hope that ML systems trained on Replica may transfer directly to real world image and video data. Together with the data, we are releasing a minimal C++ SDK as a starting point for working with the Replica dataset. In addition, Replica is `Habitat-compatible', i.e. can be natively used with AI Habitat for training and testing embodied agents.}
+      \field{day}{13}
+      \field{eprintclass}{cs, eess}
+      \field{eprinttype}{arXiv}
+      \field{month}{6}
+      \field{pubstate}{prepublished}
+      \field{shorttitle}{The {{Replica Dataset}}}
+      \field{title}{The {{Replica Dataset}}: {{A Digital Replica}} of {{Indoor Spaces}}}
+      \field{urlday}{10}
+      \field{urlmonth}{8}
+      \field{urlyear}{2024}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{eprint}
+      \verb 1906.05797
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\18317\\DevSpace\\DocHub\\essay\\zotero\\attachments\\gs_spalt\\experiments\\Straub et al_2019_The Replica Dataset.pdf;C\:\\Users\\18317\\Zotero\\storage\\VRTGI9PS\\1906.html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1906.05797
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1906.05797
+      \endverb
+      \keyw{Computer Science - Computer Vision and Pattern Recognition,Computer Science - Graphics,Electrical Engineering and Systems Science - Image and Video Processing}
+    \endentry
+    \entry{sturmBenchmarkEvaluationRGBD2012}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=9e291584a3b29b27c88ecfe0a566274c}{%
+           family={Sturm},
+           familyi={S\bibinitperiod},
+           given={Jürgen},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9d6110950a50d69179aefe99b3abc81a}{%
+           family={Engelhard},
+           familyi={E\bibinitperiod},
+           given={Nikolas},
+           giveni={N\bibinitperiod}}}%
+        {{hash=4858aa954321596e8c1c81daac0271dd}{%
+           family={Endres},
+           familyi={E\bibinitperiod},
+           given={Felix},
+           giveni={F\bibinitperiod}}}%
+        {{hash=98f4ab1bc2ac191d8f8a0651315ce9c0}{%
+           family={Burgard},
+           familyi={B\bibinitperiod},
+           given={Wolfram},
+           giveni={W\bibinitperiod}}}%
+        {{hash=1bd2b6b6ca2fc15a90f164070b626131}{%
+           family={Cremers},
+           familyi={C\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{f2452d6a1e4ac6399e084b1a065ee7da}
+      \strng{fullhash}{fda811f69253ca27ebab9abbbf7b757f}
+      \strng{bibnamehash}{fda811f69253ca27ebab9abbbf7b757f}
+      \strng{authorbibnamehash}{fda811f69253ca27ebab9abbbf7b757f}
+      \strng{authornamehash}{f2452d6a1e4ac6399e084b1a065ee7da}
+      \strng{authorfullhash}{fda811f69253ca27ebab9abbbf7b757f}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2012 {{IEEE}}/{{RSJ}} International Conference on Intelligent Robots and Systems}
+      \field{title}{A Benchmark for the Evaluation of {{RGB-D SLAM}} Systems}
+      \field{urlday}{10}
+      \field{urlmonth}{8}
+      \field{urlyear}{2024}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{573\bibrangedash 580}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/IROS.2012.6385773
+      \endverb
+      \verb{file}
+      \verb C:\Users\18317\DevSpace\DocHub\essay\zotero\attachments\gs_spalt\experiments\Sturm et al_2012_A benchmark for the evaluation of RGB-D SLAM systems.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/abstract/document/6385773/
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/abstract/document/6385773/
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
