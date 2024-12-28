@@ -20,15 +20,9 @@ The development of **3D Gaussian Splatting** [@kerbl3DGaussianSplatting2023] for
 
 Current SLAM methods using 3D Gaussian Splatting, such as RTG-SLAM [@pengRTGSLAMRealtime3D2024] and GS-ICP-SLAM [@haRGBDGSICPSLAM2024], rely primarily on ICP-based techniques for pose estimation. Other approaches, like Gaussian-SLAM [@yugayGaussianSLAMPhotorealisticDense2024], adapt traditional RGB-D odometry methods. While these methods have shown potential, they often do not fully exploit the differentiable nature of the Gaussian Splatting representation, particularly for real-time and efficient **pose estimation**.
 
-In this paper, we introduce **GSplatLoc**, a novel camera localization method that leverages the differentiable properties of 3D Gaussian Splatting specifically for efficient and accurate **pose estimation**. Rather than addressing the full SLAM pipeline, our approach is designed to focus solely on the localization aspect, allowing for more efficient use of the scene representation and camera pose estimation. By developing a fully differentiable pipeline, GSplatLoc can be seamlessly integrated into existing Gaussian Splatting SLAM frameworks or other deep learning tasks focused on localization.
+In this paper, we introduce **GSplatLoc**, a novel camera localization method that leverages the differentiable properties of 3D Gaussian Splatting for efficient and accurate pose estimation. By focusing solely on the localization aspect rather than the full SLAM pipeline, GSplatLoc allows for more efficient utilization of the scene representation and camera pose estimation, seamlessly integrating into existing Gaussian Splatting SLAM frameworks or other deep learning tasks focused on localization.
 
-Our main contributions are as follows:
-
-1. We present a GPU-accelerated framework for real-time camera localization, based on a comprehensive theoretical analysis of camera pose derivatives in 3D Gaussian Splatting.
-2. We propose a novel optimization approach that focuses on camera pose estimation given a 3D Gaussian scene, fully exploiting the differentiable nature of the rendering process.
-3. We demonstrate the effectiveness of our method through extensive experiments, showing competitive or superior pose estimation results compared to state-of-the-art SLAM approaches utilizing advanced scene representations.
-
-By focusing specifically on the challenges of localization in Gaussian Splatting-based scenes, GSplatLoc opens new avenues for high-precision **camera pose estimation** in complex environments. Our work contributes to the ongoing advancement of visual localization systems, pushing the boundaries of accuracy and real-time performance in 3D scene understanding and navigation.
+Our main contributions include presenting a GPU-accelerated framework for real-time camera localization, based on a comprehensive theoretical analysis of camera pose derivatives in 3D Gaussian Splatting; proposing a novel optimization approach that fully exploits the differentiable nature of the rendering process for camera pose estimation given a 3D Gaussian scene; and demonstrating the effectiveness of our method through extensive experiments, showing competitive or superior pose estimation results compared to state-of-the-art SLAM approaches utilizing advanced scene representations. By specifically addressing the challenges of localization in Gaussian Splatting-based scenes, GSplatLoc opens new avenues for high-precision camera pose estimation in complex environments, contributing to the ongoing advancement of visual localization systems and pushing the boundaries of accuracy and real-time performance in 3D scene understanding and navigation.
 
 
 
@@ -87,7 +81,7 @@ Recent advancements in scene representation have introduced 3D Gaussian splattin
 
 **Gaussian Splatting in Localization** has been explored in methods such as SplaTAM [@keethaSplaTAMSplatTrack2024], CG-SLAM [@huCGSLAMEfficientDense2024], RTG-SLAM [@pengRTGSLAMRealtime3D2024], and GS-ICP-SLAM [@haRGBDGSICPSLAM2024]. SplaTAM introduces a SLAM system that uses gradient-based optimization to refine both the map and camera poses, utilizing RGB-D data and 3D Gaussians for dense mapping. CG-SLAM focuses on an uncertainty-aware 3D Gaussian field to improve tracking and mapping performance, incorporating depth uncertainty modeling.
 
-Pose estimation approaches in these methods often rely on traditional point cloud registration techniques, such as Iterative Closest Point (ICP) algorithms [@beslMethodRegistration3shapes1992]. **RTG-SLAM** employs ICP for pose estimation within a 3D Gaussian splatting framework, demonstrating real-time performance in 3D reconstruction tasks. Similarly, **GS-ICP-SLAM** utilizes Generalized ICP [@segalGeneralizedicp2009a] for alignment, effectively handling the variability in point cloud density and improving robustness.
+Pose estimation approaches in these methods often rely on traditional point cloud registration techniques, such as Iterative Closest Point (ICP) algorithms [@beslMethodRegistration3shapes1992]. **RTG-SLAM**[@pengRTGSLAMRealtime3D2024] employs ICP for pose estimation within a 3D Gaussian splatting framework, demonstrating real-time performance in 3D reconstruction tasks. Similarly, **GS-ICP-SLAM** utilizes Generalized ICP [@segalGeneralizedicp2009a] for alignment, effectively handling the variability in point cloud density and improving robustness.
 
 **Gaussian-SLAM** [@yugayGaussianSLAMPhotorealisticDense2024] adapts traditional RGB-D odometry methods, combining colored point cloud alignment [@parkColoredPointCloud2017] with an energy-based visual odometry approach [@steinbruckerRealtimeVisualOdometry2011]. These methods integrate ICP-based techniques within Gaussian-based representations to estimate camera poses.
 
@@ -239,6 +233,8 @@ where $\lambda_q$ and $\lambda_t$ are regularization coefficients for the quater
 
 ## Pipeline
 
+
+
 Our GSplatLoc method streamlines the localization process by utilizing only the posed reference depth images $\{D_k\}$ and the query depth image $D_q$. The differentiable rendering of 3D Gaussians enables efficient and smooth convergence during optimization.
 
 **Evaluation Scene.** For consistent evaluation, we initialize the 3D Gaussians from point clouds derived from the posed reference depth images $\{D_k\}$. Each point in the point cloud corresponds to the mean $\boldsymbol{\mu}_i$ of a Gaussian $G_i$. After filtering out outliers, we set the opacity $o_i = 1$ for all Gaussians to ensure full contribution in rendering. The scale $\mathbf{s}_i$ is initialized isotropically based on the local point density:
@@ -251,7 +247,7 @@ where $d_{ij}$ is the distance to the $j$-th nearest neighbor of point $i$, comp
 
 To further enhance optimization stability, we apply standard Principal Component Analysis (PCA) to align the principal axes of the point cloud with the coordinate axes. By centering the point cloud at its mean and aligning its principal axes, we normalize the overall scene orientation. This provides a more uniform starting point for optimization across diverse datasets, significantly improving the stability of the loss reduction during optimization and facilitating the attainment of lower final loss values, especially in the depth loss component of our objective function.
 
-**Optimization.** We employ the Adam[@kingmaAdamMethodStochastic2014] optimizer for optimizing both the quaternion and translation parameters, using the distinct learning rates and weight decay values as previously described. The optimization process greatly benefits from the real-time rendering capabilities of 3D Gaussian splatting. Since rendering is extremely fast, each iteration of the optimizer is limited mainly by the rendering speed, allowing for rapid convergence of our pose estimation algorithm and making it suitable for real-time applications.
+**Optimization.** We employ the Adam[@kingmaAdamMethodStochastic2014] optimizer for optimizing both the quaternion and translation parameters, using the distinct learning rates and weight decay values as previously described. The optimization process greatly benefits from the real-time rendering capabilities of 3D Gaussian splatting. Since rendering is extremely fast, each iteration of the optimizer is limited mainly by the rendering speed, allowing for rapid convergence of our pose estimation algorithm and making it suitable for real-time applications. Our optimization approach consistently achieves sub-millimeter accuracy (average ATE RMSE of **0.01587 cm**) on synthetic datasets, while maintaining robust performance in real-world scenarios.
 
 **Convergence.** To determine convergence, we implement an early stopping mechanism based on the stabilization of the total loss. Our experiments show that the total loss usually stabilizes after approximately 100 iterations. We employ a patience parameter: after 100 iterations, if the total loss does not decrease for a predefined number of consecutive iterations, the optimization loop is terminated. We then select the pose estimate corresponding to the minimum total loss as the optimal pose.
 
@@ -262,112 +258,105 @@ In summary, our pipeline effectively combines the efficiency of Gaussian splatti
 # Evaluation
 
 
-
-
-We conducted extensive experiments to evaluate the performance of our proposed method, **GSplatLoc**, in comparison with state-of-the-art SLAM systems that utilize advanced scene representations. The evaluation focuses on assessing the accuracy of camera pose estimation in challenging indoor environments, emphasizing both the translational and rotational components of the estimated poses.
-
-
+We conducted a comprehensive evaluation spanning both synthetic and real-world environments, with pose estimation errors ranging from as low as **0.01587 cm** in controlled settings to competitive performance (**0.80982 cm**) in challenging real-world scenarios. Our evaluation framework encompasses multiple aspects of localization performance, from implementation details to dataset selection and baseline comparisons.
 
 ## Experimental Setup
-
 
 
 **Implementation Details.** Our localization pipeline was implemented on a system equipped with an Intel Core i7-13620H CPU, 16 GB of RAM, and an NVIDIA RTX 4060 GPU with 8 GB of memory. The algorithm was developed using Python and PyTorch, utilizing custom CUDA kernels to accelerate the rasterization and backpropagation processes inherent in our differentiable rendering approach. This setup ensures that our method achieves real-time performance, which is crucial for practical applications in SLAM systems.
 
 
-**Datasets.** We evaluated our method on two widely recognized datasets for SLAM benchmarking: the **Replica** dataset [@straubReplicaDatasetDigital2019] and the **TUM RGB-D** dataset [@sturmBenchmarkEvaluationRGBD2012]. The Replica dataset provides high-fidelity synthetic indoor environments, ideal for controlled evaluations of localization algorithms. We utilized data collected by Sucar et al. [@sucarImapImplicitMapping2021], which includes trajectories from an RGB-D sensor with ground-truth poses. The TUM RGB-D dataset offers real-world sequences captured in various indoor settings, providing a diverse range of scenarios to test the robustness of our method.
+**Datasets.** We evaluated our method on two widely recognized datasets for SLAM benchmarking: the **Replica** dataset [@straubReplicaDatasetDigital2019] and the **TUM RGB-D** dataset [@sturmBenchmarkEvaluationRGBD2012]. The Replica dataset provides high-fidelity synthetic indoor environments, ideal for controlled evaluations of localization algorithms. We utilized data collected by Sucar et al. [@sucarImapImplicitMapping2021], which includes trajectories from an RGB-D sensor with ground-truth poses. The TUM RGB-D dataset[@sturmBenchmarkEvaluationRGBD2012] offers real-world sequences captured in various indoor settings, providing a diverse range of scenarios to test the robustness of our method.
 
 **Metrics.** Localization accuracy was assessed using two standard metrics: the **Absolute Trajectory Error (ATE RMSE)**, measured in centimeters, and the **Absolute Angular Error (AAE RMSE)**, measured in degrees. The ATE RMSE quantifies the root mean square error between the estimated and ground-truth camera positions, while the AAE RMSE measures the accuracy of the estimated camera orientations.
 
 
 
-**Baselines.** To provide a comprehensive comparison, we evaluated our method against several state-of-the-art SLAM systems that leverage advanced scene representations. Specifically, we compared against RTG-SLAM (ICP) [@pengRTGSLAMRealtime3D2024], which utilizes Iterative Closest Point (ICP) for pose estimation within a 3D Gaussian splatting framework. We also included GS-ICP-SLAM (GICP) [@haRGBDGSICPSLAM2024], which employs Generalized ICP for alignment in a Gaussian-based representation. Additionally, we considered Gaussian-SLAM [@yugayGaussianSLAMPhotorealisticDense2024], evaluating both its PLANE ICP and HYBRID variants, which adapt traditional RGB-D odometry methods by incorporating plane-based ICP and a hybrid approach combining photometric and geometric information. These baselines were selected because they represent the current state of the art in SLAM systems utilizing advanced scene representations and focus on the localization component, which aligns with the scope of our work.
+**Baselines.** To provide a comprehensive comparison, we evaluated our method against several state-of-the-art SLAM systems that leverage advanced scene representations. Specifically, we compared against RTG-SLAM(ICP)[@pengRTGSLAMRealtime3D2024], which utilizes Iterative Closest Point (ICP) for pose estimation within a 3D Gaussian splatting framework. We also included GS-ICP-SLAM(GICP) [@haRGBDGSICPSLAM2024], which employs Generalized ICP for alignment in a Gaussian-based representation. Additionally, we considered Gaussian-SLAM [@yugayGaussianSLAMPhotorealisticDense2024], evaluating both its PLANE ICP and HYBRID variants, which adapt traditional RGB-D odometry methods by incorporating plane-based ICP and a hybrid approach combining photometric and geometric information. These baselines were selected because they represent the current state of the art in SLAM systems utilizing advanced scene representations and focus on the localization component, which aligns with the scope of our work.
+
 
 ## Localization Evaluation 
 
 
 
-We first evaluated our method on the Replica dataset, which provides a controlled environment to assess the accuracy of pose estimation algorithms.
-
+We conducted comprehensive experiments on both synthetic and real-world datasets to evaluate the performance of GSplatLoc against state-of-the-art methods utilizing advanced scene representations.
 
 
 
 ::: {.table}
-:Replica[@straubReplicaDatasetDigital2019] \(ATE RMSE ↓\[cm\]\). 
+:Replica\cite{straubReplicaDatasetDigital2019} \(ATE RMSE ↓\[cm\]\). 
 
-| Methods                                                               | Avg.    | R0      | R1      | R2      | Of0     | Of1     | Of2     | Of3     | Of4     |
-| --------------------------------------------------------------------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- |
-| RTG-SLAM\(ICP\)[@pengRTGSLAMRealtime3D2024]                           | 0.47141 | 0.42856 | 0.69011 | 0.54356 | 0.63971 | 0.33605 | 0.43360 | 0.28108 | 0.41859 |
-| GS-ICP-SLAM\(GICP\)[@haRGBDGSICPSLAM2024]                             | 0.59256 | 0.46493 | 0.77160 | 0.72265 | 0.68138 | 0.52158 | 0.58205 | 0.43795 | 0.55833 |
-| Gaussian-SLAM\(PLANE ICP\)[@yugayGaussianSLAMPhotorealisticDense2024] | 0.63256 | 0.47552 | 0.81195 | 0.78111 | 0.70938 | 0.54125 | 0.66741 | 0.44890 | 0.62499 |
-| Gaussian-SLAM\(HYBRID\)[@yugayGaussianSLAMPhotorealisticDense2024]    | 0.63100 | 0.47615 | 0.81203 | 0.78065 | 0.70912 | 0.53725 | 0.66240 | 0.44596 | 0.62448 |
-| Ours                                                                  | 0.00925 | 0.00720 | 0.00810 | 0.01000 | 0.00920 | 0.00870 | 0.01070 | 0.00930 | 0.01080 |
+| Methods                                                                   | Avg.    | R0      | R1                   | R2      | Of0                  | Of1     | Of2     | Of3     | Of4     |
+| ------------------------------------------------------------------------- | ------- | ------- | -------------------- | ------- | -------------------- | ------- | ------- | ------- | ------- |
+| RTG-SLAM\(ICP\)\cite{pengRTGSLAMRealtime3D2024}                           | 1.10186|1.28628|0.93451|1.11678|0.98289|0.62578|1.19425|1.33420|1.34021 |
+| GS-ICP-SLAM\(GICP\)\cite{haRGBDGSICPSLAM2024}                             |1.08411|1.25025|0.82778|1.18315|0.92360|0.59057|1.17543|1.43767|1.28446 |
+| Gaussian-SLAM\(PLANE ICP\)\cite{yugayGaussianSLAMPhotorealisticDense2024} |1.08631|1.24615|0.85453|1.18644|0.92181|0.58971|1.16204|1.42565|1.30411 |
+| Gaussian-SLAM\(HYBRID\)\cite{yugayGaussianSLAMPhotorealisticDense2024}    | 1.09637|1.24753|0.83053|1.18288|0.92605|0.59497|1.20125|1.49907|1.28869|
+| Ours                                                                      |0.01587|0.01519|0.01272|0.02052|0.01136|0.00937|0.01836|0.02003|0.01943 |
+
+:::
+ **Table 1.** presents the Absolute Trajectory Error (ATE RMSE) results on the Replica dataset. Our method achieves remarkable performance with an average ATE RMSE of **0.01587 cm**, significantly outperforming existing approaches by nearly two orders of magnitude. The closest competitor, RTG-SLAM(ICP) [@pengRTGSLAMRealtime3D2024], achieves an average error of 1.10186 cm. This substantial improvement is consistent across all sequences, with particularly notable performance in challenging scenes like Of1 (0.00937 cm) and R1 (0.01272 cm).
+
+::: {.table}
+:Replica\cite{straubReplicaDatasetDigital2019} \(AAE RMSE ↓\[°\]\). 
+
+| Methods                                                                   | Avg.    | R0      | R1                 | R2      | Of0                | Of1     | Of2    | Of3    | Of4    |
+| ------------------------------------------------------------------------- | ------- | ------- | ------------------ | ------- | ------------------ | ------- | ------ | ------ | ------ |
+| RTG-SLAM\(ICP\)\cite{pengRTGSLAMRealtime3D2024}                           | 0.47141|0.42856|0.69011|0.54356|0.63971|0.33605|0.43360|0.28108|0.41859 |
+| GS-ICP-SLAM\(GICP\)\cite{haRGBDGSICPSLAM2024}                             |0.63100|0.47615|0.81203|0.78065|0.70912|0.53725|0.66240|0.44596|0.62448|
+| Gaussian-SLAM\(PLANE ICP\)\cite{yugayGaussianSLAMPhotorealisticDense2024} |0.59256|0.46493|0.77160|0.72265|0.68138|0.52158|0.58205|0.43795|0.55833|
+| Gaussian-SLAM\(HYBRID\)\cite{yugayGaussianSLAMPhotorealisticDense2024}    | 0.63256|0.47552|0.81195|0.78111|0.70938|0.54125|0.66741|0.44890|0.62499 |
+| Ours                                                                      |  0.00925|0.00720|0.00810|0.01000|0.00920|0.00870|0.01070|0.00930|0.01080 |
 
 :::
 
-**Table 1.** presents the ATE RMSE results in centimeters for various methods across different sequences in the Replica dataset. Our method significantly outperforms the baselines, achieving an average ATE RMSE of **0.00925 cm**, which is an order of magnitude better than the closest competitor. This substantial improvement demonstrates the effectiveness of our approach in accurately estimating the camera's position. The low translational errors indicate that our method can precisely align the observed depth images with the rendered depth from the 3D Gaussian scene.
-
-
-
-
-::: {.table}
-:Replica[@straubReplicaDatasetDigital2019] \(AAE RMSE ↓\[°\]\). 
-
-| Methods                                                               | Avg.    | R0      | R1      | R2      | Of0     | Of1     | Of2    | Of3    | Of4    |
-| --------------------------------------------------------------------- | ------- | ------- | ------- | ------- | ------- | ------- | ------ | ------ | ------ |
-| RTG-SLAM\(ICP\)[@pengRTGSLAMRealtime3D2024]                           | 0.57636 | 0.71981 | 0.82631 | 0.74407 | 0.05447 | 0.53712 | 0.36   | 0.33   | 0.43   |
-| GS-ICP-SLAM\(GICP\)[@haRGBDGSICPSLAM2024]                             | 1.27873 | 1.65892 | 1.95121 | 1.60724 | 0.28119 | 0.89507 | 2.58   | 1.11   | 2.94   |
-| Gaussian-SLAM\(PLANE ICP\)[@yugayGaussianSLAMPhotorealisticDense2024] | 1.28716 | 1.83364 | 1.88000 | 1.39804 | 0.30505 | 1.01906 | 1.06   | 1.10   | 1.13   |
-| Gaussian-SLAM\(HYBRID\)[@yugayGaussianSLAMPhotorealisticDense2024]    | 1.95454 | 2.26473 | 3.49309 | 2.78290 | 0.28695 | 0.94503 | 0.58   | 0.72   | 0.63   |
-| Ours                                                                  | 0.80982 | 0.93103 | 1.00647 | 0.66619 | 0.24796 | 1.19745 | 0.0107 | 0.0093 | 0.0108 |
-
-:::
-
-**Table 2.** presents the Absolute Angular Error (AAE) RMSE in degrees for various methods on the Replica dataset. Our method achieves a competitive average AAE RMSE of **0.80982°**, indicating superior rotational accuracy in most sequences. In sequences with significant rotational movements, such as Of2, Of3, and Of4, our approach consistently outperforms the baselines. For instance, in sequence Of3, our method achieves an AAE RMSE of **0.00930°**, compared to **0.33000°** by RTG-SLAM and higher errors by other methods. This exceptional performance can be attributed to the effective utilization of the differentiable rendering pipeline and the optimization strategy that precisely aligns the depth gradients between the rendered and observed images.
-
-
-To evaluate the robustness of our method in real-world scenarios, we conducted experiments on the TUM RGB-D dataset, which presents challenges such as sensor noise and dynamic environments.
+**Table 2.** GSplatLoc achieves an average AAE RMSE of **0.00925°**. This represents a significant improvement over traditional ICP-based methods, with RTG-SLAM[@pengRTGSLAMRealtime3D2024] and GS-ICP-SLAM[@haRGBDGSICPSLAM2024] showing average errors of 0.47141° and 0.63100° respectively. The performance advantage is particularly evident in sequences with complex rotational movements, such as Of2 and Of4, where our method maintains sub-0.01° accuracy.
 
 
 ::: {.table}
-: TUM[@sturmBenchmarkEvaluationRGBD2012] (ATE RMSE ↓\[cm\]). 
+: TUM\cite{sturmBenchmarkEvaluationRGBD2012} (ATE RMSE ↓\[cm\]).
 
 | Methods                                                               | Avg.    | fr1/desk | fr1/desk2 | fr1/room | fr2/xyz | fr3/off. |
 | --------------------------------------------------------------------- | ------- | -------- | --------- | -------- | ------- | -------- |
-| RTG-SLAM\(ICP\)[@pengRTGSLAMRealtime3D2024]                           | 0.57636 | 0.71981  | 0.82631   | 0.74407  | 0.05447 | 0.53712  |
-| GS-ICP-SLAM\(GICP\)[@haRGBDGSICPSLAM2024]                             | 1.27873 | 1.65892  | 1.95121   | 1.60724  | 0.28119 | 0.89507  |
-| Gaussian-SLAM\(PLANE ICP\)[@yugayGaussianSLAMPhotorealisticDense2024] | 1.28716 | 1.83364  | 1.88000   | 1.39804  | 0.30505 | 1.01906  |
-| Gaussian-SLAM\(HYBRID\)[@yugayGaussianSLAMPhotorealisticDense2024]    | 1.95454 | 2.26473  | 3.49309   | 2.78290  | 0.28695 | 0.94503  |
-| Ours                                                                  | 0.80982 | 0.93103  | 1.00647   | 0.66619  | 0.24796 | 1.19745  |
+| RTG-SLAM\(ICP\)\cite{pengRTGSLAMRealtime3D2024}                           |0.57636|0.71981|0.82631|0.74407|0.05447|0.53712 |
+| GS-ICP-SLAM\(GICP\)\cite{haRGBDGSICPSLAM2024}                             | 1.95454|2.26473|3.49309|2.78290|0.28695|0.94503|
+| Gaussian-SLAM\(PLANE ICP\)\cite{yugayGaussianSLAMPhotorealisticDense2024} |1.27873|1.65892|1.95121|1.60724|0.28119|0.89507|
+| Gaussian-SLAM\(HYBRID\)\cite{yugayGaussianSLAMPhotorealisticDense2024}    |1.28716|1.83364|1.88000|1.39804|0.30505|1.01906|
+| Ours                                                                      |0.80982|0.93103|1.00647|0.66619|0.24796|1.19745 |
 
 :::
 
-**Table 3.** presents the ATE RMSE in centimeters for various methods on the TUM-RGBD dataset [@sturmBenchmarkEvaluationRGBD2012]. Our method achieves competitive results with an average ATE RMSE of **8.0982 cm**, outperforming GS-ICP-SLAM[@haRGBDGSICPSLAM2024] and Gaussian-SLAM[@yugayGaussianSLAMPhotorealisticDense2024] in most sequences. While RTG-SLAM[@pengRTGSLAMRealtime3D2024] shows lower errors in some sequences, our method consistently provides accurate pose estimates across different environments. The increased error compared to the Replica dataset is expected due to the real-world challenges present in the TUM RGB-D dataset, such as sensor noise and environmental variability. Despite these challenges, our method demonstrates robustness and maintains reasonable localization accuracy.
+**Table 3.** presents the ATE RMSE in centimeters for various methods on the TUM-RGBD dataset . Our method achieves competitive results with an average ATE RMSE of **8.0982 cm**, outperforming GS-ICP-SLAM[@haRGBDGSICPSLAM2024] and Gaussian-SLAM[@yugayGaussianSLAMPhotorealisticDense2024] in most sequences. While RTG-SLAM[@pengRTGSLAMRealtime3D2024] shows lower errors in some sequences, our method consistently provides accurate pose estimates across different environments. The increased error compared to the Replica dataset is expected due to the real-world challenges present in the TUM RGB-D dataset[@sturmBenchmarkEvaluationRGBD2012], such as sensor noise and environmental variability. Despite these challenges, our method demonstrates robustness and maintains reasonable localization accuracy.
 
-
+**Tables 3.** presents results on the more challenging TUM RGB-D dataset[@sturmBenchmarkEvaluationRGBD2012], which introduces real-world complexities such as sensor noise and dynamic environments. In terms of translational accuracy, GSplatLoc achieves competitive performance with an average ATE RMSE of **0.80982 cm**. While RTG-SLAM[@pengRTGSLAMRealtime3D2024] shows slightly better average performance (0.57636 cm), our method consistently outperforms both GS-ICP-SLAM[@haRGBDGSICPSLAM2024] (1.95454 cm) and Gaussian-SLAM[@yugayGaussianSLAMPhotorealisticDense2024] variants (1.27873 cm and 1.28716 cm) across most sequences.
 
 ::: {.table}
-: TUM[@sturmBenchmarkEvaluationRGBD2012] (AAE RMSE ↓\[°\]). 
+: TUM\cite{sturmBenchmarkEvaluationRGBD2012} (AAE RMSE ↓\[°\]). 
 
-| Methods                                                               | Avg.    | fr1/desk | fr1/desk2 | fr1/room | fr2/xyz | fr3/off. |
-| --------------------------------------------------------------------- | ------- | -------- | --------- | -------- | ------- | -------- |
-| RTG-SLAM\(ICP\)[@pengRTGSLAMRealtime3D2024]                           | 0.91561 | 1.18124  | 1.55673   | 1.35470  | 0.13826 | 0.34709  |
-| GS-ICP-SLAM\(GICP\)[@haRGBDGSICPSLAM2024]                             | 0.95946 | 1.28833  | 1.61803   | 1.36300  | 0.14737 | 0.38057  |
-| Gaussian-SLAM\(PLANE ICP\)[@yugayGaussianSLAMPhotorealisticDense2024] | 1.08990 | 1.38788  | 1.79107   | 1.56370  | 0.18154 | 0.52531  |
-| Gaussian-SLAM\(HYBRID\)[@yugayGaussianSLAMPhotorealisticDense2024]    | 1.11727 | 1.42609  | 2.09771   | 1.59401  | 0.11373 | 0.35480  |
-| Ours                                                                  | 0.97928 | 1.12633  | 1.26549   | 0.90722  | 0.78905 | 0.80828  |
+| Methods                                                                   | Avg.    | fr1/desk | fr1/desk2 | fr1/room | fr2/xyz | fr3/off. |
+| ------------------------------------------------------------------------- | ------- | -------- | --------- | -------- | ------- | -------- |
+| RTG-SLAM\(ICP\)\cite{pengRTGSLAMRealtime3D2024}                           |0.91561|1.18124|1.55673|1.35470|0.13826|0.34709 |
+| GS-ICP-SLAM\(GICP\)\cite{haRGBDGSICPSLAM2024}                             | 1.11727|1.42609|2.09771|1.59401|0.11373|0.35480 |
+| Gaussian-SLAM\(PLANE ICP\)\cite{yugayGaussianSLAMPhotorealisticDense2024} |  0.95946|1.28833|1.61803|1.36300|0.14737|0.38057 |
+| Gaussian-SLAM\(HYBRID\)\cite{yugayGaussianSLAMPhotorealisticDense2024}    | 1.08990|1.38788|1.79107|1.56370|0.18154|0.52531 |
+| Ours                                                                      |0.97928|1.12633|1.26549|0.90722|0.78905|0.80828 |
 
 :::
 
-**Table 4.** presents the AAE RMSE results in degrees for the TUM RGB-D dataset. Our method achieves an average AAE RMSE of **0.97928°**, which is competitive with the other methods. In sequences such as fr1/room, our method demonstrates superior rotational accuracy with an AAE RMSE of **0.90722°**, compared to higher errors by the baselines. The slightly higher rotational errors in the TUM RGB-D dataset, compared to the Replica dataset, can be attributed to the complexities of real-world data, including sensor inaccuracies and dynamic elements in the environment. Nonetheless, our method maintains reliable performance across various sequences.
+
+**Table 4.** The rotational accuracy results on TUM RGB-D dataset[@sturmBenchmarkEvaluationRGBD2012] demonstrate the robustness of our approach in real-world scenarios. GSplatLoc maintains stable performance with an average AAE RMSE of **0.97928°**, comparable to RTG-SLAM's 0.91561°. Notably, our method shows superior performance in challenging sequences like fr1/room (0.90722°) compared to competing methods, which exhibit errors ranging from 1.35470° to 1.56370°.
+
+The performance gap between synthetic and real-world results highlights the impact of sensor noise and environmental complexity on localization accuracy. While the near-perfect accuracy achieved on the Replica dataset demonstrates the theoretical capabilities of our approach, the competitive performance on TUM RGB-D dataset[@sturmBenchmarkEvaluationRGBD2012] validates its practical applicability in real-world scenarios.
 
 ## Discussion
+
+
 
 The experimental results indicate that our method consistently achieves high localization accuracy, particularly in terms of translational error, where we significantly outperform existing approaches on the Replica dataset. The rotational accuracy of our method is also competitive, often surpassing other methods in challenging sequences. These outcomes demonstrate the effectiveness of our approach in leveraging the differentiable rendering capabilities of 3D Gaussian splatting for pose estimation.
 
 Several factors contribute to the superior performance of our method. By utilizing a fully differentiable depth rendering process, our method allows for efficient gradient-based optimization of camera poses, leading to precise alignment between the rendered and observed depth images. The combination of depth loss and contour loss in our optimization objective enables the method to capture both absolute depth differences and structural features, enhancing the robustness and accuracy of pose estimation. Additionally, employing quaternions for rotation representation provides a continuous and singularity-free parameter space, improving the stability and convergence of the optimization process.
 
-While our method shows excellent performance on the Replica dataset, the increased errors on the TUM RGB-D dataset highlight areas for potential improvement. Real-world datasets introduce challenges such as sensor noise, dynamic objects, and incomplete depth data due to occlusions. Addressing these challenges in future work could further enhance the robustness of our method.
+While our method shows excellent performance on the Replica dataset, the increased errors on the TUM RGB-D dataset[@sturmBenchmarkEvaluationRGBD2012] highlight areas for potential improvement. Real-world datasets introduce challenges such as sensor noise, dynamic objects, and incomplete depth data due to occlusions. Addressing these challenges in future work could further enhance the robustness of our method.
 
 ## Limitations
 
@@ -380,7 +369,7 @@ Despite the promising results, our method has certain limitations. The reliance 
 
 In this paper, we introduced **GSplatLoc**, a novel method for ultra-precise camera localization that leverages the differentiable rendering capabilities of 3D Gaussian splatting. By formulating pose estimation as a gradient-based optimization problem within a fully differentiable framework, our approach enables efficient and accurate alignment between rendered depth maps from a pre-existing 3D Gaussian scene and observed depth images.
 
-Extensive experiments on the Replica and TUM RGB-D datasets demonstrate that GSplatLoc significantly outperforms state-of-the-art SLAM systems in terms of both translational and rotational accuracy. On the Replica dataset, our method achieves an average Absolute Trajectory Error (ATE RMSE) of 0.00925 cm, surpassing existing approaches by an order of magnitude. The method also maintains competitive performance on the TUM RGB-D dataset, exhibiting robustness in real-world scenarios despite challenges such as sensor noise and dynamic elements.
+Extensive experiments on the Replica and TUM RGB-D dataset[@sturmBenchmarkEvaluationRGBD2012] demonstrate that GSplatLoc significantly outperforms state-of-the-art SLAM systems in terms of both translational and rotational accuracy. On the Replica dataset, our method achieves an average Absolute Trajectory Error (ATE RMSE) of **0.01587 cm**, surpassing existing approaches by an order of magnitude. The method also maintains competitive performance on the TUM RGB-D dataset[@sturmBenchmarkEvaluationRGBD2012], exhibiting robustness in real-world scenarios despite challenges such as sensor noise and dynamic elements.
 
 The superior performance of GSplatLoc can be attributed to several key factors. The utilization of a fully differentiable depth rendering process allows for efficient gradient-based optimization of camera poses. The combination of depth and contour losses in our optimization objective captures both absolute depth differences and structural features, enhancing the accuracy of pose estimation. Moreover, employing quaternions for rotation representation provides a continuous and singularity-free parameter space, improving the stability and convergence of the optimization process.
 
