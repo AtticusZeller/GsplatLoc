@@ -29,6 +29,7 @@ dev = [
 ]
 docs = [
     "pandas>=2.2.3",
+    "pandas-stubs>=2.2.3.241126",
     "panflute>=2.3.1",
 ]
 
