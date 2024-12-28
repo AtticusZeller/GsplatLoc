@@ -1,0 +1,85 @@
+\documentclass[twocolumn]{article}
+\usepackage{mathtools}
+\usepackage{unicode-math}
+\usepackage{arxiv}
+\usepackage{fontspec}
+
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{amsfonts}
+\usepackage{nicefrac}
+\usepackage{microtype}
+\usepackage{lipsum}
+\usepackage{graphicx}
+\usepackage{doi}
+\usepackage{titlesec}
+\usepackage{setspace}
+\setstretch{1.1}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{tabularx}
+\usepackage{colortbl}
+
+\usepackage{adjustbox}
+\usepackage{libertinus}
+\usepackage[backend=biber,style=ieee]{biblatex}
+\addbibresource{bibliography.bib}
+
+
+% caption front
+\usepackage{caption}
+\captionsetup{font=small,labelfont=bf}
+
+
+\title{\large\bfseries\textit{GSplatLoc} : Ultra-Precise Camera
+Localization via 3D Gaussian Splatting}
+
+
+\usepackage{titling}
+
+% https://www.overleaf.com/learn/latex/Hyperlinks
+\usepackage{hyperref}
+
+\hypersetup{
+    pdftitle={GSplatLoc : Ultra-Precise Camera Localization via 3D
+Gaussian Splatting},
+    pdfauthor={Atticus J. Zeller},
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=green,
+    urlcolor=cyan,
+}
+\urlstyle{same}
+
+
+\newcommand{\authorinfo}[4]{%
+  \begin{tabular}[t]{c}
+    \href{#1}{\includegraphics[scale=0.06]{orcid.pdf}\hspace{1mm}\textbf{#2}}#4\\
+    #3\\
+  \end{tabular}%
+}
+\renewcommand{\and}{\hspace{2em}}
+
+% 作者设置
+\author{%
+\authorinfo{https://orcid.org/0009-0008-5460-325X}{Atticus J.
+Zeller}{Southeast University Chengxian College\\Nanjing, China}{}\and%
+}
+
+% main
+\begin{document}
+
+\twocolumn[
+\begin{@twocolumnfalse}
+  \maketitle
+  \begin{abstract}
+    $abstract$
+  \end{abstract}
+  \vspace{1cm}
+\end{@twocolumnfalse}
+]
+
+$body$
+
+\printbibliography
+\end{document}
