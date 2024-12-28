@@ -1,15 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-
-%% declare nonatbib option, which does not load natbib in case of
-%% package clash (users can pass options to natbib via
-%% \PassOptionsToPackage)
-%\newif\if@natbib\@natbibtrue
-%\DeclareOption{nonatbib}{
-%  \@natbibfalse
-%}
-
 \ProcessOptions\relax
-
 
 % Define page geometry
 \RequirePackage[verbose=true,letterpaper]{geometry}
@@ -23,12 +13,12 @@
     footskip=30pt
   }
 }
-\setlength{\columnsep}{20pt} % 将两列之间的距离设置为 20pt，可以根据需要调整
+\setlength{\columnsep}{20pt} % Set the distance between two columns to 20pt, which can be adjusted as needed
 
-\widowpenalty=10000 % 设置孤行惩罚值为 10000,这意味着 LaTeX 会尽量避免出现孤行。
-\clubpenalty=10000 % 设置孤节惩罚值为 10000,这意味着 LaTeX 会尽量避免出现孤节
-\flushbottom % 确保页面底部对齐
-\sloppy % 使 LaTeX 在断行时更加宽松,避免过于紧凑的排版。
+\widowpenalty=10000 % Set the orphan penalty value to 10000, which means LaTeX will try to avoid orphan lines.
+\clubpenalty=10000 % Set the orphan penalty value to 10000, which means LaTeX will try to avoid orphan sections
+\flushbottom % Ensure the bottom of the page is aligned
+\sloppy % Make LaTeX more relaxed when breaking lines to avoid overly compact typesetting.
 
 % Header options
 \RequirePackage{fancyhdr}
@@ -36,7 +26,7 @@
 \pagestyle{fancy}
 \renewcommand{\headrulewidth}{0pt}
 \fancyheadoffset{0pt}
-\cfoot{\thepage} % 只在页脚中心添加页码
+\cfoot{\thepage} % Add page number only in the center of the footer
 
 
 
@@ -170,34 +160,6 @@
               \labelwidth\leftmarginvi
               \advance\labelwidth-\labelsep}
 
-
-\newcommand{\undertitle}{}
-% create title
-% \renewcommand{\@maketitle}{%
-%   \vbox{%
-%     \hsize\textwidth
-%     \linewidth\hsize
-%     \vskip 0.1in
-%     \@toptitlebar
-%     \centering
-%     {\LARGE\sc \@title\par}
-%     \@bottomtitlebar
-%     \textsc{\undertitle}\\
-%     \vskip 0.1in
-%     \def\And{%
-%       \end{tabular}\hfil\linebreak[0]\hfil%
-%       \begin{tabular}[t]{c}\bf\rule{\z@}{24\p@}\ignorespaces%
-%     }
-%     \def\AND{%
-%       \end{tabular}\hfil\linebreak[4]\hfil%
-%       \begin{tabular}[t]{c}\bf\rule{\z@}{24\p@}\ignorespaces%
-%     }
-%     \@author
-%     \vskip 0.4in \@minus 0.1in \center{\@date}   \vskip 0.2in
-%   }
-% }
-
-
 % rules for title box at top of first page
 \newcommand{\@toptitlebar}{
   \hrule height 2\p@
@@ -211,31 +173,6 @@
   \vskip 0.09in%
 }
 
-% create title (includes both anonymized and non-anonymized versions)
-% \providecommand{\@maketitle}{}
-% \renewcommand{\@maketitle}{%
-%   \vbox{%
-%     \hsize\textwidth
-%     \linewidth\hsize
-%     \vskip 0.1in
-%     \@toptitlebar
-%     \centering
-%     {\LARGE\sc \@title\par}
-%     \@bottomtitlebar
-%     \textsc{\undertitle}\\
-%     \vskip 0.1in
-%     \def\And{%
-%       \end{tabular}\hfil\linebreak[0]\hfil%
-%       \begin{tabular}[t]{c}\bf\rule{\z@}{24\p@}\ignorespaces%
-%     }
-%     \def\AND{%
-%       \end{tabular}\hfil\linebreak[4]\hfil%
-%       \begin{tabular}[t]{c}\bf\rule{\z@}{24\p@}\ignorespaces%
-%     }
-%     \begin{tabular}[t]{c}\bf\rule{\z@}{24\p@}\@author\end{tabular}%
-%   \vskip 0.4in \@minus 0.1in \center{\@date}   \vskip 0.2in
-%   }
-% }
 
 % add conference notice to bottom of first page
 \newcommand{\ftype@noticebox}{8}
