@@ -128,8 +128,6 @@ By leveraging these properties, we aim to develop a localization method that ful
 
 **Problem Formulation.** Our objective is to estimate the 6-DoF pose $(\mathbf{R}, \mathbf{t}) \in SE(3)$ of a query depth image $D_q$, where $\mathbf{R}$ is the rotation matrix and $\mathbf{t}$ is the translation vector in the camera coordinate system. Given a 3D representation of the environment in the form of 3D Gaussians, let $\mathcal{G} = \{G_i\}_{i=1}^N$ denote a set of $N$ Gaussians, and posed reference depth images $\{D_k\}$, which together constitute the reference data.
 
-In the following sections, we detail the components of our method, including the scene representation, the differentiable depth rendering process, the formulation of the optimization problem, and the overall pipeline for camera localization.
-
 
 
 ## Scene Representation
