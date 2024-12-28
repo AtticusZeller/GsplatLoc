@@ -28,9 +28,22 @@ uv run pandoc --from markdown --to latex -o main.tex --pdf-engine=xelatex main.m
 uv run pandoc --from markdown --to latex -o .\submission\main.tex main.md --template=output.tex --biblatex --filter=table_filter.py --bibliography=bibliography.bib --mathjax
 ```
 
+
 ```powershell
 xelatex main
 biber main
 xelatex main
 xelatex main
+```
+
+
+## Clean
+```powershell
+rm *.aux,*.bbl,*.blg,*.log, *.bcf, *.out,*.run.xml -Force
+```
+
+## Zip
+
+```powershell
+zip arxiv-submission.zip main.tex arxiv.sty bibliography.bib Flowcharts.pdf main.bbl orcid.pdf
 ```
