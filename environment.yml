@@ -30,7 +30,7 @@ dependencies:
     - opencv-contrib-python-headless
     - wandb
     - kornia
-  # gsplat
+    - gsplat
     - tyro
     - viser
     - nerfview
