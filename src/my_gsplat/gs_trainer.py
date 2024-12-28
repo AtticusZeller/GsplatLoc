@@ -1,6 +1,6 @@
 import time
 from timeit import default_timer
-
+import torch.nn.functional as F
 import torch
 import tqdm
 
@@ -29,7 +29,11 @@ class Runner(ExperimentBase):
 
         self.config = base_config
         # load data
-        self.parser = Parser(self.sub_set, normalize=wandb_config.normalize)
+        self.parser = Parser(
+            data_set=wandb_config.dataset,
+            name=self.sub_set,
+            normalize=wandb_config.normalize,
+        )
 
         # Losses & Metrics.
         self.config.init_loss()
@@ -100,18 +104,18 @@ class Runner(ExperimentBase):
                 non_zero_depth_mask = (depths != 0).float()
 
                 # # RGB L1 Loss
-                # l1loss = F.l1_loss(
-                #     colors * non_zero_depth_mask,
-                #     pixels * non_zero_depth_mask,
-                #     reduction="sum",
-                # ) / (non_zero_depth_mask.sum() + 1e-8)
+                l1loss = F.l1_loss(
+                    colors * non_zero_depth_mask,
+                    pixels * non_zero_depth_mask,
+                    reduction="sum",
+                ) / (non_zero_depth_mask.sum() + 1e-8)
                 #
-                # # SSIM Loss
-                # ssim_value = self.config.ssim(
-                #     (pixels * non_zero_depth_mask).permute(0, 3, 1, 2),
-                #     (colors * non_zero_depth_mask).permute(0, 3, 1, 2),
-                # )
-                # ssimloss = 1.0 - ssim_value
+                # SSIM Loss
+                ssim_value = self.config.ssim(
+                    (pixels * non_zero_depth_mask).permute(0, 3, 1, 2),
+                    (colors * non_zero_depth_mask).permute(0, 3, 1, 2),
+                )
+                ssimloss = 1.0 - ssim_value
 
                 # Depth Loss
                 depth_loss = compute_depth_loss(
@@ -146,12 +150,12 @@ class Runner(ExperimentBase):
                 with torch.no_grad():
                     # loss
                     self.logger.log_loss("total_loss", total_loss.item(), step=step)
-                    # self.logger.log_loss(
-                    #     "pixels", l1loss.item(), step=step, l_type="l1"
-                    # )
-                    # self.logger.log_loss(
-                    #     "pixels", ssimloss.item(), step=step, l_type="ssim"
-                    # )
+                    self.logger.log_loss(
+                        "pixels", l1loss.item(), step=step, l_type="l1"
+                    )
+                    self.logger.log_loss(
+                        "pixels", ssimloss.item(), step=step, l_type="ssim"
+                    )
                     self.logger.log_loss(
                         "depth", depth_loss.item(), step=step, l_type="l1"
                     )
@@ -169,10 +173,10 @@ class Runner(ExperimentBase):
                     )
                     # IMAGE
                     if step % 100 == 0:
-                        # psnr = self.config.psnr(
-                        #     (pixels * non_zero_depth_mask).permute(0, 3, 1, 2),
-                        #     (colors * non_zero_depth_mask).permute(0, 3, 1, 2),
-                        # )
+                        psnr = self.config.psnr(
+                            (pixels * non_zero_depth_mask).permute(0, 3, 1, 2),
+                            (colors * non_zero_depth_mask).permute(0, 3, 1, 2),
+                        )
                         self.logger.plot_rgbd(
                             depths_gt[0, :, :, 0],
                             depths[0, :, :, 0],
@@ -180,22 +184,22 @@ class Runner(ExperimentBase):
                                 "type": "l1",
                                 "value": depth_loss.item(),
                             },
-                            # color=train_data.pixels,
-                            # rastered_color=colors.squeeze(0),
-                            # color_loss={
-                            #     "type": "psnr",
-                            #     "value": psnr.item(),
-                            # },
+                            color=train_data.pixels,
+                            rastered_color=colors.squeeze(0),
+                            color_loss={
+                                "type": "psnr",
+                                "value": psnr.item(),
+                            },
                             # normal_loss={
                             #     "type": "cosine",
                             #     "value": normal_loss.item(),
                             # },
-                            normal=depth_to_normal(
-                                depths_gt[0, :, :, 0], Ks.squeeze(0)
-                            ),
-                            rastered_normal=depth_to_normal(
-                                depths[0, :, :, 0], Ks.squeeze(0)
-                            ),
+                            # normal=depth_to_normal(
+                            #     depths_gt[0, :, :, 0], Ks.squeeze(0)
+                            # ),
+                            # rastered_normal=depth_to_normal(
+                            #     depths[0, :, :, 0], Ks.squeeze(0)
+                            # ),
                             step=step,
                             fig_title="gs_splats Visualization",
                         )
