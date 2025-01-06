@@ -1,5 +1,4 @@
 from pathlib import Path
-import time
 from typing import List, Optional
 
 import numpy as np
@@ -35,9 +34,9 @@ class PcdVisualizer:
         # self.o3d_vis.get_render_option().load_from_json(render_option.as_posix())
 
         # Initialize trajectory variables
-        self.camera_positions: List[np.ndarray] = []
-        self.camera_poses: List[np.ndarray] = []
-        self.trajectory_line: Optional[o3d.geometry.LineSet] = None
+        self.camera_positions: list[np.ndarray] = []
+        self.camera_poses: list[np.ndarray] = []
+        self.trajectory_line: o3d.geometry.LineSet | None = None
         self.colormap = plt.get_cmap("cool")
 
         self.line_width = 10.0  # 增加轨迹线的宽度
@@ -47,7 +46,7 @@ class PcdVisualizer:
         self,
         new_pcd: np.ndarray,
         estimate_pose: np.ndarray,
-        new_color: Optional[np.ndarray] = None,
+        new_color: np.ndarray | None = None,
     ):
         # Create and add/update point cloud
         pcd_o3d = o3d.geometry.PointCloud(o3d.utility.Vector3dVector(new_pcd))
@@ -57,8 +56,7 @@ class PcdVisualizer:
         self.o3d_vis.add_geometry(pcd_o3d)
         self.o3d_vis.update_geometry(pcd_o3d)
 
-
-        if 0<=len(self.camera_positions)<=3:
+        if 0 <= len(self.camera_positions) <= 3:
             # Update camera trajectory
             self.camera_positions.append(estimate_pose[:3, 3])
             self.camera_poses.append(estimate_pose)
@@ -84,9 +82,7 @@ class PcdVisualizer:
             self.trajectory_line = o3d.geometry.LineSet()
             self.o3d_vis.add_geometry(self.trajectory_line)
 
-        self.trajectory_line.points = o3d.utility.Vector3dVector(
-            self.camera_positions
-        )
+        self.trajectory_line.points = o3d.utility.Vector3dVector(self.camera_positions)
         self.trajectory_line.lines = o3d.utility.Vector2iVector(lines)
         self.trajectory_line.colors = o3d.utility.Vector3dVector(colors)
 
@@ -97,7 +93,7 @@ class PcdVisualizer:
 
         self.o3d_vis.update_geometry(self.trajectory_line)
 
-    def add_camera_frustum(self, pose: np.ndarray, color: List[float]):
+    def add_camera_frustum(self, pose: np.ndarray, color: list[float]):
         # 将 c2w 转换为 w2c
         w2c = np.linalg.inv(pose)
 
@@ -111,7 +107,7 @@ class PcdVisualizer:
         frustum.paint_uniform_color(color)
         self.o3d_vis.add_geometry(frustum)
 
-    def add_camera_marker(self, position: np.ndarray, color: List[float]):
+    def add_camera_marker(self, position: np.ndarray, color: list[float]):
         sphere = o3d.geometry.TriangleMesh.create_sphere(
             radius=0.0001
         )  # 减小轨迹点的大小
@@ -124,6 +120,7 @@ class PcdVisualizer:
         self.view_control.convert_from_pinhole_camera_parameters(
             self.camera_params, allow_arbitrary=True
         )
+
     def run_visualization(self):
         print("Visualization complete. Use mouse/keyboard to interact.")
         print("Press Q or Esc to exit.")
@@ -143,7 +140,7 @@ def visualize_dataset(data_set: BaseDataset):
             new_color=rgbd_image.colors.cpu().numpy(),
         )
     vis.run_visualization()
- 
+
 
 def visualize_trajectory(data_set: BaseDataset):
     """vis 3d trajectory"""

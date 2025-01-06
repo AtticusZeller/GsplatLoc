@@ -1,7 +1,8 @@
 import time
 from timeit import default_timer
-import torch.nn.functional as F
+
 import torch
+import torch.nn.functional as F
 import tqdm
 
 from src.data import AlignData, Parser
@@ -9,7 +10,6 @@ from src.data.base import DEVICE, Config
 from src.eval.experiment import ExperimentBase, WandbConfig
 
 from ..eval.utils import calculate_rotation_error, calculate_translation_error
-from .geometry import depth_to_normal
 from .loss import compute_depth_loss, compute_silhouette_loss
 from .model import CameraOptModule_quat_tans, GSModel
 
