@@ -1,6 +1,6 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'main.blg'
-[103] biber-MSWIN64:340> INFO - === 
+[103] biber-MSWIN64:340> INFO - ===
 [141] Biber.pm:419> INFO - Reading 'main.bcf'
 [248] Biber.pm:979> INFO - Found 39 citekeys in bib section 0
 [261] Biber.pm:4419> INFO - Processing section 0

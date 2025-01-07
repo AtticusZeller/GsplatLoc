@@ -64,7 +64,7 @@ def compute_normal_consistency_loss(
     depth_rendered: Tensor,
     *,
     K: Tensor,
-    loss_type: Literal["cosine", "l1", "mse"] = "cosine"
+    loss_type: Literal["cosine", "l1", "mse"] = "cosine",
 ) -> Tensor:
     """
     Compute the normal consistency loss between two depth images.
