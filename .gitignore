@@ -167,4 +167,5 @@ cython_debug/
 .vscode/PythonImportHelper-v2-Completion.json
 
 # dataset
-.datasets/
+**/datasets
+**/wandb
