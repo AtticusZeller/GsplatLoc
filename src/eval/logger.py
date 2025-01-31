@@ -1,4 +1,5 @@
 import json
+import os
 from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
@@ -27,10 +28,8 @@ class WandbLogger:
             run_name = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
         else:
             run_name = run_name
-        self.entity = "supavision"
-        # self.project = "ABGICP"
-        # self.entity = "atticuszz"
-        self.project = "GspaltLoc"
+        self.entity = os.environ["ENTITY"]
+        self.project = os.environ["PROJECT"]
         wandb.init(
             project=self.project,
             entity=self.entity,
