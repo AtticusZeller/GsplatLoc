@@ -1,3 +1,5 @@
+#! /usr/bin/env bash
+
 cd ..
 # Install requirements by poetry
 poetry install

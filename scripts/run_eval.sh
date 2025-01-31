@@ -1,3 +1,5 @@
+#! /usr/bin/env bash
+
 # Function to run training for a dataset and room pair
 run_training() {
     dataset=$1
