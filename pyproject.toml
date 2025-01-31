@@ -1,19 +1,34 @@
 [project]
-name = "GsplatLoc"
-description = "Ultra-Precise Camera Localization via 3D Gaussian Splatting"
-readme = "README.md"
-requires-python = ">=3.10"
-license = { file = "LICENSE" }
-authors = [{ name = "A.J.Zeller", email = "GitHub.AJZ@pm.me" }]
-maintainers = [{ name = "A.J.Zeller", email = "GitHub.AJZ@pm.me" }]
+name            = "GsplatLoc"
+description     = "Ultra-Precise Camera Localization via 3D Gaussian Splatting"
+readme          = "README.md"
+requires-python = "==3.10.*"
+license         = { file = "LICENSE" }
+authors         = [{ name = "A.J.Zeller", email = "GitHub.AJZ@pm.me" }]
+maintainers     = [{ name = "A.J.Zeller", email = "GitHub.AJZ@pm.me" }]
 
 dynamic = ["version"] # https://hatch.pypa.io/latest/config/metadata/#version
+dependencies = [
+    "gsplat>=1.4.0",
+    "kornia>=0.8.0",
+    "matplotlib>=3.10.0",
+    "natsort>=8.4.0",
+    "nerfview>=0.0.3",
+    "open3d>=0.19.0",
+    "opencv-contrib-python-headless>=4.11.0.86",
+    "small-gicp>=1.0.0",
+    "torch==2.4.0",
+    "torchmetrics>=1.6.1",
+    "torchvision==0.19.0",
+    "tqdm>=4.67.1",
+    "viser>=0.2.23",
+    "wandb>=0.19.5",
+]
 
 [project.urls]
-Homepage = "https://github.com/AtticusZeller/GsplatLoc"
-Issues = "https://github.com/AtticusZeller/GsplatLoc/issues"
+Homepage  = "https://github.com/AtticusZeller/GsplatLoc"
+Issues    = "https://github.com/AtticusZeller/GsplatLoc/issues"
 Changelog = "https://github.com/AtticusZeller/GsplatLoc/blob/main/CHANGELOG.md"
-
 
 [project.optional-dependencies]
 # optional deps for package installation
@@ -21,22 +36,38 @@ Changelog = "https://github.com/AtticusZeller/GsplatLoc/blob/main/CHANGELOG.md"
 [dependency-groups]
 dev = [
     "ruff>=0.6.3",
-    # "mypy>=1.11.2",
+    "mypy>=1.11.2",
     "pre-commit>=3.8.0",
     "git-cliff>=2.6.1",
     "bump-my-version>=0.28.0",
     "typos>=1.26.8",
+    "pytest>=8.3.4",
+    "pytest-sugar>=1.0.0",     # Nicer pytest output
 ]
-docs = [
-    "pandas>=2.2.3",
-    "pandas-stubs>=2.2.3.241126",
-    "panflute>=2.3.1",
-]
+docs = ["pandas>=2.2.3", "pandas-stubs>=2.2.3.241126", "panflute>=2.3.1"]
 
+[tool.uv.sources]
+torch = [
+    { index = "pytorch-cu121", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
+]
+torchvision = [
+    { index = "pytorch-cu121", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
+]
+gsplat = [{ index = "gsplat-cu121",  marker = "sys_platform == 'linux' or sys_platform == 'win32'" }]
+
+[[tool.uv.index]]
+name     = "pytorch-cu121"
+url      = "https://download.pytorch.org/whl/cu121"
+explicit = true
+
+[[tool.uv.index]]
+name     = "gsplat-cu121"
+url      = "https://docs.gsplat.studio/whl/pt24cu121"
+explicit = true
 
 ## Test
 [tool.mypy]
-strict = true
+strict  = true
 exclude = ["venv", ".venv"]
 
 ## Linter and formatter
@@ -75,13 +106,16 @@ ignore = [
     "W293",   # Blank line contains whitespace
 ]
 
-isort = { combine-as-imports = true,  split-on-trailing-comma = false }
+isort = { combine-as-imports = true, split-on-trailing-comma = false }
 
 # Avoid trying to fix flake8-bugbear (`B`) violations.
 unfixable = ["B"]
 
+[tool.ruff.lint.pydocstyle]
+convention = "numpy" # Accepts: "google", "numpy", or "pep257".
+
 [tool.ruff.format]
-docstring-code-format = true
+docstring-code-format     = true
 skip-magic-trailing-comma = true
 
 # Reference
@@ -90,11 +124,10 @@ skip-magic-trailing-comma = true
 # 3. https=//github.com/pydantic/logfire
 # 4. https=//coverage.readthedocs.io/en/latest/index.html
 
-
 ## VCS
 [tool.git-cliff.remote.github]
-owner = "atticuszz"
-repo = "python-uv"
+owner = "atticuszeller"
+repo  = "python-uv"
 
 [tool.git-cliff.changelog]
 # template for the changelog header
@@ -145,24 +178,24 @@ split_commits = false
 # regex for preprocessing the commit messages
 commit_preprocessors = [
     # If the spelling is incorrect, it will be automatically fixed.
-    { pattern = '.*', replace_command = 'typos --write-changes -' }
+    { pattern = '.*', replace_command = 'typos --write-changes -' },
 ]
 # regex for parsing and grouping commits
 commit_parsers = [
-  { message = "^feat", group = "<!-- 0 -->🚀 Features" },
-  { message = "^fix", group = "<!-- 1 -->🐛 Bug Fixes" },
-  { message = "^doc", group = "<!-- 3 -->📚 Documentation" },
-  { message = "^perf", group = "<!-- 4 -->⚡ Performance" },
-  { message = "^refactor", group = "<!-- 2 -->🚜 Refactor" },
-  { message = "^style", group = "<!-- 5 -->🎨 Styling" },
-  { message = "^test", group = "<!-- 6 -->🧪 Testing" },
-  { message = "^chore\\(release\\)", skip = true },
-  { message = "^chore\\(deps.*\\)", skip = true },
-  { message = "^chore\\(pr\\)", skip = true },
-  { message = "^chore\\(pull\\)", skip = true },
-  { message = "^chore|^ci", group = "<!-- 7 -->⚙️ Miscellaneous Tasks" },
-  { body = ".*security", group = "<!-- 8 -->🛡️ Security" },
-  { message = "^revert", group = "<!-- 9 -->◀️ Revert" },
+    { message = "^feat", group = "<!-- 0 -->🚀 Features" },
+    { message = "^fix", group = "<!-- 1 -->🐛 Bug Fixes" },
+    { message = "^doc", group = "<!-- 3 -->📚 Documentation" },
+    { message = "^perf", group = "<!-- 4 -->⚡ Performance" },
+    { message = "^refactor", group = "<!-- 2 -->🚜 Refactor" },
+    { message = "^style", group = "<!-- 5 -->🎨 Styling" },
+    { message = "^test", group = "<!-- 6 -->🧪 Testing" },
+    { message = "^chore\\(release\\)", skip = true },
+    { message = "^chore\\(deps.*\\)", skip = true },
+    { message = "^chore\\(pr\\)", skip = true },
+    { message = "^chore\\(pull\\)", skip = true },
+    { message = "^chore|^ci", group = "<!-- 7 -->⚙️ Miscellaneous Tasks" },
+    { body = ".*security", group = "<!-- 8 -->🛡️ Security" },
+    { message = "^revert", group = "<!-- 9 -->◀️ Revert" },
 ]
 # filter out the commits that are not matched by commit parsers
 filter_commits = false
@@ -171,34 +204,33 @@ topo_order = false
 # sort the commits inside sections by oldest/newest order
 sort_commits = "oldest"
 
-
 [tool.bumpversion]
-current_version = "0.0.40"
-parse = "(?P<major>\\d+)\\.(?P<minor>\\d+)\\.(?P<patch>\\d+)"
-serialize = ["{major}.{minor}.{patch}"]
-search = "{current_version}"
-replace = "{new_version}"
-regex = false
+current_version        = "0.0.40"
+parse                  = "(?P<major>\\d+)\\.(?P<minor>\\d+)\\.(?P<patch>\\d+)"
+serialize              = ["{major}.{minor}.{patch}"]
+search                 = "{current_version}"
+replace                = "{new_version}"
+regex                  = false
 ignore_missing_version = false
-ignore_missing_files = false
-tag = true
-sign_tags = false
-tag_name = "v{new_version}"
-tag_message = "chore(release): {current_version} → {new_version}"
-allow_dirty = true # git-cliff first then bump patch
-commit = true
-message = "chore(release): {current_version} → {new_version}"
-commit_args = ""
-setup_hooks = []
-pre_commit_hooks = []
-post_commit_hooks = []
+ignore_missing_files   = false
+tag                    = true
+sign_tags              = false
+tag_name               = "v{new_version}"
+tag_message            = "chore(release): {current_version} → {new_version}"
+allow_dirty            = true                                                  # git-cliff first then bump patch
+commit                 = true
+message                = "chore(release): {current_version} → {new_version}"
+commit_args            = ""
+setup_hooks            = []
+pre_commit_hooks       = []
+post_commit_hooks      = []
 
 [[tool.bumpversion.files]]
 filename = "src/__init__.py"
 
 [[tool.bumpversion.files]]
 filename = "CHANGELOG.md"
-search = "unreleased"
-replace = "{new_version} - {now:%Y-%m-%d}"
+search   = "unreleased"
+replace  = "{new_version} - {now:%Y-%m-%d}"
 
 # https://callowayproject.github.io/bump-my-version/reference/search-and-replace-config/
