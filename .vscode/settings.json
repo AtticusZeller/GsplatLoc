@@ -1,5 +1,0 @@
-{
-    "DockerRun.DisableAutoGenerateConfig": true,
-    "editor.cursorSmoothCaretAnimation": "on",
-    "cmake.sourceDirectory": "/home/atticuszz/DevSpace/python/GsplatLoc/thirdparty/SplaTAM/diff-gaussian-rasterization-w-depth.git/third_party/glm/glm"
-}
