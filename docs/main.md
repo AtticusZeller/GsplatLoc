@@ -34,7 +34,7 @@ Camera localization is a fundamental problem in computer vision and robotics, cr
 
 
 
-## Classical RGB-D Localization 
+## Classical RGB-D Localization
 
 
 
@@ -54,7 +54,7 @@ Despite their successes, classical methods face challenges in balancing computat
 
 
 
-## NeRF-Based Localization 
+## NeRF-Based Localization
 
 
 
@@ -72,7 +72,7 @@ Furthermore, NeRF-based localization methods rely heavily on photometric consist
 
 
 
-## Gaussian-Based Localization 
+## Gaussian-Based Localization
 
 
 
@@ -275,7 +275,7 @@ We conducted a comprehensive evaluation spanning both synthetic and real-world e
 **Baselines.** To provide a comprehensive comparison, we evaluated our method against several state-of-the-art SLAM systems that leverage advanced scene representations. Specifically, we compared against RTG-SLAM(ICP)[@pengRTGSLAMRealtime3D2024], which utilizes Iterative Closest Point (ICP) for pose estimation within a 3D Gaussian splatting framework. We also included GS-ICP-SLAM(GICP) [@haRGBDGSICPSLAM2024], which employs Generalized ICP for alignment in a Gaussian-based representation. Additionally, we considered Gaussian-SLAM [@yugayGaussianSLAMPhotorealisticDense2024], evaluating both its PLANE ICP and HYBRID variants, which adapt traditional RGB-D odometry methods by incorporating plane-based ICP and a hybrid approach combining photometric and geometric information. These baselines were selected because they represent the current state of the art in SLAM systems utilizing advanced scene representations and focus on the localization component, which aligns with the scope of our work.
 
 
-## Localization Evaluation 
+## Localization Evaluation
 
 
 
@@ -284,7 +284,7 @@ We conducted comprehensive experiments on both synthetic and real-world datasets
 
 
 ::: {.table}
-:Replica\cite{straubReplicaDatasetDigital2019} \(ATE RMSE ↓\[cm\]\). 
+:Replica\cite{straubReplicaDatasetDigital2019} \(ATE RMSE ↓\[cm\]\).
 
 | Methods                                                                   | Avg.    | R0      | R1                   | R2      | Of0                  | Of1     | Of2     | Of3     | Of4     |
 | ------------------------------------------------------------------------- | ------- | ------- | -------------------- | ------- | -------------------- | ------- | ------- | ------- | ------- |
@@ -298,7 +298,7 @@ We conducted comprehensive experiments on both synthetic and real-world datasets
  **Table 1.** presents the Absolute Trajectory Error (ATE RMSE) results on the Replica dataset. Our method achieves remarkable performance with an average ATE RMSE of **0.01587 cm**, significantly outperforming existing approaches by nearly two orders of magnitude. The closest competitor, RTG-SLAM(ICP) [@pengRTGSLAMRealtime3D2024], achieves an average error of 1.10186 cm. This substantial improvement is consistent across all sequences, with particularly notable performance in challenging scenes like Of1 (0.00937 cm) and R1 (0.01272 cm).
 
 ::: {.table}
-:Replica\cite{straubReplicaDatasetDigital2019} \(AAE RMSE ↓\[°\]\). 
+:Replica\cite{straubReplicaDatasetDigital2019} \(AAE RMSE ↓\[°\]\).
 
 | Methods                                                                   | Avg.    | R0      | R1                 | R2      | Of0                | Of1     | Of2    | Of3    | Of4    |
 | ------------------------------------------------------------------------- | ------- | ------- | ------------------ | ------- | ------------------ | ------- | ------ | ------ | ------ |
@@ -331,7 +331,7 @@ We conducted comprehensive experiments on both synthetic and real-world datasets
 **Tables 3.** presents results on the more challenging TUM RGB-D dataset[@sturmBenchmarkEvaluationRGBD2012], which introduces real-world complexities such as sensor noise and dynamic environments. In terms of translational accuracy, GSplatLoc achieves competitive performance with an average ATE RMSE of **0.80982 cm**. While RTG-SLAM[@pengRTGSLAMRealtime3D2024] shows slightly better average performance (0.57636 cm), our method consistently outperforms both GS-ICP-SLAM[@haRGBDGSICPSLAM2024] (1.95454 cm) and Gaussian-SLAM[@yugayGaussianSLAMPhotorealisticDense2024] variants (1.27873 cm and 1.28716 cm) across most sequences.
 
 ::: {.table}
-: TUM\cite{sturmBenchmarkEvaluationRGBD2012} (AAE RMSE ↓\[°\]). 
+: TUM\cite{sturmBenchmarkEvaluationRGBD2012} (AAE RMSE ↓\[°\]).
 
 | Methods                                                                   | Avg.    | fr1/desk | fr1/desk2 | fr1/room | fr2/xyz | fr3/off. |
 | ------------------------------------------------------------------------- | ------- | -------- | --------- | -------- | ------- | -------- |

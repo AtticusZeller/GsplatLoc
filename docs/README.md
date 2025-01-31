@@ -1,6 +1,6 @@
 
 
-[Zotero Style Repository](https://www.zotero.org/styles) down your csl 
+[Zotero Style Repository](https://www.zotero.org/styles) down your csl
 
 ## install tex tools
 ```powershell

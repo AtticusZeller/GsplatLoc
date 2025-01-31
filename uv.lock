@@ -110,7 +110,6 @@ wheels = [
 
 [[package]]
 name = "gsplatloc"
-version = "0.0.0"
 source = { virtual = "." }
 
 [package.dev-dependencies]

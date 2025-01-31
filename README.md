@@ -19,12 +19,12 @@ If you find our paper and code useful, please cite us:
 
 ```bib
 @misc{zeller2024gsplatlocultraprecisecameralocalization,
-      title={GSplatLoc: Ultra-Precise Camera Localization via 3D Gaussian Splatting}, 
+      title={GSplatLoc: Ultra-Precise Camera Localization via 3D Gaussian Splatting},
       author={Atticus J. Zeller},
       year={2024},
       eprint={2412.20056},
       archivePrefix={arXiv},
       primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2412.20056}, 
+      url={https://arxiv.org/abs/2412.20056},
 }
 ```
