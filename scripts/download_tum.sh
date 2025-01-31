@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 
-cd ..
+
 mkdir -p Datasets
-cd Datasets
+cd Datasets || exit
 git clone https://huggingface.co/datasets/voviktyl/TUM_RGBD-SLAM
