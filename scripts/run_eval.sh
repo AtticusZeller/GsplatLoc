@@ -5,9 +5,9 @@ run_training() {
     dataset=$1
     room1=$2
     room2=$3
-    python GsplatLoc_eval.py --dataset $dataset --rooms $room1 $room2 --num-iters 2000 --disable-viewer &
+    python -m src.GsplatLoc_eval --dataset $dataset --rooms $room1 $room2 --num-iters 2000 --disable-viewer &
 }
-cd ../src || echo "failed to cd to ../src dir !"
+
 # Replica dataset
 run_training Replica room0 room1
 run_training Replica room2 office0

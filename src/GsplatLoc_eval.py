@@ -5,9 +5,8 @@ from typing import Any
 
 from src.eval.experiment import WandbConfig
 from src.eval.utils import set_random_seed
-from src.my_gsplat.gs_trainer import Runner
+from src.my_gsplat.gs_trainer_total import Runner
 
-sys.path.append("..")
 set_random_seed(42)
 
 
