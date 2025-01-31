@@ -3,7 +3,7 @@
 # `pre-commit autoupdate` to update repos
 # `pre-commit run --all-files` run hooks for all file
 
-# exclude: (^|/)\..*
+exclude: (^|/)\..*
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
