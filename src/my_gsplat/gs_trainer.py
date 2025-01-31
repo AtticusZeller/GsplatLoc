@@ -180,16 +180,10 @@ class Runner(ExperimentBase):
                         self.logger.plot_rgbd(
                             depths_gt[0, :, :, 0],
                             depths[0, :, :, 0],
-                            {
-                                "type": "l1",
-                                "value": depth_loss.item(),
-                            },
+                            {"type": "l1", "value": depth_loss.item()},
                             color=train_data.pixels,
                             rastered_color=colors.squeeze(0),
-                            color_loss={
-                                "type": "psnr",
-                                "value": psnr.item(),
-                            },
+                            color_loss={"type": "psnr", "value": psnr.item()},
                             # normal_loss={
                             #     "type": "cosine",
                             #     "value": normal_loss.item(),
@@ -204,23 +198,15 @@ class Runner(ExperimentBase):
                             fig_title="gs_splats Visualization",
                         )
                     # NOTE: monitor the pose error
-                    eT = calculate_translation_error(
-                        cur_c2w,
-                        train_data.src_c2w,
-                    )
+                    eT = calculate_translation_error(cur_c2w, train_data.src_c2w)
 
-                    eR = calculate_rotation_error(
-                        cur_c2w,
-                        train_data.src_c2w,
-                    )
+                    eR = calculate_rotation_error(cur_c2w, train_data.src_c2w)
                     # Error
                     self.logger.log_translation_error(eT, step=step)
                     self.logger.log_rotation_error(eR, step=step)
                     # LR
                     self.logger.log_LR(
-                        model=camera_opt,
-                        schedulers=schedulers,
-                        step=step,
+                        model=camera_opt, schedulers=schedulers, step=step
                     )
                     # self.logger.log_LR(
                     #     model=gs_splats,

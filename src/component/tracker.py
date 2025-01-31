@@ -24,7 +24,6 @@ class Scan2ScanICP:
         implementation: Literal["small_gicp", "open3d"] = "small_gicp",
         error_threshold: float = 50.0,
     ):
-
         self.voxel_downsampling_resolutions = voxel_downsampling_resolutions
         self.max_corresponding_distance = max_corresponding_distance
         self.num_threads = num_threads
@@ -143,7 +142,6 @@ class Scan2ScanICP:
         T_last_current: NDArray[np.float64] = np.identity(4),
         knn: int = 20,
     ):
-
         # 创建 Open3D 点云对象
         pcd = o3d.geometry.PointCloud()
         pcd.points = o3d.utility.Vector3dVector(raw_points[:, :3])  # 假设前三列是 XYZ
@@ -216,7 +214,6 @@ class Scan2ScanICP:
         init_gt_pose: NDArray[np.float64] | None = None,
         T_last_current: NDArray[np.float64] = np.identity(4),
     ):
-
         rgbd = o3d.t.geometry.RGBDImage(
             o3d.t.geometry.Image(np.ascontiguousarray(image)).to(self.o3d_device),
             o3d.t.geometry.Image(np.ascontiguousarray(depth)).to(self.o3d_device),

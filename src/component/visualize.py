@@ -1,5 +1,4 @@
 from pathlib import Path
-from typing import List, Optional
 
 import numpy as np
 import open3d as o3d
@@ -70,7 +69,6 @@ class PcdVisualizer:
         self.o3d_vis.update_renderer()
 
     def update_trajectory(self):
-
         # Update line set
         lines = [[i, i + 1] for i in range(len(self.camera_positions) - 1)]
         colors = [
@@ -232,9 +230,9 @@ def visualize_point_cloud(points: torch.Tensor, colors: torch.Tensor):
     # Ensure input has correct shape
     assert points.shape[1] == 3, "Point coordinates should have shape (N, 3)"
     assert colors.shape[1] == 3, "Colors should have shape (N, 3)"
-    assert (
-        points.shape[0] == colors.shape[0]
-    ), "Number of points and colors should be the same"
+    assert points.shape[0] == colors.shape[0], (
+        "Number of points and colors should be the same"
+    )
 
     # Convert to numpy arrays
     points_np = points.detach().cpu().numpy()

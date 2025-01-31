@@ -40,7 +40,6 @@ class WandbConfig(NamedTuple):
 
 
 class ExperimentBase:
-
     def __init__(
         self, wandb_config: WandbConfig, extra_config: dict = None, backends=None
     ):
@@ -61,23 +60,21 @@ class ExperimentBase:
 
 class ICPExperiment(ExperimentBase):
     def __init__(
-        self,
-        registration_config: RegistrationConfig,
-        wandb_config: WandbConfig,
+        self, registration_config: RegistrationConfig, wandb_config: WandbConfig
     ):
-        super().__init__(
-            backends=Scan2ScanICP(**registration_config.as_dict()),
-            wandb_config=wandb_config,
-            extra_config=registration_config.as_dict(),
-        ),
+        (
+            super().__init__(
+                backends=Scan2ScanICP(**registration_config.as_dict()),
+                wandb_config=wandb_config,
+                extra_config=registration_config.as_dict(),
+            ),
+        )
         self.data = get_data_set(name=wandb_config.dataset, room=wandb_config.sub_set)
         # self.grid_downsample = registration_config.grid_downsample_resolution
         # self.knn = registration_config.knn
 
     def run(self, max_images: int = 2000):
-
         for i, rgbd_image in enumerate(self.data):
-
             # print(f"Processing image {i + 1}/{len(data)}...")
             rgbd_image: RGBDImage
             # convert tensors to numpy arrays

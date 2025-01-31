@@ -136,9 +136,7 @@ def compute_depth_gt(
 
 
 def depth_to_points(
-    depth: Tensor,
-    K: Tensor,
-    include_homogeneous: bool = False,
+    depth: Tensor, K: Tensor, include_homogeneous: bool = False
 ) -> Tensor:
     """
     Project depth map to point clouds using intrinsic matrix.

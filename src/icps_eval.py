@@ -24,14 +24,13 @@ def save_finished_experiment(file_path: Path, finished: tuple):
 
 
 if __name__ == "__main__":
-
     file_path = Path("grip_o3d_finished_experiments.json")
     methods = [
         # "GICP",
         # "PLANE_ICP",
         # "COLORED_ICP",
         # "ICP",
-        "HYBRID",
+        "HYBRID"
     ]
     implements = ("open3d",)
     # rooms = [

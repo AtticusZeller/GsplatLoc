@@ -5,9 +5,10 @@ from pathlib import Path
 from typing import Literal
 
 import torch
-import wandb
 from matplotlib import pyplot as plt
 from torch import Tensor
+
+import wandb
 
 from .utils import calculate_RMSE_np, compute_silhouette_diff
 

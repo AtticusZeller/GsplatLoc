@@ -48,7 +48,6 @@ class BaseDataset(Sequence[RGBDImage]):
                 raise ValueError(f"Index {index} out of range (0 to {len(self) - 1})")
             return self._get_one(index)
         elif isinstance(index, slice):
-
             return [self._get_one(i) for i in range(*index.indices(len(self)))]
         else:
             raise TypeError(f"index must be int or slice but now is {type(index)}")
@@ -352,7 +351,6 @@ class Parser:
         # NOTE: PCA
         pca_factor = torch.scalar_tensor(1.0, device=tar.points.device)
         if self.normalize:
-
             # NOTE: PCA
             tar, src, pca_factor = normalize_2C(tar, src)
             ks = self.K.unsqueeze(0)  # [1, 3, 3]

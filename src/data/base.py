@@ -14,7 +14,9 @@ from viser import ViserServer
 DEVICE = (
     "cuda"
     if torch.cuda.is_available()
-    else "mps" if torch.backends.mps.is_available() else "cpu"
+    else "mps"
+    if torch.backends.mps.is_available()
+    else "cpu"
 )
 print(f"Using {DEVICE} DEVICE")
 
@@ -61,17 +63,12 @@ class ViewerConfig:
         if not self.disable_viewer:
             self.server = ViserServer(port=self.port, verbose=False)
             self.viewer = Viewer(
-                server=self.server,
-                render_fn=viewer_render_fn,
-                mode="training",
+                server=self.server, render_fn=viewer_render_fn, mode="training"
             )
 
 
 @dataclass
-class Config(
-    OptimizationConfig,
-    ViewerConfig,
-):
+class Config(OptimizationConfig, ViewerConfig):
     ckpt: str | None = None
 
     def adjust_steps(self, factor: float = 1.0):

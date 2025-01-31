@@ -152,22 +152,15 @@ class Runner(ExperimentBase):
                 total_loss.backward(retain_graph=True)
                 # NOTE: logger
                 with torch.no_grad():
-
                     # NOTE: early stop
                     desc = f"loss={total_loss.item():.8f}|"
                     pbar.set_description(desc)
 
                     if self.config.early_stop:
                         # NOTE: monitor the pose error
-                        eT = calculate_translation_error(
-                            cur_c2w,
-                            train_data.src_c2w,
-                        )
+                        eT = calculate_translation_error(cur_c2w, train_data.src_c2w)
 
-                        eR = calculate_rotation_error(
-                            cur_c2w,
-                            train_data.src_c2w,
-                        )
+                        eR = calculate_rotation_error(cur_c2w, train_data.src_c2w)
                         if step > 100:
                             if total_loss.item() < self.config.best_loss:
                                 self.config.best_loss = total_loss.item()
@@ -216,10 +209,7 @@ class Runner(ExperimentBase):
                                 depths_gt[0, :, :, 0],
                                 depths[0, :, :, 0],
                                 # combined_projected_depth,
-                                {
-                                    "type": "l1",
-                                    "value": depth_loss.item(),
-                                },
+                                {"type": "l1", "value": depth_loss.item()},
                                 # color=train_data.pixels,
                                 # rastered_color=colors.squeeze(0),
                                 # color_loss={
@@ -237,9 +227,7 @@ class Runner(ExperimentBase):
                             self.logger.log_rotation_error(self.config.best_eR, step=i)
                             # LR
                             self.logger.log_LR(
-                                model=camera_opt,
-                                schedulers=schedulers,
-                                step=i,
+                                model=camera_opt, schedulers=schedulers, step=i
                             )
                             desc += f"Early stopping triggered at step {step}|"
                             # NOTE: clean

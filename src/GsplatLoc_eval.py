@@ -1,6 +1,7 @@
 import argparse
 import sys
 import time
+from typing import Any
 
 from src.eval.experiment import WandbConfig
 from src.eval.utils import set_random_seed
@@ -10,7 +11,7 @@ sys.path.append("..")
 set_random_seed(42)
 
 
-def parse_arguments():
+def parse_arguments() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="Run GSplat training on specified rooms for Replica or TUM datasets."
     )
@@ -45,15 +46,12 @@ def parse_arguments():
         help="Number of iterations (default: 2000)",
     )
     parser.add_argument(
-        "--disable-viewer",
-        action="store_true",
-        default=True,
-        help="Disable the viewer",
+        "--disable-viewer", action="store_true", default=True, help="Disable the viewer"
     )
     return parser.parse_args()
 
 
-def get_rooms(args):
+def get_rooms(args) -> list[str] | Any | None:
     if args.dataset == "Replica":
         if args.all:
             return ["room" + str(i) for i in range(3)] + [
@@ -88,7 +86,7 @@ def get_rooms(args):
             return ["freiburg1_desk"]
 
 
-def main():
+def main() -> None:
     args = parse_arguments()
     rooms = get_rooms(args)
 
@@ -111,7 +109,7 @@ def main():
             try:
                 time.sleep(10)  # Wait for 10 seconds before moving to the next room
             except KeyboardInterrupt:
-                print(f"Moving to the next room...")
+                print("Moving to the next room...")
 
 
 if __name__ == "__main__":

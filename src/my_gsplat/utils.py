@@ -14,7 +14,6 @@ from src.data.utils import to_tensor
 
 
 def knn(x: Tensor, K: int = 4) -> Tensor:
-
     x_np = x.cpu().numpy() if not x.requires_grad else x.detach().cpu().numpy()
     pcd = small_gicp.PointCloud(x_np.astype(np.float64))
     model = small_gicp.KdTree(pcd, num_threads=32)

@@ -98,13 +98,7 @@ class CameraOptModule_quat_tans(nn.Module):
         ]
         optimizers = [
             Adam(
-                [
-                    {
-                        "params": param,
-                        "lr": lr,
-                        "name": name,
-                    }
-                ],
+                [{"params": param, "lr": lr, "name": name}],
                 weight_decay=(
                     self.config.quat_opt_reg
                     if name == "quat"
@@ -220,9 +214,7 @@ class GSModel(nn.Module):
 
     @torch.no_grad()
     def viewer_render_fn(
-        self,
-        camera_state: nerfview.CameraState,
-        img_wh: tuple[int, int],
+        self, camera_state: nerfview.CameraState, img_wh: tuple[int, int]
     ):
         """Callable function for the viewer."""
         W, H = img_wh
