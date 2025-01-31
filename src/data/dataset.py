@@ -343,7 +343,7 @@ class Parser:
 
     def __getitem__(self, index: int) -> AlignData:
         assert index < len(self._data)
-        tar, src = self._data[index], self._data[index + 10]
+        tar, src = self._data[index], self._data[index + 1]
         # transform to world
         tar.points = transform_points(tar.pose, tar.points)
         src.points = transform_points(tar.pose, src.points)
