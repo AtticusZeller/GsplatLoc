@@ -42,7 +42,8 @@ dev = [
     "bump-my-version>=0.28.0",
     "typos>=1.26.8",
     "pytest>=8.3.4",
-    "pytest-sugar>=1.0.0",     # Nicer pytest output
+    "pytest-sugar>=1.0.0", # Nicer pytest output
+    "panflute>=2.3.1",
 ]
 docs = ["pandas>=2.2.3", "pandas-stubs>=2.2.3.241126", "panflute>=2.3.1"]
 
