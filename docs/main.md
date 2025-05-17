@@ -6,6 +6,9 @@ authors:
     orcid: https://orcid.org/0009-0008-5460-325X
     affiliation: Southeast University Chengxian College
     address: Nanjing, China
+  - name: Haijuan Wu
+    affiliation: Southeast University Chengxian College
+    address: Nanjing, China
 abstract: We present **GSplatLoc**, a camera localization method that leverages the differentiable rendering capabilities of 3D Gaussian splatting for ultra-precise pose estimation. By formulating pose estimation as a gradient-based optimization problem that minimizes discrepancies between rendered depth maps from a pre-existing 3D Gaussian scene and observed depth images, GSplatLoc achieves translational errors within **0.01 cm** and near-zero rotational errors on the Replica dataset—significantly outperforming existing methods. Evaluations on the Replica and TUM RGB-D datasets demonstrate the method's robustness in challenging indoor environments with complex camera motions. GSplatLoc sets a new benchmark for localization in dense mapping, with important implications for applications requiring accurate real-time localization, such as robotics and augmented reality. Code is available at \url{https://github.com/AtticusZeller/GsplatLoc}.
 ---
 # Introduction
