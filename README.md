@@ -1,3 +1,5 @@
+
+
 <p align="center">
   <h1 align="center">GSplatLoc: Ultra-Precise Camera Localization via 3D Gaussian Splatting</h1>
   <p align="center">
@@ -24,7 +26,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 Then setup environment from the `pyproject.toml` :
 
 ```bash
-uv sync --all-extras --all-groups --dev
+uv sync --all-extras --all-groups
 source .venv/bin/activate
 ```
 
